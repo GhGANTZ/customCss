@@ -1,31 +1,41 @@
 .MuiListItem-gutters {
-    animation-name: fadeLeftToRight;
-    animation-duration: 8s;
-    animation-fill-mode:forwards;
-    animation-iteration-count:1;
-    animation-timing-function:ease;
-    animation-delay: 0s;
+  /* アニメーション名の指定：@keyframesと名前をそろえる */
+  animation-name: fadeLeftToRight;
+  /* 再生時間：短いほどフェードインが早くなる */
+  animation-duration: 8s;
+  /* アニメーション終了後の動き
+  　：forwards⇒最後の状態を保持、backwards⇒最初に戻る */
+  animation-fill-mode:forwards;
+  /* 繰り返し回数 */
+  animation-iteration-count:1;
+  /* 滑らかに動くためのおまじない */
+  animation-timing-function:ease;
+  /* 表示されてからアニメーション開始するまでの時間 */
+  animation-delay: 0s;
+  /* 気にしないでください */
     animation-direction:normal;
+}
+
+@keyframes fadeLeftToRight {
+  0% {
+    /* 透明度：0⇒透明、1⇒不透明 */
+    opacity: 0;
+    /* 横の動き */
+    transform: translateX(-150px);
   }
-  
-  @keyframes fadeLeftToRight {
-    0% {
-      opacity: 0;
-      transform: translateX(-150px);
-    }
-  
-    15% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  
-    75% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  
-    100% {
-      opacity: 0;
-      transform: translateX(0);
-    }
+
+  15% {
+    opacity: 1;
+    transform: translateX(0);
   }
+
+  75% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
