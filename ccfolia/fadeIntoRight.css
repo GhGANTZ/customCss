@@ -1,0 +1,31 @@
+.MuiListItem-gutters {
+    animation-name: fadeLeftToRight;
+    animation-duration: 8s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-delay: 0s;
+    animation-direction:normal;
+  }
+  
+  @keyframes fadeLeftToRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-150px);
+    }
+  
+    15% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+    75% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+    100% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,126 @@
+:root {
+    /** アイコンを表示するか：inline-flex⇒通常、none：非表示 */
+    --disp-icon: none;
+    /** アイコンの大きさ */
+    --icon-size: 40px;
+    /** アイコンとステータスの配置：inline-flex⇒通常、inline-block⇒縦並び */
+    --placement-icon-status: inline-block;
+    /** ステータスを2段にするか3段にするか：flex⇒通常、block⇒3段 */
+    --status-disp-type: block;
+    /** ステータスの横幅 */
+    --width-status: 160px;
+    /** ステータスの高さ */
+    --height-status: 40px;
+    /** ステータス(最大値)の高さ、位置 */
+    --height-total: 10px;
+    --top-total: 20px;
+    /** ステータス(残り)の高さ、位置 */
+    --height-remain: 10px;
+    --top-remain: 20px;
+    /** ステータス文字の周りの余白 */
+    --status-padding: 3px;
+    /** HPなど、見出し側のフォントサイズ */
+    --item-font-size: 30px;
+    /** 12/15など、ステータス側のフォントサイズ */
+    --status-font-size: 30px;
+    /** HPなど、見出しの周りに白縁を設定する */
+    --item-outline-color: rgb(255, 255, 255);
+    /**12/15Pなど、ステータスの周りに白縁を設定する */
+    --status-outline-color: rgb(255, 255, 255);
+}
+/************************
+  非表示要素の指定
+ ***********************/
+
+/** ツールバー */
+.MuiAppBar-root,
+/** サウンド設定 */
+.ehpWma,
+/** 盤面サイズ設定 */
+.VniSm,
+/** 編集ボタン */
+.jItBif,
+/** チャット欄 */
+.MuiDrawer-paper,
+/** 配置固定したスクリーンパネルの削除 */
+.hcTYPf,
+/** 配置固定していないスクリーンパネルの削除 */
+.ghXOMC,
+/** 背景の削除 */
+.goyzdF img:nth-child(1),
+/** 前景の削除 */
+.goyzdF img:nth-child(2),
+/** キャラ駒の削除 */
+.eucqli,
+/** キャラ駒の名前の削除 */
+.jDbTzn,
+/** カットインの削除 */
+.erRkBX,
+/** ダイス結果(下)の削除 */
+.kEQhkG,
+/** サイコロ画像の削除 */
+.iSEgox {
+  display: none;
+}
+/** 背景の非表示 */
+.fA-DYIg {
+  opacity: 0;
+}
+
+/************************
+  デザイン
+ ***********************/
+.MuiBadge-root {
+  display: var(--disp-icon) !important;
+}
+.dibOSn {
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.hliKga {
+  display: var(--placement-icon-status) !important;
+}
+.jKvVYK {
+  display: var(--status-disp-type) !important;
+}
+.gJasWt {
+    width: var(--width-status) !important;
+}
+.gkLmyk {
+    height: var(--height-status) !important;
+}
+.rcjSI {
+    height: var(--height-total) !important;
+    top: var(--top-total) !important;
+}
+.hmYKMg {
+    height: var(--height-remain) !important;
+    top: var(--top-remain) !important;
+}
+.cbqMGJ {
+  padding: var(--status-padding) !important;
+}
+.fsaUOa {
+  font-size: var(--item-font-size) !important;
+  text-shadow:
+  var(--item-outline-color) 1px 1px 0px,
+  var(--item-outline-color) -1px -1px 0px,
+  var(--item-outline-color) -1px 1px 0px,
+  var(--item-outline-color) 1px -1px 0px,
+  var(--item-outline-color) 0px 1px 0px,
+  var(--item-outline-color) 0px -1px 0px,
+  var(--item-outline-color) -1px 0px 0px,
+  var(--item-outline-color) 1px 0px 0px !important;
+}
+.dSQOJa {
+    font-size: var(--status-font-size) !important;
+    text-shadow:
+    var(--status-outline-color) 1px 1px 0px,
+    var(--status-outline-color) -1px -1px 0px,
+    var(--status-outline-color) -1px 1px 0px,
+    var(--status-outline-color) 1px -1px 0px,
+    var(--status-outline-color) 0px 1px 0px,
+    var(--status-outline-color) 0px -1px 0px,
+    var(--status-outline-color) -1px 0px 0px,
+    var(--status-outline-color) 1px 0px 0px !important;
+}

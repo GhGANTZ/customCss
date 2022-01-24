@@ -1,0 +1,190 @@
+:root {
+  --background-color: rgb(0, 0, 0);
+  --background-padding: 8px 8px 8px 8px;
+  --border-color: rgb(255, 255, 255);
+  --border-image: url(https://xxx);
+  --border-width: 2px;
+  --border-radius: 0px;
+  --border-shadow: 0;
+  --font-color: rgb(255, 255, 255);
+  --font-color-shadow: 0;
+  --font-color-fail: rgb(245, 0, 87);
+  --font-color-fail-shadow: 0;
+  --font-color-success: rgb(33, 150, 243);
+  --font-color-success-shadow: 0;
+  --font-size: 1.5rem;
+  --font-shadow: 0;
+  --image-radius: 0%;
+  --width: 500px;
+  --result-space: 10px;
+  --line-clamp: 30;
+  --disp-dice-time: transparent;
+}
+
+.MuiList-root>div>div>div>div:nth-last-child(-n+3) {
+    display: block !important;
+}
+/**************************
+ 表示用CSS
+**************************/
+/**************************
+ 各種調整
+**************************/
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/** ツールバー */
+.MuiAppBar-root,
+/** サウンド設定 */
+.ehpWma,
+/** 盤面サイズ設定 */
+.VniSm,
+/** 編集ボタン */
+.jItBif,
+/** 配置固定したスクリーンパネルの削除 */
+.hcTYPf,
+/** 配置固定していないスクリーンパネルの削除 */
+.ghXOMC,
+/** 背景の削除 */
+.goyzdF img:nth-child(1),
+/** 前景の削除 */
+.goyzdF img:nth-child(2),
+/** ステータスの削除 */
+.gpoAiV,
+/** キャラ駒の削除 */
+.eucqli,
+/** キャラ駒の名前の削除 */
+.jDbTzn,
+/** カットインの削除 */
+.erRkBX,
+/** ダイス結果(下)の削除 */
+.kEQhkG,
+/** サイコロ画像の削除 */
+.iSEgox {
+  display: none !important;
+}
+/** 背景の非表示 */
+.fA-DYIg {
+  opacity: 0 !important;
+}
+
+/**************************
+　デザイン
+**************************/
+/**　右側全体 */
+.MuiDrawer-root>.MuiPaper-root {
+  width: 100% !important;
+}
+
+hr {
+  display: none;
+}
+
+/**　チャット欄背景 */
+.MuiDrawer-paperAnchorDockedRight {
+  border: none;
+}
+
+/**　ダイス結果 */
+.MuiListItem-root {
+  padding: var(--background-padding) !important;
+  background: var(--background-color) !important;
+  border: solid var(--border-width) var(--border-color) !important;
+  border-radius: var(--border-radius) !important;
+  border-image: var(--border-image) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  box-sizing: border-box !important;
+  box-shadow: var(--border-shadow) !important;
+  align-items: center !important;
+}
+
+/**　チャット欄アイコン入れ物 */
+.MuiListItemAvatar-alignItemsFlexStart {
+  margin: 0px;
+}
+
+/**　チャット欄アイコン画像 */
+.sc-bBHHxi {
+  background: transparent;
+  border-radius: var(--image-radius);
+}
+
+/**　右側背景 */
+.MuiPaper-root {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+/**　ダイス結果（入力内容） */
+.MuiTypography-body2 {
+  font-size: var(--font-size)
+}
+
+/** ダイス結果のスクロールを発生させないよう高さを指定 */
+.sc-cNKqjZ>div:nth-child(1)>div>div {
+  height: 70vh !important;
+}
+
+.MuiList-root>div>div>div>div {
+  /** ダイス結果をすべて非表示に。外出しした設定にimportantを付けることで設定した個数だけ表示する */
+  display: none;
+  /** 要素の高さを持ってる子要素に合わせる */
+  height: auto !important;
+  min-height: auto !important;
+  /** ダイス結果の横幅を設定 */
+  width: var(--width) !important;
+  /** top,leftなどの影響を受けないようにする */
+  position: static !important;
+  /* 他の要素のサイズで箱の要素の横幅が変わらないよう固定 */
+  flex-shrink: 0;
+  /** ダイス結果同士の距離感を設定 */
+  margin: var(--result-space);
+}
+
+/* ダイス結果欄のテキストすべてを囲う要素 */
+.MuiListItemText-root {
+  overflow: hidden;
+}
+
+/* ダイス結果(デフォルト)の文字色 */
+p.MuiTypography-root,
+.MuiTypography-colorTextSecondary {
+  color: var(--font-color);
+  text-shadow: var(--font-color-shadow);
+}
+
+/** ダイス結果文字全体 */
+p.MuiTypography-root {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* ダイス結果の上限行数を指定(超えると…表示になる) */
+  -webkit-line-clamp: var(--line-clamp);
+}
+
+/** 成功時の青文字部分 */
+.MuiTypography-colorPrimary {
+  color: var(--font-color-success);
+  text-shadow: var(--font-color-success-shadow);
+}
+
+/* 失敗時の赤字部分 */
+.MuiTypography-colorSecondary {
+  color: var(--font-color-fail);
+  text-shadow: var(--font-color-fail-shadow);
+}
+
+/* ユーザ名、ダイスを振った時間 */
+.MuiListItemText-primary,
+.MuiTypography-caption {
+   color: var(--font-color) !important;
+  text-shadow: var(--font-color-shadow) !important;
+}
+/* ダイスを振った時間 */
+span.MuiTypography-root.MuiTypography-caption {
+  display: var(--disp-dice-time) !important;
+}
