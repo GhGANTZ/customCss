@@ -1,41 +1,65 @@
+/**************************
+ 設定変更箇所
+**************************/
+
 :root {
-  --background-color: rgb(0, 0, 0);
-  --background-padding: 8px 8px 8px 8px;
-  --border-color: rgb(255, 255, 255);
-  --border-image: url(https://xxx);
-  --border-width: 2px;
-  --border-radius: 0px;
-  --border-shadow: 0;
-  --font-color: rgb(255, 255, 255);
-  --font-color-shadow: 0;
-  --font-color-fail: rgb(245, 0, 87);
-  --font-color-fail-shadow: 0;
-  --font-color-success: rgb(33, 150, 243);
-  --font-color-success-shadow: 0;
-  --font-size: 1.5rem;
-  --font-shadow: 0;
-  --image-radius: 0%;
-  --width: 500px;
-  --result-space: 10px;
-  --line-clamp: 30;
-  --disp-dice-time: transparent;
+  /** ダイス結果背景 */
+  --width: 500px; /** 結果の横幅 */
+  --background-color: rgba(0, 0, 0, 0.6); /** 背景色 */
+  --background-padding: 8px 8px 8px 8px; /** 外枠と文字の隙間 */
+  --border-color: rgba(255, 255, 255, 1); /** 枠線の色 */
+  --border-image: url(https://xxx/yyy.png); /** 枠線に画像を使用 */
+  --border-slice: 0px; /** 枠線画像の太さ */
+  --border-width: 0px; /** 枠線の幅 */
+  --border-radius: 10px; /** 角の丸み */
+  --border-shadow: 5px 5px 10px black; /** 読み方）X軸 Y軸 影の幅 色 */
+  --result-space: 10px; /** ダイス結果同士の隙間 */
+  /** アイコン画像の設定 */
+  --icon-radius: 0%; /** 画像の丸み：0%⇒四角、50%⇒正円 */
+  --icon-background-color: transparent; /** アイコン背景色：transparentで透明 */
+  --line-clamp: 3; /** 表示行数の上限 */
+  /** ダイス結果の文字部分（デフォルト） */
+  --font-size-result: 1.5rem;
+  --font-color-result: rgba(255, 255, 255, 1);
+  --font-shadow-result: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
+  /** 成功時の青文字部分 */
+  --font-size-success: 1.1rem; 
+  --font-color-success: rgba(134, 202, 255, 1);
+  --font-shadow-success: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
+  /** 失敗時の赤文字部分 */
+  --font-size-fail: 1.1rem;
+  --font-color-fail: rgba(255, 161, 161, 1);
+  --font-shadow-fail: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
+  /** ユーザ名の部分 */
+  --font-size-user-name: 1.1rem;
+  --font-color-user-name: rgba(255, 255, 255, 1);
+  --font-shadow-user-name: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
+  /** ダイスを振った時間を表示するか */
+  --disp-dice-time: transparent; /** none⇒表示しない、transparent⇒表示する */
+  --font-size-dice-time: 1rem;
+  --font-color-dice-time: rgba(255, 255, 255, 0.6);
+  --font-shadow-dice-time: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 }
 
 .MuiList-root>div>div>div>div:nth-last-child(-n+3) {
     display: block !important;
 }
+
+
 /**************************
- 表示用CSS
+ OBS用のおまじない
 **************************/
-/**************************
- 各種調整
-**************************/
-/* OBS */
+
 body {
   background-color: rgba(0, 0, 0, 0);
   margin: 0px auto;
   overflow: hidden;
 }
+
+
+/**************************
+ 非表示要素の設定
+**************************/
 
 /** ツールバー */
 .MuiAppBar-root,
@@ -75,18 +99,16 @@ body {
 /**************************
 　デザイン
 **************************/
+
 /**　右側全体 */
 .MuiDrawer-root>.MuiPaper-root {
+  /** チャットがアニメーションする幅を確保 */
   width: 100% !important;
 }
 
+/** ダイス結果間の境界線 */
 hr {
-  display: none;
-}
-
-/**　チャット欄背景 */
-.MuiDrawer-paperAnchorDockedRight {
-  border: none;
+  display: none !important;
 }
 
 /**　ダイス結果 */
@@ -95,7 +117,8 @@ hr {
   background: var(--background-color) !important;
   border: solid var(--border-width) var(--border-color) !important;
   border-radius: var(--border-radius) !important;
-  border-image: var(--border-image) !important;
+  border-image-source: var(--border-image) !important;
+  border-image-slice: var(--border-slice) !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: cover !important;
@@ -106,23 +129,18 @@ hr {
 
 /**　チャット欄アイコン入れ物 */
 .MuiListItemAvatar-alignItemsFlexStart {
-  margin: 0px;
+  margin: 0px !important;
 }
 
 /**　チャット欄アイコン画像 */
 .sc-bBHHxi {
-  background: transparent;
-  border-radius: var(--image-radius);
+  background: var(--icon-background-color) !important;
+  border-radius: var(--icon-radius);
 }
 
 /**　右側背景 */
 .MuiPaper-root {
   background-color: rgba(0,0,0,0) !important;
-}
-
-/**　ダイス結果（入力内容） */
-.MuiTypography-body2 {
-  font-size: var(--font-size)
 }
 
 /** ダイス結果のスクロールを発生させないよう高さを指定 */
@@ -141,50 +159,55 @@ hr {
   /** top,leftなどの影響を受けないようにする */
   position: static !important;
   /* 他の要素のサイズで箱の要素の横幅が変わらないよう固定 */
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
   /** ダイス結果同士の距離感を設定 */
-  margin: var(--result-space);
+  margin: var(--result-space) !important;
 }
 
 /* ダイス結果欄のテキストすべてを囲う要素 */
 .MuiListItemText-root {
-  overflow: hidden;
+  /* ダイス結果が長すぎて四角をはみ出た場合に、はみ出し部分を表示しない */
+  overflow: hidden !important;
 }
 
-/* ダイス結果(デフォルト)の文字色 */
-p.MuiTypography-root,
-.MuiTypography-colorTextSecondary {
-  color: var(--font-color);
-  text-shadow: var(--font-color-shadow);
-}
-
-/** ダイス結果文字全体 */
+/** ダイス結果テキスト（ユーザ名などを除く） */
 p.MuiTypography-root {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
+  /** -webkit-line-clampを有効にするためのおまじない */
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
   /* ダイス結果の上限行数を指定(超えると…表示になる) */
-  -webkit-line-clamp: var(--line-clamp);
+  -webkit-line-clamp: var(--line-clamp) !important;
+  color: var(--font-color-result) !important;
+  text-shadow: var(--font-shadow-result) !important;
+  font-size: var(--font-size-result) !important;
 }
 
 /** 成功時の青文字部分 */
 .MuiTypography-colorPrimary {
-  color: var(--font-color-success);
-  text-shadow: var(--font-color-success-shadow);
+  color: var(--font-color-success) !important;
+  text-shadow: var(--font-shadow-success) !important;
+  font-size: var(--font-size-success) !important;
 }
 
 /* 失敗時の赤字部分 */
 .MuiTypography-colorSecondary {
-  color: var(--font-color-fail);
-  text-shadow: var(--font-color-fail-shadow);
+  color: var(--font-color-fail) !important;
+  text-shadow: var(--font-shadow-fail) !important;
+  font-size: var(--font-size-fail) !important;
 }
 
 /* ユーザ名、ダイスを振った時間 */
 .MuiListItemText-primary,
 .MuiTypography-caption {
-   color: var(--font-color) !important;
-  text-shadow: var(--font-color-shadow) !important;
+  /** ユーザ名を設定した色にしたい場合はここ（color）を削除する */
+  color: var(--font-color-user-name) !important;
+  text-shadow: var(--font-shadow-user-name) !important;
+  font-size: var(--font-size-user-name) !important;
 }
 /* ダイスを振った時間 */
 span.MuiTypography-root.MuiTypography-caption {
   display: var(--disp-dice-time) !important;
+  color: var(--font-color-dice-time) !important;
+  text-shadow: var(--font-shadow-dice-time) !important;
+  font-size: var(--font-size-dice-time) !important;
 }
