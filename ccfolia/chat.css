@@ -3,6 +3,8 @@
 **************************/
 
 :root {
+  /** 表示行数の上限 */
+  --line-clamp: 3;
   /** ダイス結果背景 */
   --width: 500px; /** 結果の横幅 */
   --background-color: rgba(0, 0, 0, 0.6); /** 背景色 */
@@ -17,7 +19,6 @@
   /** アイコン画像の設定 */
   --icon-radius: 0%; /** 画像の丸み：0%⇒四角、50%⇒正円 */
   --icon-background-color: transparent; /** アイコン背景色：transparentで透明 */
-  --line-clamp: 3; /** 表示行数の上限 */
   /** ダイス結果の文字部分（デフォルト） */
   --font-size-result: 1.5rem;
   --font-color-result: rgba(255, 255, 255, 1);
@@ -40,11 +41,6 @@
   --font-color-dice-time: rgba(255, 255, 255, 0.6);
   --font-shadow-dice-time: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 }
-
-.MuiList-root>div>div>div>div:nth-last-child(-n+3) {
-    display: block !important;
-}
-
 
 /**************************
  OBS用のおまじない
