@@ -1,0 +1,49 @@
+/**************************
+ OBS用のおまじない
+**************************/
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+/**************************
+ 非表示項目の設定
+**************************/
+
+/** ツールバー */
+.MuiAppBar-root,
+/** サウンド設定 */
+.ehpWma,
+/** 盤面サイズ設定 */
+.VniSm,
+/** 編集ボタン */
+.jItBif,
+/** チャット欄 */
+.MuiDrawer-paper,
+/** 配置固定したスクリーンパネルの削除 */
+.hcTYPf,
+/** 配置固定していないスクリーンパネルの削除 */
+.ghXOMC,
+/** 背景の削除 */
+.goyzdF img:nth-child(1),
+/** 前景の削除 */
+.goyzdF img:nth-child(2),
+/** キャラ駒の名前の削除 */
+.jDbTzn,
+/** カットインの削除 */
+.erRkBX,
+/** ダイス結果(下)の削除 */
+.kEQhkG,
+/** サイコロ画像の削除 */
+.iSEgox,
+/** ステータスの削除 */
+.gpoAiV {
+  display: none !important;
+}
+
+/** メイン盤面の見切れを解消 */
+.hPKYjV {
+  right: -960px !important;
+}
