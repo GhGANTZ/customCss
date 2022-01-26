@@ -1,0 +1,16 @@
+◆◆◆◆第１回：チャット欄◆◆◆◆
+
+
+◆◆◆◆◆テキスト１◆◆◆◆◆
+
+@import url("https://ghgantz.github.io/customCss/ccfolia/chat.css");
+
+◆◆◆◆◆テキスト２◆◆◆◆◆
+
+.MuiList-root>div>div>div>div:nth-last-child(-n+3) {
+    display: block !important;
+}
+
+◆◆◆◆◆テキスト３◆◆◆◆◆
+
+@import url("https://ghgantz.github.io/customCss/ccfolia/fadeIntoRight.css");
