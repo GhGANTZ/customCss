@@ -1,3 +1,8 @@
+:root {
+  /** ぼかしの度合い(デフォルト：8px) */
+  --blur-degree: 0px;
+}
+
 /**************************
  OBS用のおまじない
 **************************/
@@ -53,4 +58,8 @@ body {
 /** メイン盤面の見切れを解消 */
 .hPKYjV {
   right: -960px !important;
+}
+
+.jDgfID {
+  filter: blur(var(--blur-degree)) !important;
 }
