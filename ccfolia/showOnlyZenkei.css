@@ -12,8 +12,6 @@ body {
  非表示項目の設定
 **************************/
 
-/** 広告の削除 */
-.MuiDialog-scrollPaper,
 /** ツールバー */
 .MuiAppBar-root,
 /** サウンド設定 */
@@ -39,18 +37,21 @@ body {
 /** ダイス結果(下)の削除 */
 .kEQhkG,
 /** サイコロ画像の削除 */
-.iSEgox {
+.iSEgox,
+/** ステータスの削除 */
+.gpoAiV,
+/** キャラ駒の削除 */
+.eucqli {
   display: none !important;
 }
 /** 背景の非表示 */
 .fA-DYIg {
   opacity: 0 !important;
 }
-/** ステータスの削除 */
-.gpoAiV {
-  display: none !important;
+/** 広告の削除 */
+.MuiDialog-scrollPaper {
+  display: none !important; /** 広告画像の削除 */
 }
-/** キャラ駒の削除 */
-.eucqli {
-  display: none !important;
+.MuiBackdrop-root {
+  background: rgba(0,0,0,0) !important; /** 広告背景の削除 */
 }

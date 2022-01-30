@@ -55,8 +55,6 @@ body {
  非表示要素の指定
 ***********************/
 
-/** 広告の削除 */
-.MuiDialog-scrollPaper,
 /** ツールバー */
 .MuiAppBar-root,
 /** サウンド設定 */
@@ -90,6 +88,13 @@ body {
 /** 背景の非表示 */
 .fA-DYIg {
   opacity: 0;
+}
+/** 広告の削除 */
+.MuiDialog-scrollPaper {
+  display: none !important; /** 広告画像の削除 */
+}
+.MuiBackdrop-root {
+  background: rgba(0,0,0,0) !important; /** 広告背景の削除 */
 }
 
 /************************

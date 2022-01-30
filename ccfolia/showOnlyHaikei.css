@@ -12,8 +12,6 @@ body {
  非表示項目の設定
 **************************/
 
-/** 広告の削除 */
-.MuiDialog-scrollPaper,
 /** ツールバー */
 .MuiAppBar-root,
 /** サウンド設定 */
@@ -43,6 +41,13 @@ body {
 /** ステータスの削除 */
 .gpoAiV {
   display: none !important;
+}
+/** 広告の削除 */
+.MuiDialog-scrollPaper {
+  display: none !important; /** 広告画像の削除 */
+}
+.MuiBackdrop-root {
+  background: rgba(0,0,0,0) !important; /** 広告背景の削除 */
 }
 
 /** メイン盤面の見切れを解消 */
