@@ -5,6 +5,9 @@
 :root {
   /** 表示行数の上限 */
   --line-clamp: 3;
+  /** ダイス結果の上下揃えの設定 */
+  --is-top: auto;/* 上揃えの場合⇒0、下揃えの場合⇒auto */
+  --is-bottom: 0;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
   /** ダイス結果背景 */
   --width: 500px; /** 結果の横幅 */
   --background-color: rgba(0, 0, 0, 0.6); /** 背景色 */
@@ -84,7 +87,9 @@ body {
 /** ダイス結果(下)の削除 */
 .kEQhkG,
 /** サイコロ画像の削除 */
-.iSEgox {
+.iSEgox,
+/** チャット入力欄の削除 */
+.btWeVW {
   display: none !important;
 }
 /** 背景の非表示 */
@@ -148,7 +153,11 @@ hr {
 
 /** ダイス結果のスクロールを発生させないよう高さを指定 */
 .sc-cNKqjZ>div:nth-child(1)>div>div {
-  height: 70vh !important;
+  height: auto !important;
+  position: absolute !important;
+  /** ダイス結果の上揃え、下揃えを設定 */
+  top: var(--is-top) !important;
+  bottom: var(--is-bottom) !important;
 }
 
 .MuiList-root>div>div>div>div {
@@ -165,6 +174,8 @@ hr {
   flex-shrink: 0 !important;
   /** ダイス結果同士の距離感を設定 */
   margin: var(--result-space) !important;
+  /** 自動で設定されるtopをリセットする */
+  top: auto !important;
 }
 
 /* ダイス結果欄のテキストすべてを囲う要素 */
