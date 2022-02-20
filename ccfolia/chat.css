@@ -76,7 +76,7 @@ body {
 .goyzdF img:nth-child(1),
 /** 前景の削除 */
 .goyzdF img:nth-child(2),
-/* 前景の削除(無敗系の時のマス目) */
+/** 前景の削除(無敗系の時のマス目) */
 .ccDFfG>div>div>div,
 /** ステータスの削除 */
 .gpoAiV,
