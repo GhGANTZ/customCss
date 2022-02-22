@@ -23,12 +23,14 @@
   --height-status: 40px;
   /** ステータス同士の距離 */
   --space-between-status: 20px;
-  /** ステータス(最大値)の高さ、位置 */
+  /** ステータス(最大値)の高さ、位置、色 */
   --height-total: 10px;
   --top-total: 20px;
-  /** ステータス(残り)の高さ、位置 */
+  --color-total: rgba(255, 255, 255, 1);
+  /** ステータス(残り)の高さ、位置、色 */
   --height-remain: 10px;
   --top-remain: 20px;
+  --color-remain: rgba(255, 255, 255, 0.6);
   /** ステータス文字の周りの余白 */
   --status-padding: 3px;
   /** HPなど、見出し側のフォントサイズ */
@@ -132,10 +134,12 @@ body {
 .rcjSI {
   height: var(--height-total) !important;
   top: var(--top-total) !important;
+  background: var(--color-total) !important;
 }
 .hmYKMg {
   height: var(--height-remain) !important;
   top: var(--top-remain) !important;
+  background: var(--color-remain) !important;
 }
 .cbqMGJ {
   padding: var(--status-padding) !important;
