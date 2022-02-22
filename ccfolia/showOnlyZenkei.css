@@ -32,6 +32,8 @@ body {
 .cwrusq,
 /** キャラ駒の名前の削除 */
 .jDbTzn,
+/** キャラ駒の削除 */
+.eucqli,
 /** カットインの削除 */
 .erRkBX,
 /** ダイス結果(下)の削除 */
@@ -39,9 +41,8 @@ body {
 /** サイコロ画像の削除 */
 .iSEgox,
 /** ステータスの削除 */
-.gpoAiV,
-/** キャラ駒の削除 */
-.eucqli {
+.gpoAiV
+ {
   display: none !important;
 }
 /** 背景の非表示 */
