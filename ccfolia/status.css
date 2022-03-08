@@ -33,10 +33,14 @@
   --color-remain: rgba(255, 255, 255, 0.6);
   /** ステータス文字の周りの余白 */
   --status-padding: 3px;
-  /** HPなど、見出し側のフォントサイズ */
+  /** HPなど、見出し側のフォントサイズ、色 */
   --item-font-size: 30px;
-  /** 12/15など、ステータス側のフォントサイズ */
+  --item-font-color: rgb(66, 66, 66); 
+  /** 12/15など、ステータス側のフォントサイズ、色 */
   --status-font-size: 30px;
+  --status-font-color: rgb(66, 66, 66);
+  /* 不定時の赤字の色 */
+  --futei-font-color: rgb(197, 17, 98);
   /** HPなど、見出しの周りに白縁を設定する */
   --item-outline-color: rgba(255, 255, 255, 1);
   /**12/15Pなど、ステータスの周りに白縁を設定する */
@@ -146,6 +150,7 @@ body {
 }
 .fsaUOa {
   font-size: var(--item-font-size) !important;
+  color: var(--item-font-color) !important;
   text-shadow:
     var(--item-outline-color) 1px 1px 0px,
     var(--item-outline-color) -1px -1px 0px,
@@ -158,6 +163,7 @@ body {
 }
 .dSQOJa {
   font-size: var(--status-font-size) !important;
+  color: var(--status-font-color) !important;
   text-shadow:
     var(--status-outline-color) 1px 1px 0px,
     var(--status-outline-color) -1px -1px 0px,
@@ -167,4 +173,11 @@ body {
     var(--status-outline-color) 0px -1px 0px,
     var(--status-outline-color) -1px 0px 0px,
     var(--status-outline-color) 1px 0px 0px !important;
+}
+.dLKiqb {
+  color: var(--futei-font-color) !important;
+}
+.gpoAiV {
+  /* ステータスを一定以上の横幅にしたときに見切れないようにする設定 */
+  overflow-y: visible !important;
 }
