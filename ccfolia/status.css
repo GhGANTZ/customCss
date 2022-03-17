@@ -34,11 +34,11 @@
   /** ステータス文字の周りの余白 */
   --status-padding: 3px;
   /** HPなど、見出し側のフォント、サイズ、色 */
-  --item-font-family: inherit;
+  --item-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   --item-font-size: 30px;
   --item-font-color: rgb(66, 66, 66); 
   /** 12/15など、ステータス側のフォント、サイズ、色 */
-  --status-font-family: inherit;
+  --status-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   --status-font-size: 30px;
   --status-font-color: rgb(66, 66, 66);
   /* 不定時の赤字の色 */
