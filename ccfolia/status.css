@@ -33,10 +33,12 @@
   --color-remain: rgba(255, 255, 255, 0.6);
   /** ステータス文字の周りの余白 */
   --status-padding: 3px;
-  /** HPなど、見出し側のフォントサイズ、色 */
+  /** HPなど、見出し側のフォント、サイズ、色 */
+  --item-font-family: inherit;
   --item-font-size: 30px;
   --item-font-color: rgb(66, 66, 66); 
-  /** 12/15など、ステータス側のフォントサイズ、色 */
+  /** 12/15など、ステータス側のフォント、サイズ、色 */
+  --status-font-family: inherit;
   --status-font-size: 30px;
   --status-font-color: rgb(66, 66, 66);
   /* 不定時の赤字の色 */
@@ -149,6 +151,7 @@ body {
   padding: var(--status-padding) !important;
 }
 .fsaUOa {
+  font-family: var(--item-font-family) !important;
   font-size: var(--item-font-size) !important;
   color: var(--item-font-color) !important;
   text-shadow:
@@ -162,6 +165,7 @@ body {
     var(--item-outline-color) 1px 0px 0px !important;
 }
 .dSQOJa {
+  font-family: var(--item-font-family) !important;
   font-size: var(--status-font-size) !important;
   color: var(--status-font-color) !important;
   text-shadow:
