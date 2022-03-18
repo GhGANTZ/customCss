@@ -1,0 +1,41 @@
+:root {
+  --num-hour: 15;
+  --num-minute: 30
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+#main-text {
+  display: flex;
+  overflow: hidden;
+  color: #000;
+  font-family: Futura, sans-serif;
+  font-size: 30px;
+}
+
+#main-text span {
+  display: block;
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+#main-text.-visible span {
+  transform: translate(0, 0);
+}
+
+#main-text span {
+  @for $i from 1 through 23 {
+    &:nth-child(#{$i + 1}) {
+      $delay: $i * 0.04 + s;
+      transition-delay: $delay;
+    }
+  }
+}

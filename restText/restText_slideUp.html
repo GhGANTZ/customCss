@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>休憩中テキスト</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+    :root {
+      --num-hour: 15;
+      --num-minute: 30
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0
+    }
+
+    #main-text {
+      display: flex;
+      overflow: hidden;
+      color: #000;
+      font-family: Futura, sans-serif;
+      font-size: 30px
+    }
+
+    #main-text span {
+      display: block;
+      transform: translate(0, 105%);
+      transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
+    }
+
+    #main-text.-visible span {
+      transform: translate(0, 0)
+    }
+
+    #main-text span:nth-child(2) {
+      transition-delay: .04s
+    }
+
+    #main-text span:nth-child(3) {
+      transition-delay: .08s
+    }
+
+    #main-text span:nth-child(4) {
+      transition-delay: .12s
+    }
+
+    #main-text span:nth-child(5) {
+      transition-delay: .16s
+    }
+
+    #main-text span:nth-child(6) {
+      transition-delay: .2s
+    }
+
+    #main-text span:nth-child(7) {
+      transition-delay: .24s
+    }
+
+    #main-text span:nth-child(8) {
+      transition-delay: .28s
+    }
+
+    #main-text span:nth-child(9) {
+      transition-delay: .32s
+    }
+
+    #main-text span:nth-child(10) {
+      transition-delay: .36s
+    }
+
+    #main-text span:nth-child(11) {
+      transition-delay: .4s
+    }
+
+    #main-text span:nth-child(12) {
+      transition-delay: .44s
+    }
+
+    #main-text span:nth-child(13) {
+      transition-delay: .48s
+    }
+
+    #main-text span:nth-child(14) {
+      transition-delay: .52s
+    }
+
+    #main-text span:nth-child(15) {
+      transition-delay: .56s
+    }
+
+    #main-text span:nth-child(16) {
+      transition-delay: .6s
+    }
+
+    #main-text span:nth-child(17) {
+      transition-delay: .64s
+    }
+
+    #main-text span:nth-child(18) {
+      transition-delay: .68s
+    }
+
+    #main-text span:nth-child(19) {
+      transition-delay: .72s
+    }
+
+    #main-text span:nth-child(20) {
+      transition-delay: .76s
+    }
+
+    #main-text span:nth-child(21) {
+      transition-delay: .8s
+    }
+
+    #main-text span:nth-child(22) {
+      transition-delay: .84s
+    }
+
+    #main-text span:nth-child(23) {
+      transition-delay: .88s
+    }
+
+    #main-text span:nth-child(24) {
+      transition-delay: .92s
+    }
+  </style>
+</head>
+
+<body>
+  <p id="main-text">
+    <span>た</span>
+    <span>だ</span>
+    <span>い</span>
+    <span>ま</span>
+    <span>休</span>
+    <span>憩</span>
+    <span>中</span>
+    <span>で</span>
+    <span>す</span>
+    <span>。</span><br />
+    <span id="hour"></span>
+    <span>時</span>
+    <span id="minute"></span>
+    <span>分</span>
+    <span>よ</span>
+    <span>り</span>
+    <span>再</span>
+    <span>開</span>
+    <span>い</span>
+    <span>た</span>
+    <span>し</span>
+    <span>ま</span>
+    <span>す</span>
+    <span>。</span>
+  </p>
+</body>
+<script>
+  var hourNum = getComputedStyle(document.documentElement).getPropertyValue('--num-hour');
+  var minuteNum = getComputedStyle(document.documentElement).getPropertyValue('--num-minute');
+  document.getElementById('hour').innerHTML = hourNum;
+  document.getElementById('minute').innerHTML = minuteNum;
+
+  const CLASSNAME = "-visible";
+  const DISP_TIME = 8000;
+  const LOOP_TIME = 12000;
+  const $target = $("#main-text");
+
+  setInterval(() => {
+    $target.addClass(CLASSNAME);
+    setTimeout(() => {
+      $target.removeClass(CLASSNAME);
+    }, DISP_TIME);
+  }, LOOP_TIME);
+</script>
+
+</html>
