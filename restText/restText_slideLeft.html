@@ -8,17 +8,56 @@
   <style>
     :root {
       --num-hour: 15;
-      --num-minute: 30;
+      --num-minute: 30;
+      --title-color: #aa8f7b;
+      --title-size: 70px;
+      --title-font: serif;
+      --title-weight: bold;
+      --sentence-color: black;
+      --sentence-size: 40px;
+      --sentence-font: serif;
+      --sentence-weight: bold;
+      --text-distance: 15px;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    h1 {
+      margin-block-start: 0em !important;
+      margin-block-end: var(--text-distance) !important;
+    }
+
+    p {
+      margin-block-start: 0em !important;
+      margin-block-end: 0em !important;
     }
 
     .title {
       overflow: hidden;
       transform: translate(-100%, 0);
       transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-      color: #aa8f7b;
-      font-size: 40px;
-      font-family: serif;
       text-align: center;
+      color: var(--title-color);
+      font-size: var(--title-size);
+      font-family: var(--title-font);
+      font-weight: var(--title-weight);
+    }
+
+    .sentence {
+      overflow: hidden;
+      transform: translate(-100%, 0);
+      transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+      text-align: center;
+      color: var(--sentence-color);
+      font-size: var(--sentence-size);
+      font-family: var(--sentence-font);
+      font-weight: var(--sentence-weight);
     }
 
     .title span {
@@ -32,15 +71,6 @@
       transform: translate(0, 0);
     }
 
-    .sentence {
-      overflow: hidden;
-      transform: translate(-100%, 0);
-      transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-      font-family: serif;
-      font-size: 23px;
-      text-align: center;
-    }
-
     .sentence span {
       display: block;
       transform: translate(100%, 0);
@@ -52,14 +82,6 @@
       transform: translate(0, 0);
     }
 
-    /****** Base style. ******/
-    body {
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-    }
   </style>
 
 <body>
@@ -75,10 +97,15 @@
 </body>
 
 <script>
-  var hourNum = getComputedStyle(document.documentElement).getPropertyValue('--num-hour');
-  var minuteNum = getComputedStyle(document.documentElement).getPropertyValue('--num-minute');
-  var textTime = 'ただいま休憩中です。<br/>' + hourNum + "時"+ minuteNum + "分より再開いたします。";
-  document.getElementById('time-text').innerHTML = textTime;
+  var hourNum;
+  var minuteNum;
+  var textTime;
+  setTimeout(() => {
+    hourNum = getComputedStyle(document.documentElement).getPropertyValue('--num-hour');
+    minuteNum = getComputedStyle(document.documentElement).getPropertyValue('--num-minute');
+    textTime = 'ただいま休憩中です。<br/>' + hourNum + "時"+ minuteNum + "分より再開いたします。";
+    document.getElementById('time-text').innerHTML = textTime;
+  }, 1000);  
 
   const CLASSNAME = "-visible";
   const LOOP_TIME = 20000;

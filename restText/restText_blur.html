@@ -7,16 +7,22 @@
       :root {
         --num-hour: 15;
         --num-minute: 30;
+        --font-color: black;
+        --font-size: 50px;
+        --font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+        --font-weight: bold;
       }
+
       body {
-      font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
-      font-size: 300%;
-      font-weight: bold;
-      color: #000;
-      }
-      #main-text {
-        margin-top: 20px;
-        margin-left: 20px;
+        color: var(--font-color);
+        font-size: var(--font-size);
+        font-family: var(--font-family);
+        font-weight: var(--font-weight);
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
       }
 
       span {
@@ -172,9 +178,13 @@
     </p>
   </body>
   <script>
-   var hourNum = getComputedStyle(document.documentElement).getPropertyValue('--num-hour');
-    var minuteNum = getComputedStyle(document.documentElement).getPropertyValue('--num-minute');
-   document.getElementById('hour').innerHTML = hourNum;
-  document.getElementById('minute').innerHTML = minuteNum;
+  var hourNum;
+  var minuteNum;
+  setTimeout(() => {
+    hourNum = getComputedStyle(document.documentElement).getPropertyValue('--num-hour');
+    minuteNum = getComputedStyle(document.documentElement).getPropertyValue('--num-minute');
+    document.getElementById('hour').innerHTML = hourNum;
+    document.getElementById('minute').innerHTML = minuteNum;
+  }, 1000);  
   </script>
 </html>

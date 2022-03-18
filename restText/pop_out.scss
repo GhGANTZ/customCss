@@ -1,6 +1,11 @@
 :root {
   --num-hour: 15;
   --num-minute: 30;
+  --font-color: black;
+  --font-size: 28px;
+  --font-family: Futura, sans-serif;
+  --font-weight: 600;
+  --text-distance: 28px;
 }
 
 $t: 2s;
@@ -11,10 +16,11 @@ $front: black;
 $back: #aaa;
 
 #main-text {
-  font-family: Futura, sans-serif;
-  font-weight: 600;
-  font-size: 28px;
-  padding: 28px;
+  color: var(--font-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  padding: var(--text-distance);
 
   @keyframes pop {
     0% {

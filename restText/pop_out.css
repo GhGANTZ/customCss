@@ -1,0 +1,94 @@
+:root {
+  --num-hour: 15;
+  --num-minute: 30;
+  --font-color: black;
+  --font-size: 28px;
+  --font-family: Futura, sans-serif;
+  --font-weight: 600;
+  --text-distance: 28px;
+}
+
+#main-text {
+  color: var(--font-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  padding: var(--text-distance);
+}
+
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #aaa;
+    color: black;
+  }
+  30% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #aaa;
+    color: black;
+  }
+  70% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #aaa;
+    color: black;
+  }
+  100% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #aaa;
+    color: black;
+  }
+}
+
+@keyframes pop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #aaa;
+    color: black;
+  }
+  30% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: 0em 0em 0 #aaa;
+    color: black;
+  }
+  70% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #aaa;
+    color: black;
+  }
+  100% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #aaa;
+    color: black;
+  }
+}
+
+#main-text span {
+  position: relative;
+  display: inline-block;
+  -webkit-animation: pop 2s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+          animation: pop 2s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#main-text span:nth-last-child(1n) {
+  -webkit-animation-delay: -0.33333s;
+          animation-delay: -0.33333s;
+}
+
+#main-text span:nth-last-child(2n) {
+  -webkit-animation-delay: -0.66667s;
+          animation-delay: -0.66667s;
+}
+
+#main-text span:nth-last-child(3n) {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+/*# sourceMappingURL=pop_out.css.map */

@@ -1,6 +1,10 @@
 :root {
   --num-hour: 15;
-  --num-minute: 30
+  --num-minute: 30;
+  --font-color: black;
+  --font-size: 70px;
+  --font-family: serif;
+  --font-weight: normal;
 }
 
 body {
@@ -11,14 +15,13 @@ body {
   margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
 #main-text {
   display: flex;
   overflow: hidden;
-  color: #000;
-  font-family: Futura, sans-serif;
-  font-size: 30px;
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
 }
 
 #main-text span {

@@ -6,11 +6,13 @@
   <meta charset="utf-8">
   <title>休憩中テキスト</title>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
-
     :root {
       --num-hour: 15;
-      --num-minute: 30
+      --num-minute: 30;
+      --font-color: black;
+      --font-size: 70px;
+      --font-family: serif;
+      --font-weight: normal;
     }
 
     body {
@@ -24,9 +26,10 @@
     #main-text {
       display: flex;
       overflow: hidden;
-      color: #000;
-      font-family: Futura, sans-serif;
-      font-size: 30px
+      color: var(--font-color);
+      font-size: var(--font-size);
+      font-family: var(--font-family);
+      font-weight: var(--font-weight);
     }
 
     #main-text span {
@@ -162,10 +165,14 @@
   </p>
 </body>
 <script>
-  var hourNum = getComputedStyle(document.documentElement).getPropertyValue('--num-hour');
-  var minuteNum = getComputedStyle(document.documentElement).getPropertyValue('--num-minute');
-  document.getElementById('hour').innerHTML = hourNum;
-  document.getElementById('minute').innerHTML = minuteNum;
+  var hourNum;
+  var minuteNum;
+  setTimeout(() => {
+    hourNum = getComputedStyle(document.documentElement).getPropertyValue('--num-hour');
+    minuteNum = getComputedStyle(document.documentElement).getPropertyValue('--num-minute');
+    document.getElementById('hour').innerHTML = hourNum;
+    document.getElementById('minute').innerHTML = minuteNum;
+  }, 1000);
 
   const CLASSNAME = "-visible";
   const DISP_TIME = 8000;

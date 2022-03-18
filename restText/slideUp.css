@@ -1,0 +1,164 @@
+:root {
+  --num-hour: 15;
+  --num-minute: 30;
+  --font-color: black;
+  --font-size: 70px;
+  --font-family: serif;
+  --font-weight: normal;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+#main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+}
+
+#main-text span {
+  display: block;
+  -webkit-transform: translate(0, 105%);
+          transform: translate(0, 105%);
+  -webkit-transition: -webkit-transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: -webkit-transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s, -webkit-transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+#main-text.-visible span {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+#main-text span:nth-child(2) {
+  -webkit-transition-delay: 0.04s;
+          transition-delay: 0.04s;
+}
+
+#main-text span:nth-child(3) {
+  -webkit-transition-delay: 0.08s;
+          transition-delay: 0.08s;
+}
+
+#main-text span:nth-child(4) {
+  -webkit-transition-delay: 0.12s;
+          transition-delay: 0.12s;
+}
+
+#main-text span:nth-child(5) {
+  -webkit-transition-delay: 0.16s;
+          transition-delay: 0.16s;
+}
+
+#main-text span:nth-child(6) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+#main-text span:nth-child(7) {
+  -webkit-transition-delay: 0.24s;
+          transition-delay: 0.24s;
+}
+
+#main-text span:nth-child(8) {
+  -webkit-transition-delay: 0.28s;
+          transition-delay: 0.28s;
+}
+
+#main-text span:nth-child(9) {
+  -webkit-transition-delay: 0.32s;
+          transition-delay: 0.32s;
+}
+
+#main-text span:nth-child(10) {
+  -webkit-transition-delay: 0.36s;
+          transition-delay: 0.36s;
+}
+
+#main-text span:nth-child(11) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+#main-text span:nth-child(12) {
+  -webkit-transition-delay: 0.44s;
+          transition-delay: 0.44s;
+}
+
+#main-text span:nth-child(13) {
+  -webkit-transition-delay: 0.48s;
+          transition-delay: 0.48s;
+}
+
+#main-text span:nth-child(14) {
+  -webkit-transition-delay: 0.52s;
+          transition-delay: 0.52s;
+}
+
+#main-text span:nth-child(15) {
+  -webkit-transition-delay: 0.56s;
+          transition-delay: 0.56s;
+}
+
+#main-text span:nth-child(16) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+#main-text span:nth-child(17) {
+  -webkit-transition-delay: 0.64s;
+          transition-delay: 0.64s;
+}
+
+#main-text span:nth-child(18) {
+  -webkit-transition-delay: 0.68s;
+          transition-delay: 0.68s;
+}
+
+#main-text span:nth-child(19) {
+  -webkit-transition-delay: 0.72s;
+          transition-delay: 0.72s;
+}
+
+#main-text span:nth-child(20) {
+  -webkit-transition-delay: 0.76s;
+          transition-delay: 0.76s;
+}
+
+#main-text span:nth-child(21) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+#main-text span:nth-child(22) {
+  -webkit-transition-delay: 0.84s;
+          transition-delay: 0.84s;
+}
+
+#main-text span:nth-child(23) {
+  -webkit-transition-delay: 0.88s;
+          transition-delay: 0.88s;
+}
+
+#main-text span:nth-child(24) {
+  -webkit-transition-delay: 0.92s;
+          transition-delay: 0.92s;
+}
+/*# sourceMappingURL=slideUp.css.map */
