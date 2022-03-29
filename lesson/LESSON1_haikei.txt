@@ -1,0 +1,11 @@
+◆◆◆◆第１回：背景◆◆◆◆
+
+◆◆◆◆◆テキスト１◆◆◆◆◆
+@import url("https://ghgantz.github.io/customCss/ccfolia/showOnlyHaikei.css");
+
+◆◆◆◆◆テキスト２◆◆◆◆◆
+
+:root {
+  /** ぼかしの度合い(デフォルト：8px) */
+  --blur-degree: 4px !important;
+}
