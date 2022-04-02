@@ -160,7 +160,7 @@ body {
 }
 
 /** ダイス結果(下)のボタンの表示 */
-.MuiIconButton-root {
+.MuiToolbar-gutters .MuiIconButton-root {
   display: var(--disp-dice-window-btn) !important;
 }
 

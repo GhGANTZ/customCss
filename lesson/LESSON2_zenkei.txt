@@ -1,0 +1,33 @@
+◆◆◆◆第２回：前景◆◆◆◆
+
+◆◆◆◆◆テキスト１◆◆◆◆◆
+@import url("https://ghgantz.github.io/customCss/ccfolia/showOnlyZenkei.css");
+
+◆◆◆◆◆テキスト２◆◆◆◆◆
+
+:root {
+  /** チャット欄 */
+  --disp-chat-window: flex !important;
+  /** 配置固定したスクリーンパネルの表示 */
+  --disp-fixed-screen: block !important;
+  /** 配置固定していないスクリーンパネルの表示 */
+  --disp-flex-screen: block !important;
+  /** 配置固定したマーカーパネルの表示 */
+  --disp-fixed-marker: block !important;
+  /** 配置固定していないマーカーパネルの表示 */
+  --disp-flex-marker: block !important;
+  /** キャラ駒の名前の表示 */
+  --disp-char-name: block !important;
+  /** キャラ駒の表示 */
+  --disp-char-picture: block !important;
+  /** カットインの表示 */
+  --disp-cut-in: block !important;
+  /** ダイス結果(下)の表示 */
+  --disp-dice-window: block !important;
+  /** ダイス結果(下)のボタンの表示 */
+  --disp-dice-window-btn: inline-flex !important;
+  /** サイコロ画像の表示 */
+  --disp-dice-picture: flex !important;
+  /** ステータスの表示 */
+  --disp-status: block !important;
+}
