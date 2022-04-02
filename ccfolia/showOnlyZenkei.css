@@ -6,14 +6,6 @@
   /**************************
    表示項目の設定
   **************************/
-  /** ツールバー */
-  --disp-tool-bar: flex;
-  /** サウンド設定 */
-  --disp-sound-bar: block;
-  /** 盤面サイズ設定 */
-  --disp-board-size-bar: flex;
-  /** 編集ボタン */
-  --disp-edit-btn: inline-flex;
   /** チャット欄 */
   --disp-chat-window: flex;
   /** 配置固定したスクリーンパネルの表示 */
@@ -112,23 +104,14 @@ body {
 **************************/
 
 /** ツールバー */
-.MuiAppBar-root {
-  display: var(--disp-tool-bar) !important;
-}
-
+.MuiAppBar-root,
 /** サウンド設定 */
-.ehpWma {
-  display: var(--disp-sound-bar) !important;
-}
-
+.ehpWma,
 /** 盤面サイズ設定 */
-.VniSm {
-  display: var(--disp-board-size-bar) !important;
-}
-
+.VniSm,
 /** 編集ボタン */
 .jItBif {
-  display: var(--disp-edit-btn) !important;
+  display: none !important;
 }
 
 /** チャット欄 */
