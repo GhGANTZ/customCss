@@ -82,9 +82,9 @@
   /** 下の幅 */
   --content-bottom-space: 15px;
   /** 左の幅 */
-  --content-left-space: 15px;
+  --content-left-space: 30px;
   /** 右の幅 */
-  --content-right-space: 15px;
+  --content-right-space: 30px;
   /** テキストボックスの縦幅 */
   --content-height: 125px;
 }
