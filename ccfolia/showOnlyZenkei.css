@@ -1,4 +1,103 @@
 /**************************
+ 設定変更箇所
+**************************/
+
+:root {
+  /**************************
+   表示項目の設定
+  **************************/
+  /** ツールバー */
+  --disp-tool-bar: flex;
+  /** サウンド設定 */
+  --disp-sound-bar: block;
+  /** 盤面サイズ設定 */
+  --disp-board-size-bar: flex;
+  /** 編集ボタン */
+  --disp-edit-btn: inline-flex;
+  /** チャット欄 */
+  --disp-chat-window: flex;
+  /** 配置固定したスクリーンパネルの表示 */
+  --disp-fixed-screen: block;
+  /** 配置固定していないスクリーンパネルの表示 */
+  --disp-flex-screen: block;
+  /** 配置固定したマーカーパネルの表示 */
+  --disp-fixed-marker: block;
+  /** 配置固定していないマーカーパネルの表示 */
+  --disp-flex-marker: block;
+  /** キャラ駒の名前の表示 */
+  --disp-char-name: block;
+  /** キャラ駒の表示 */
+  --disp-char-picture: block;
+  /** カットインの表示 */
+  --disp-cut-in: block;
+  /** ダイス結果(下)の表示 */
+  --disp-dice-window: block;
+  /** ダイス結果(下)のボタンの表示 */
+  --disp-dice-window-btn: inline-flex;
+  /** サイコロ画像の表示 */
+  --disp-dice-picture: flex;
+  /** ステータスの表示 */
+  --disp-status: block;
+
+  /**************************
+   ダイスウィンドウの設定
+  **************************/
+  /** ◆◆◆ウィンドウ◆◆◆ */
+  /** 横幅 */
+  --dice-win-width: 700px;
+  /** 背景色 */
+  --dice-win-background: rgba(22, 22, 22, 0.84);
+  /** 枠線 */
+  --dice-win-border: solid 5px white;
+  /** 角の丸み */
+  --dice-win-radius: 15px;
+
+  /** ◆◆◆ダイス画像◆◆◆ */
+  /** サイズ設定 */
+  --dice-pic-size: 70px;
+  /** 上下位置の調整 */
+  --dice-pic-y: 0%;
+  /** 左側のスペースの幅 */
+  --dice-pic-left-space: 200px;
+  /** 右側のスペースの幅 */
+  --dice-pic-right-space: 0px;
+  /** 画像が表示される範囲 */
+  --dice-pic-disp-range: 600px;
+
+  /** ◆◆◆見出し、キャラ名◆◆◆ */
+  /** 文字サイズ */
+  --midashi-size: 22px;
+  /** 上の余白 */
+  --midashi-top-space: 15px;
+  /** 下の余白 */
+  --midashi-bottom-space: 15px;
+  /** 左の幅 */
+  --midashi-left-space: 30px;
+
+  /** ◆◆◆ダイス結果(□＞58)◆◆◆ */
+  /** 文字サイズ */
+  --dice-result-size: 22px;
+  /** 上の余白 */
+  --dice-result-top-space: 15px;
+  /** 下の余白 */
+  --dice-result-bottom-space: 15px;
+  /** 左の余白 */
+  --dice-result-left-space: 15px;
+
+  /** ◆◆◆内容◆◆◆ */
+  /** 文字サイズ */
+  --content-size: 17.5px;
+  /** 下の幅 */
+  --content-bottom-space: 15px;
+  /** 左の幅 */
+  --content-left-space: 15px;
+  /** 右の幅 */
+  --content-right-space: 15px;
+  /** テキストボックスの縦幅 */
+  --content-height: 125px;
+}
+
+/**************************
  OBS用のおまじない
 **************************/
 
@@ -9,50 +108,191 @@ body {
 }
 
 /**************************
- 非表示項目の設定
+ 表示項目の設定
 **************************/
 
 /** ツールバー */
-.MuiAppBar-root,
-/** サウンド設定 */
-.ehpWma,
-/** 盤面サイズ設定 */
-.VniSm,
-/** 編集ボタン */
-.jItBif,
-/** チャット欄 */
-.MuiDrawer-paper,
-/** 配置固定したスクリーンパネルの削除 */
-.hcTYPf,
-/** 配置固定していないスクリーンパネルの削除 */
-.ghXOMC,
-/** 配置固定したマーカーパネルの削除 */
-.beCBEn,
-/** 配置固定していないマーカーパネルの削除 */
-.cwrusq,
-/** キャラ駒の名前の削除 */
-.jDbTzn,
-/** キャラ駒の削除 */
-.eucqli,
-/** カットインの削除 */
-.erRkBX,
-/** ダイス結果(下)の削除 */
-.kEQhkG,
-/** サイコロ画像の削除 */
-.iSEgox,
-/** ステータスの削除 */
-.gpoAiV
- {
-  display: none !important;
+.MuiAppBar-root {
+  display: var(--disp-tool-bar) !important;
 }
+
+/** サウンド設定 */
+.ehpWma {
+  display: var(--disp-sound-bar) !important;
+}
+
+/** 盤面サイズ設定 */
+.VniSm {
+  display: var(--disp-board-size-bar) !important;
+}
+
+/** 編集ボタン */
+.jItBif {
+  display: var(--disp-edit-btn) !important;
+}
+
+/** チャット欄 */
+.MuiDrawer-paper {
+  display: var(--disp-chat-window) !important;
+}
+
+/** 配置固定したスクリーンパネルの表示 */
+.hcTYPf {
+  display: var(--disp-fixed-screen) !important;
+}
+
+/** 配置固定していないスクリーンパネルの表示 */
+.ghXOMC {
+  display: var(--disp-flex-screen) !important;
+}
+
+/** 配置固定したマーカーパネルの表示 */
+.beCBEn {
+  display: var(--disp-fixed-marker) !important;
+}
+
+/** 配置固定していないマーカーパネルの表示 */
+.cwrusq {
+  display: var(--disp-flex-marker) !important;
+}
+
+/** キャラ駒の名前の表示 */
+.jDbTzn {
+  display: var(--disp-char-name) !important;
+}
+
+/** キャラ駒の表示 */
+.eucqli {
+  display: var(--disp-char-picture) !important;
+}
+
+/** カットインの表示 */
+.erRkBX {
+  display: var(--disp-cut-in) !important;
+}
+
+/** ダイス結果(下)の表示 */
+.kEQhkG {
+  display: var(--disp-dice-window) !important;
+}
+
+/** ダイス結果(下)のボタンの表示 */
+.MuiIconButton-root {
+  display: var(--disp-dice-window-btn) !important;
+}
+
+/** サイコロ画像の表示 */
+.iSEgox {
+  display: var(--disp-dice-picture) !important;
+}
+
+/** ステータスの表示 */
+.gpoAiV {
+  display: var(--disp-status) !important;
+}
+
+/**************************
+ 固定非表示項目の設定
+**************************/
+
 /** 背景の非表示 */
 .fA-DYIg {
   opacity: 0 !important;
 }
+
 /** 広告の削除 */
 .MuiDialog-scrollPaper {
-  display: none !important; /** 広告画像の削除 */
+  /** 広告画像の削除 */
+  display: none !important;
 }
+
 .MuiBackdrop-root {
-  background: rgba(0,0,0,0) !important; /** 広告背景の削除 */
+  /** 広告背景の削除 */
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+/** スクロールバーの削除 */
+.cvajyX::-webkit-scrollbar {
+  display: none !important;
+}
+
+/**************************
+ ダイスウィンドウの設定
+**************************/
+
+/** ウィンドウ */
+.kEQhkG {
+  /** 横幅 */
+  max-width: var(--dice-win-width) !important;
+  /** 背景色 */
+  background: var(--dice-win-background) !important;
+  /** 枠線 */
+  border: var(--dice-win-border) !important;
+  /** 角の丸み */
+  border-radius: var(--dice-win-radius) !important;
+}
+.ldYVfF {
+  /** 気にするでない */
+  background: rgba(0, 0, 0, 0) !important;
+  padding-top: 0px !important;
+}
+
+/** ダイス画像 */
+.sc-hkgtus {
+  /** サイズ設定 */
+  width: var(--dice-pic-size) !important;
+  height: var(--dice-pic-size) !important;
+}
+.iSEgox {
+  /** 上下位置の調整 */
+  bottom: var(--dice-pic-y) !important;
+  /** 左側のスペースの幅 */
+  margin-left: var(--dice-pic-left-space) !important;
+  /** 右側のスペースの幅 */
+  right: var(--dice-pic-right-space) !important;
+  /** 画像が表示される範囲 */
+  max-width: var(--dice-pic-disp-range) !important;
+}
+
+/** 見出し、キャラ名 */
+.MuiPaper-rounded .MuiTypography-subtitle2 {
+  /** 文字サイズ */
+  font-size: var(--midashi-size) !important;
+  /** 上の余白 */
+  margin-top: var(--midashi-top-space) !important;
+  /** 下の余白 */
+  margin-bottom: var(--midashi-bottom-space) !important;
+}
+.MuiToolbar-gutters {
+  /** 左の余白 */
+  padding-left: var(--midashi-left-space) !important;
+}
+
+/** ダイス結果(□＞58) */
+.MuiPaper-rounded .MuiTypography-body2 {
+  /** 文字サイズ */
+  font-size: var(--dice-result-size) !important;
+  /** 上の余白 */
+  margin-top: var(--dice-result-top-space) !important;
+  /** 下の余白 */
+  margin-bottom: var(--dice-result-bottom-space) !important;
+  /** 左の余白 */
+  margin-left: var(--dice-result-left-space) !important;
+}
+
+/** 内容 */
+.MuiTypography-body1 {
+  /** 文字サイズ */
+  font-size: var(--content-size) !important;
+}
+
+.cvajyX {
+  /** 下の幅 */
+  padding-bottom: var(--content-bottom-space) !important;
+  /** 左の幅 */
+  padding-left: var(--content-left-space) !important;
+  /** 右の幅 */
+  padding-right: var(--content-right-space) !important;
+  /** テキストボックスの縦幅 */
+  height: var(--content-height) !important;
 }
