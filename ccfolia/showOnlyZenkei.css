@@ -200,17 +200,6 @@ body {
   opacity: 0 !important;
 }
 
-/** 広告の削除 */
-.MuiDialog-scrollPaper {
-  /** 広告画像の削除 */
-  display: none !important;
-}
-
-.MuiBackdrop-root {
-  /** 広告背景の削除 */
-  background: rgba(0, 0, 0, 0) !important;
-}
-
 /** スクロールバーの削除 */
 .cvajyX::-webkit-scrollbar {
   display: none !important;
