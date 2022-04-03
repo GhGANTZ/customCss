@@ -57,6 +57,10 @@
   --dice-pic-disp-range: 600px;
 
   /** ◆◆◆見出し、キャラ名◆◆◆ */
+  /** フォント */
+  --midashi-font: inherit;
+  /** フォントの太さ(normal or bold) */
+  --midashi-font-weight: normal;
   /** 文字サイズ */
   --midashi-size: 22px;
   /** 上の余白 */
@@ -67,6 +71,10 @@
   --midashi-left-space: 30px;
 
   /** ◆◆◆ダイス結果(□＞58)◆◆◆ */
+  /** フォント */
+  --dice-result-font: inherit;
+  /** フォントの太さ(normal or bold) */
+  --dice-result-font-weight: normal;
   /** 文字サイズ */
   --dice-result-size: 22px;
   /** 上の余白 */
@@ -77,6 +85,10 @@
   --dice-result-left-space: 15px;
 
   /** ◆◆◆内容◆◆◆ */
+  /** フォント */
+  --content-font: inherit;
+  /** フォントの太さ(normal or bold) */
+  --content-font-weight: normal;
   /** 文字サイズ */
   --content-size: 17.5px;
   /** 下の幅 */
@@ -228,6 +240,10 @@ body {
 
 /** 見出し、キャラ名 */
 .MuiPaper-rounded .MuiTypography-subtitle2 {
+  /** フォント */
+  font-family: var(--midashi-font) !important;
+  /** フォントの太さ(normal or bold) */
+  font-weight: var(--midashi-font-weight) !important;
   /** 文字サイズ */
   font-size: var(--midashi-size) !important;
   /** 上の余白 */
@@ -242,6 +258,10 @@ body {
 
 /** ダイス結果(□＞58) */
 .MuiPaper-rounded .MuiTypography-body2 {
+  /** フォント */
+  font-family: var(--dice-result-font) !important;
+  /** フォントの太さ(normal or bold) */
+  font-weight: var(--dice-result-font-weight) !important;
   /** 文字サイズ */
   font-size: var(--dice-result-size) !important;
   /** 上の余白 */
@@ -254,6 +274,10 @@ body {
 
 /** 内容 */
 .MuiTypography-body1 {
+  /** フォント */
+  font-family: var(--content-font) !important;
+  /** フォントの太さ(normal or bold) */
+  font-weight: var(--content-font-weight) !important;
   /** 文字サイズ */
   font-size: var(--content-size) !important;
 }
