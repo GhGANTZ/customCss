@@ -4,6 +4,14 @@
 
 :root {
     /**************************
+    表示項目の設定
+    **************************/
+    /** ダイス結果(下)のボタンの表示 */
+    --disp-dice-window-btn: inline-flex;
+    /** サイコロ画像の表示 */
+    --disp-dice-picture: flex;
+
+    /**************************
      ダイスウィンドウの設定
     **************************/
     /** ◆◆◆ウィンドウ◆◆◆ */
@@ -146,6 +154,20 @@ body {
 /** スクロールバーの削除 */
 .cvajyX::-webkit-scrollbar {
     display: none !important;
+}
+
+/**************************
+ 表示項目の設定
+**************************/
+
+/** ダイス結果(下)のボタンの表示 */
+.MuiToolbar-gutters .MuiIconButton-root {
+  display: var(--disp-dice-window-btn) !important;
+}
+  
+/** サイコロ画像の表示 */
+.iSEgox {
+  display: var(--disp-dice-picture) !important;
 }
 
 /**************************
