@@ -33,6 +33,8 @@
     /** ◆◆◆見出し、キャラ名◆◆◆ */
     /** フォント */
     --midashi-font: inherit;
+    /** フォント色 */
+    --midashi-color: inherit;
     /** フォントの太さ(normal or bold) */
     --midashi-font-weight: normal;
     /** 文字サイズ */
@@ -47,6 +49,8 @@
     /** ◆◆◆ダイス結果(□＞58)◆◆◆ */
     /** フォント */
     --dice-result-font: inherit;
+    /** フォント色 */
+    --dice-result-color: inherit;
     /** フォントの太さ(normal or bold) */
     --dice-result-font-weight: normal;
     /** 文字サイズ */
@@ -61,6 +65,8 @@
     /** ◆◆◆内容◆◆◆ */
     /** フォント */
     --content-font: inherit;
+    /** フォント色 */
+    --content-color: inherit;
     /** フォントの太さ(normal or bold) */
     --content-font-weight: normal;
     /** 文字サイズ */
@@ -182,6 +188,8 @@ body {
 .MuiPaper-rounded .MuiTypography-subtitle2 {
     /** フォント */
     font-family: var(--midashi-font) !important;
+    /** フォント色 */
+    color: var(--midashi-color) !important;
     /** フォントの太さ(normal or bold) */
     font-weight: var(--midashi-font-weight) !important;
     /** 文字サイズ */
@@ -200,6 +208,8 @@ body {
 .MuiPaper-rounded .MuiTypography-body2 {
     /** フォント */
     font-family: var(--dice-result-font) !important;
+    /** フォント色 */
+    color: var(--dice-result-color) !important;
     /** フォントの太さ(normal or bold) */
     font-weight: var(--dice-result-font-weight) !important;
     /** 文字サイズ */
@@ -216,6 +226,8 @@ body {
 .MuiTypography-body1 {
     /** フォント */
     font-family: var(--content-font) !important;
+    /** フォント色 */
+    color: var(--content-color) !important;
     /** フォントの太さ(normal or bold) */
     font-weight: var(--content-font-weight) !important;
     /** 文字サイズ */
