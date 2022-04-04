@@ -1,0 +1,193 @@
+◆◆◆◆第３回：ダイスウィンドウ◆◆◆◆
+
+◆◆◆◆◆テキスト１◆◆◆◆◆
+前景とダイスウィンドウを一緒に取り込む場合
+
+@import url("https://ghgantz.github.io/customCss/ccfolia/showOnlyZenkei.css");
+
+:root {
+  /**************************
+   表示項目の設定
+   ※第2回で使い方を解説しています※
+  **************************/
+  /** チャット欄 */
+  --disp-chat-window: flex !important;
+  /** 配置固定したスクリーンパネルの表示 */
+  --disp-fixed-screen: block !important;
+  /** 配置固定していないスクリーンパネルの表示 */
+  --disp-flex-screen: block !important;
+  /** 配置固定したマーカーパネルの表示 */
+  --disp-fixed-marker: block !important;
+  /** 配置固定していないマーカーパネルの表示 */
+  --disp-flex-marker: block !important;
+  /** キャラ駒の名前の表示 */
+  --disp-char-name: block !important;
+  /** キャラ駒の表示 */
+  --disp-char-picture: block !important;
+  /** カットインの表示 */
+  --disp-cut-in: block !important;
+  /** ダイス結果(下)の表示 */
+  --disp-dice-window: block !important;
+  /** ダイス結果(下)のボタンの表示 */
+  --disp-dice-window-btn: inline-flex !important;
+  /** サイコロ画像の表示 */
+  --disp-dice-picture: flex !important;
+  /** ステータスの表示 */
+  --disp-status: block !important;
+
+  /**************************
+   ダイスウィンドウの設定
+  **************************/
+  /** ◆◆◆ウィンドウ◆◆◆ */
+  /** 横幅 */
+  --dice-win-width: 700px !important;
+  /** 背景色 */
+  --dice-win-background: rgba(22, 22, 22, 0.84) !important;
+  /** 枠線 */
+  --dice-win-border: solid 5px white !important;
+  /** 角の丸み */
+  --dice-win-radius: 15px !important;
+
+  /** ◆◆◆ダイス画像◆◆◆ */
+  /** サイズ設定 */
+  --dice-pic-size: 70px !important;
+  /** 上下位置の調整 */
+  --dice-pic-y: 0% !important;
+  /** 左側のスペースの幅 */
+  --dice-pic-left-space: 200px !important;
+  /** 右側のスペースの幅 */
+  --dice-pic-right-space: 0px !important;
+  /** 画像が表示される範囲 */
+  --dice-pic-disp-range: 600px !important;
+
+  /** ◆◆◆見出し、キャラ名◆◆◆ */
+  /** フォント */
+  --midashi-font: inherit !important;
+  /** フォント色 */
+  --midashi-color: inherit !important;
+  /** フォントの太さ(normal or bold) */
+  --midashi-font-weight: normal !important;
+  /** 文字サイズ */
+  --midashi-size: 22px !important;
+  /** 上の余白 */
+  --midashi-top-space: 15px !important;
+  /** 下の余白 */
+  --midashi-bottom-space: 15px !important;
+  /** 左の幅 */
+  --midashi-left-space: 30px !important;
+
+  /** ◆◆◆ダイス結果(□＞58)◆◆◆ */
+  /** フォント */
+  --dice-result-font: inherit !important;
+  /** フォント色 */
+  --dice-result-color: inherit !important;
+  /** フォントの太さ(normal or bold) */
+  --dice-result-font-weight: normal !important;
+  /** 文字サイズ */
+  --dice-result-size: 22px !important;
+  /** 上の余白 */
+  --dice-result-top-space: 15px !important;
+  /** 下の余白 */
+  --dice-result-bottom-space: 15px !important;
+  /** 左の余白 */
+  --dice-result-left-space: 15px !important;
+
+  /** ◆◆◆内容◆◆◆ */
+  /** フォント */
+  --content-font: inherit !important;
+  /** フォント色 */
+  --content-color: inherit !important;
+  /** フォントの太さ(normal or bold) */
+  --content-font-weight: normal !important;
+  /** 文字サイズ */
+  --content-size: 17.5px !important;
+  /** 下の幅 */
+  --content-bottom-space: 15px !important;
+  /** 左の幅 */
+  --content-left-space: 30px !important;
+  /** 右の幅 */
+  --content-right-space: 30px !important;
+  /** テキストボックスの縦幅 */
+  --content-height: 125px !important;
+}
+
+
+◆◆◆◆◆テキスト２◆◆◆◆◆
+ダイスウィンドウだけを取り込む場合
+
+@import url("https://ghgantz.github.io/customCss/ccfolia/diceWindow.css");
+
+:root {
+  /** ◆◆◆ウィンドウ◆◆◆ */
+  /** 横幅 */
+  --dice-win-width: 700px !important;
+  /** 背景色 */
+  --dice-win-background: rgba(22, 22, 22, 0.84) !important;
+  /** 枠線 */
+  --dice-win-border: solid 5px white !important;
+  /** 角の丸み */
+  --dice-win-radius: 15px !important;
+
+  /** ◆◆◆ダイス画像◆◆◆ */
+  /** サイズ設定 */
+  --dice-pic-size: 70px !important;
+  /** 上下位置の調整 */
+  --dice-pic-y: 0% !important;
+  /** 左側のスペースの幅 */
+  --dice-pic-left-space: 200px !important;
+  /** 右側のスペースの幅 */
+  --dice-pic-right-space: 0px !important;
+  /** 画像が表示される範囲 */
+  --dice-pic-disp-range: 600px !important;
+
+  /** ◆◆◆見出し、キャラ名◆◆◆ */
+  /** フォント */
+  --midashi-font: inherit !important;
+  /** フォント色 */
+  --midashi-color: inherit !important;
+  /** フォントの太さ(normal or bold) */
+  --midashi-font-weight: normal !important;
+  /** 文字サイズ */
+  --midashi-size: 22px !important;
+  /** 上の余白 */
+  --midashi-top-space: 15px !important;
+  /** 下の余白 */
+  --midashi-bottom-space: 15px !important;
+  /** 左の幅 */
+  --midashi-left-space: 30px !important;
+
+  /** ◆◆◆ダイス結果(□＞58)◆◆◆ */
+  /** フォント */
+  --dice-result-font: inherit !important;
+  /** フォント色 */
+  --dice-result-color: inherit !important;
+  /** フォントの太さ(normal or bold) */
+  --dice-result-font-weight: normal !important;
+  /** 文字サイズ */
+  --dice-result-size: 22px !important;
+  /** 上の余白 */
+  --dice-result-top-space: 15px !important;
+  /** 下の余白 */
+  --dice-result-bottom-space: 15px !important;
+  /** 左の余白 */
+  --dice-result-left-space: 15px !important;
+
+  /** ◆◆◆内容◆◆◆ */
+  /** フォント */
+  --content-font: inherit !important;
+  /** フォント色 */
+  --content-color: inherit !important;
+  /** フォントの太さ(normal or bold) */
+  --content-font-weight: normal !important;
+  /** 文字サイズ */
+  --content-size: 17.5px !important;
+  /** 下の幅 */
+  --content-bottom-space: 15px !important;
+  /** 左の幅 */
+  --content-left-space: 30px !important;
+  /** 右の幅 */
+  --content-right-space: 30px !important;
+  /** テキストボックスの縦幅 */
+  --content-height: 125px !important;
+}
+
