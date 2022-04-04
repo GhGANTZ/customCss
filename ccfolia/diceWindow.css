@@ -113,6 +113,10 @@ body {
 .beCBEn,
 /** 配置固定していないマーカーパネルの削除 */
 .cwrusq,
+/** 背景の削除 */
+.goyzdF img:nth-child(1),
+/** 前景の削除 */
+.goyzdF img:nth-child(2),
 /** キャラ駒の名前の削除 */
 .jDbTzn,
 /** キャラ駒の削除 */
