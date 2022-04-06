@@ -69,7 +69,7 @@
   --midashi-top-space: 15px;
   /** 下の余白 */
   --midashi-bottom-space: 15px;
-  /** 左の幅 */
+  /** 左の余白 */
   --midashi-left-space: 30px;
 
   /** ◆◆◆ダイス結果(□＞58)◆◆◆ */
@@ -97,11 +97,11 @@
   --content-font-weight: normal;
   /** 文字サイズ */
   --content-size: 17.5px;
-  /** 下の幅 */
+  /** 下の余白 */
   --content-bottom-space: 15px;
-  /** 左の幅 */
+  /** 左の余白 */
   --content-left-space: 30px;
-  /** 右の幅 */
+  /** 右の余白 */
   --content-right-space: 30px;
   /** テキストボックスの縦幅 */
   --content-height: 125px;
@@ -295,11 +295,11 @@ body {
 }
 
 .cvajyX {
-  /** 下の幅 */
+  /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
-  /** 左の幅 */
+  /** 左の余白 */
   padding-left: var(--content-left-space) !important;
-  /** 右の幅 */
+  /** 右の余白 */
   padding-right: var(--content-right-space) !important;
   /** テキストボックスの縦幅 */
   height: var(--content-height) !important;
