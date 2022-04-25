@@ -146,6 +146,7 @@ body {
   height: var(--height-remain) !important;
   top: var(--top-remain) !important;
   background: var(--color-remain) !important;
+  opacity: 0 !important;
 }
 .cbqMGJ {
   padding: var(--status-padding) !important;
