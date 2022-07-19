@@ -1,0 +1,196 @@
+◆◆◆◆第４回：ステータス◆◆◆◆
+
+◆◆◆◆◆テキスト１◆◆◆◆◆
+前景とダイスウィンドウを一緒に取り込む場合
+
+@import url("https://ghgantz.github.io/customCss/ccfolia/status.css");
+
+:root {
+  /**************************
+   ステータスの設定
+  **************************/
+
+}
+
+
+◆◆◆◆◆テキスト２◆◆◆◆◆
+
+/**************************
+  アイコン
+**************************/
+/** アイコンを表示するか */
+--disp-icon: none;
+/** アイコンの大きさ */
+--icon-size: 60px;
+/** アイコンの角の丸み */
+--icon-radius: 7px;
+/** アイコンとステータスの配置 */
+--placement-icon-status: inline-block;
+/** アイコンの位置調整(縦) */
+--icon-position-x1: 0px;
+--icon-position-x2: 10px;
+/** アイコンの位置調整(横) */
+--icon-position-y1: 0px;
+--icon-position-y2: 170px;
+
+/**************************
+  ステータス（全体）
+**************************/
+/** ステータスの横幅 */
+--width-status: 170px;
+/** ステータスの行間 */
+--height-status: 40px;
+/** ステータス同士の距離 */
+--space-between-status: 160px;
+
+/**************************
+  ステータス（個別）
+**************************/
+/** ステータス1～6行目の位置調整 */
+--left-space-status1: 115px;
+--left-space-status2: 92px;
+--left-space-status3: 69px;
+--left-space-status4: 46px;
+--left-space-status5: 23px;
+--left-space-status6: 0px;
+
+/**************************
+  ステータス（最大値）
+**************************/
+/** 高さ */
+--height-total: 30px;
+/** 位置 */
+--top-total: 0px;
+/** 色 */
+--color-total: rgb(255, 255, 255);
+/** 不透明度 */
+--opacity-total: 0.6;
+/** 角の角度 */
+--degree-total: -30deg;
+/** 角の丸み */
+--radius-total: 0px;
+
+/**************************
+  ステータス（現在値）
+**************************/
+/** 高さ */
+--height-remain: 30px;
+/** 位置 */
+--top-remain: 0px;
+/** 色 */
+--color-remain: rgb(255,255,255);
+/** 不透明度 */
+--opacity-remain: 1;
+/** 角の角度 */
+--degree-remain: -30deg;
+/** 角の丸み */
+--radius-remain: 0px;
+
+/**************************
+  文字
+**************************/
+/** ステータス文字の周りの余白(上,下,左,右) */
+--status-padding-top: 3px;
+--status-padding-bottom: 3px;
+--status-padding-left: 20px;
+--status-padding-right: 20px;
+/** HPなど、見出し側のフォント、サイズ、色 */
+--item-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+--item-font-size: 25px;
+--item-font-color: rgb(66, 66, 66); 
+/** 12/15など、ステータス側のフォント、サイズ、色 */
+--status-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+--status-font-size: 25px;
+--status-font-color: rgb(66, 66, 66);
+/* 不定時の赤字の色 */
+--futei-font-color: rgb(197, 17, 98);
+/** HPなど、見出しの周りに白縁を設定する */
+--item-outline-color: rgba(255, 255, 255, 1);
+/** 12/15など、ステータスの周りに白縁を設定する */
+--status-outline-color: rgba(255, 255, 255, 1);
+
+
+◆◆◆◆◆テキスト３◆◆◆◆◆
+https://ghgantz.github.io/customCss/ccfolia/status.css
+
+
+◆◆◆◆◆テキスト４◆◆◆◆◆
+=====================
+デザイン１
+=====================
+:root {
+  --left-space-status1: 0px !important;
+  --left-space-status2: 0px !important;
+  --status-padding-left: 10px !important;
+  --status-padding-right: 10px !important;
+  --degree-total: 0deg !important;
+  --degree-remain: 0deg !important;
+}
+
+=====================
+デザイン２
+=====================
+:root {
+  --left-space-status1: 0px !important;
+  --left-space-status2: 0px !important;
+  --status-padding-top: 4px !important;
+  --status-padding-left: 0px !important;
+  --status-padding-right: 0px !important;
+  --degree-total: 0deg !important;
+  --degree-remain: 0deg !important;
+  --height-remain: 20px !important;
+}
+.rcjSI {
+  border-top: solid 6px rgb(0 56 201) !important;
+  border-bottom: solid 6px rgb(0 56 201) !important;
+}
+
+=====================
+デザイン３
+=====================
+:root {
+  --disp-icon: inline-flex !important;
+}
+
+=====================
+デザイン４
+=====================
+:root {
+  --status-padding-top: 6px !important;
+  --space-between-status: 100px !important;
+  --left-space-status1: 0px !important;
+  --left-space-status2: 46px !important;
+  --left-space-status3: -23px !important;
+  --left-space-status4: 23px !important;
+  --left-space-status5: -46px !important;
+  --left-space-status6: 0px !important;
+  --color-total: rgb(255 255 255) !important;
+  --color-remain: rgb(52 82 165) !important;
+  --item-font-size: 22px !important;
+  --status-font-size: 22px !important;
+}
+
+=====================
+デザイン５
+=====================
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+:root {
+  --left-space-status1: 0px !important;
+  --left-space-status2: 0px !important;
+  --status-padding-left: 10px !important;
+  --status-padding-right: 10px !important;
+  --degree-total: 0deg !important;
+  --degree-remain: 0deg !important;
+  --color-total: rgb(52 37 5) !important;
+  --color-remain: rgb(255 237 195) !important;
+  --radius-total: 10px;
+  --radius-remain: 10px;
+  --opacity-total: 1 !important;
+  --item-font-color: rgb(99 73 18) !important; 
+  --status-font-color: rgb(99 73 18) !important; 
+  --item-font-family: 'Hachi Maru Pop', cursive !important;
+  --status-font-family: 'Hachi Maru Pop', cursive !important;
+  --item-font-size: 23px !important;
+  --status-font-size: 23px !important;
+}
