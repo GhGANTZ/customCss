@@ -3,49 +3,86 @@
 **************************/
 
 :root {
+  /**************************
+   アイコン
+ **************************/
   /** アイコンを表示するか：inline-flex⇒通常、none：非表示 */
   --disp-icon: none;
   /** アイコンの大きさ */
-  --icon-size: 100px;
+  --icon-size: 60px;
   /** アイコンの角の丸み：50%⇒正円 */
   --icon-radius: 7px;
   /** アイコンとステータスの配置：inline-flex⇒横並び、inline-block⇒縦並び */
   --placement-icon-status: inline-block;
   /** アイコンの位置調整(縦) */
   --icon-position-x1: 0px; /** 横並びの時の縦位置の設定。縦並びの場合は0に設定する */
-  --icon-position-x2: 20px; /** 縦並びの時の縦位置の設定。横並びの場合は0に設定する */
+  --icon-position-x2: 10px; /** 縦並びの時の縦位置の設定。横並びの場合は0に設定する */
   /** アイコンの位置調整(横) */
   --icon-position-y1: 0px; /** 横並びの時の横位置の設定。縦並びの場合は0に設定する */
-  --icon-position-y2: 32px; /** 縦並びの時の横位置の設定。横並びの場合は0に設定する */
+  --icon-position-y2: 170px; /** 縦並びの時の横位置の設定。横並びの場合は0に設定する */
+
+  /**************************
+   ステータス（全体）
+ **************************/
   /** ステータスの横幅 */
-  --width-status: 160px;
+  --width-status: 170px;
   /** ステータスの行間 */
   --height-status: 40px;
   /** ステータス同士の距離 */
-  --space-between-status: 20px;
-  /** ステータス(最大値)の高さ、位置、色 */
-  --height-total: 10px;
-  --top-total: 20px;
-  --color-total: rgba(255, 255, 255, 1);
-  /** ステータス(残り)の高さ、位置、色 */
-  --height-remain: 10px;
-  --top-remain: 20px;
-  --color-remain: rgba(255, 255, 255, 0.6);
-  /** ステータス文字の周りの余白 */
-  --status-padding: 3px;
+  --space-between-status: 160px;
+  
+  /**************************
+    ステータス（個別）
+  **************************/
+  /** ステータス1～6行目の位置調整 */
+  --left-space-status1: 115px;
+  --left-space-status2: 92px;
+  --left-space-status3: 69px;
+  --left-space-status4: 46px;
+  --left-space-status5: 23px;
+  --left-space-status6: 0px;
+
+  /**************************
+    ステータス（最大値）
+  **************************/
+  --height-total: 30px; /** 高さ */
+  --top-total: 0px; /** 位置 */
+  --color-total: rgb(255, 255, 255); /** 色 */
+  --opacity-total: 0.6; /** 不透明度 */
+  --degree-total: -30deg; /** 角の角度 */
+  --radius-total: 0px; /** 角の丸み */
+
+  /**************************
+    ステータス（現在値）
+  **************************/
+  --height-remain: 30px; /** 高さ */
+  --top-remain: 0px; /** 位置 */
+  --color-remain: rgb(255,255,255); /** 色 */
+  --opacity-remain: 1; /** 不透明度 */
+  --degree-remain: -30deg; /** 角の角度 */
+  --radius-remain: 0px; /** 角の丸み */
+
+  /**************************
+   文字
+ **************************/
+  /** ステータス文字の周りの余白(上,下,左,右) */
+  --status-padding-top: 3px;
+  --status-padding-bottom: 3px;
+  --status-padding-left: 20px;
+  --status-padding-right: 20px;
   /** HPなど、見出し側のフォント、サイズ、色 */
   --item-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  --item-font-size: 30px;
+  --item-font-size: 25px;
   --item-font-color: rgb(66, 66, 66); 
   /** 12/15など、ステータス側のフォント、サイズ、色 */
   --status-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  --status-font-size: 30px;
+  --status-font-size: 25px;
   --status-font-color: rgb(66, 66, 66);
   /* 不定時の赤字の色 */
   --futei-font-color: rgb(197, 17, 98);
   /** HPなど、見出しの周りに白縁を設定する */
   --item-outline-color: rgba(255, 255, 255, 1);
-  /**12/15Pなど、ステータスの周りに白縁を設定する */
+  /** 12/15など、ステータスの周りに白縁を設定する */
   --status-outline-color: rgba(255, 255, 255, 1);
 }
 
@@ -91,11 +128,11 @@ body {
 .kEQhkG,
 /** サイコロ画像の削除 */
 .iSEgox {
-  display: none;
+  display: none !important;
 }
 /** 背景の非表示 */
 .fA-DYIg {
-  opacity: 0;
+  opacity: 0 !important;
 }
 /** 広告の削除 */
 .MuiDialog-scrollPaper {
@@ -134,22 +171,48 @@ body {
 .gJasWt {
   width: var(--width-status) !important;
 }
+.gJasWt:nth-child(1) {
+  margin-left: var(--left-space-status1) !important;
+}
+.gJasWt:nth-child(2) {
+  margin-left: var(--left-space-status2) !important;
+}
+.gJasWt:nth-child(3) {
+  margin-left: var(--left-space-status3) !important;
+}
+.gJasWt:nth-child(4) {
+  margin-left: var(--left-space-status4) !important;
+}
+.gJasWt:nth-child(5) {
+  margin-left: var(--left-space-status5) !important;
+}
+.gJasWt:nth-child(6) {
+  margin-left: var(--left-space-status6) !important;
+}
 .gkLmyk {
   height: var(--height-status) !important;
 }
-.rcjSI {
+.hmYKMg {
   height: var(--height-total) !important;
   top: var(--top-total) !important;
   background: var(--color-total) !important;
+  transform: skewX(var(--degree-total)) !important;
+  opacity: var(--opacity-total) !important;
+  border-radius: var(--radius-total) !important;
 }
-.hmYKMg {
+.rcjSI {
   height: var(--height-remain) !important;
   top: var(--top-remain) !important;
   background: var(--color-remain) !important;
-  opacity: 1 !important;
+  transform: skewX(var(--degree-remain)) !important;
+  opacity: var(--opacity-remain) !important;
+  border-radius: var(--radius-remain) !important;
 }
 .cbqMGJ {
-  padding: var(--status-padding) !important;
+  padding-top: var(--status-padding-top) !important;
+  padding-bottom: var(--status-padding-bottom) !important;
+  padding-left: var(--status-padding-left) !important;
+  padding-right: var(--status-padding-right) !important;
 }
 .fsaUOa {
   font-family: var(--item-font-family) !important;
@@ -166,7 +229,7 @@ body {
     var(--item-outline-color) 1px 0px 0px !important;
 }
 .dSQOJa {
-  font-family: var(--item-font-family) !important;
+  font-family: var(--status-font-family) !important;
   font-size: var(--status-font-size) !important;
   color: var(--status-font-color) !important;
   text-shadow:
@@ -185,4 +248,6 @@ body {
 .gpoAiV {
   /* ステータスを一定以上の横幅にしたときに見切れないようにする設定 */
   overflow-y: visible !important;
+  /** ステータスをひし形にした際に左側の角が見切れないようにする設定 */
+  margin-left: 60px !important;
 }
