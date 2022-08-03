@@ -1,0 +1,10 @@
+{
+    "name": "いあきゃら整形ツール",
+    "description": "いあきゃらのコマ出力をより便利に",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+}
