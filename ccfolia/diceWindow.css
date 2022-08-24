@@ -190,6 +190,9 @@ body {
     background: rgba(0, 0, 0, 0) !important;
     padding-top: 0px !important;
 }
+.MuiPaper-elevation1 {
+    box-shadow: none !important;
+}
 
 /** ダイス画像 */
 .sc-hkgtus {
