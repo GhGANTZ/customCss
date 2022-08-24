@@ -11,7 +11,7 @@
   /** ダイス結果背景 */
   --width: 500px; /** 結果の横幅 */
   --background-color: rgba(0, 0, 0, 0.6); /** 背景色 */
-  --background-padding: 8px 8px 8px 8px; /** 外枠と文字の隙間 */
+  --background-padding: 8px 18px 8px 8px; /** 外枠と文字の隙間 */
   --border-color: rgba(255, 255, 255, 1); /** 枠線の色 */
   --border-image: url(https://xxx/yyy.png); /** 枠線に画像を使用 */
   --border-slice: 0px; /** 枠線画像の太さ */
@@ -22,6 +22,12 @@
   /** アイコン画像の設定 */
   --icon-radius: 0%; /** 画像の丸み：0%⇒四角、50%⇒正円 */
   --icon-background-color: transparent; /** アイコン背景色：transparentで透明 */
+  --icon-width: 70px; /** 画像の横幅 */
+  --icon-height: 70px; /** 画像の高さ */
+  --icon-margin-top: 0px; /** アイコン上のスペース */
+  --icon-margin-bottom: 0px; /** アイコン下のスペース */
+  --icon-margin-left: 0px; /** アイコン左のスペース */
+  --icon-margin-right: 10px; /** アイコン右のスペース */
   /** ダイス結果の文字部分（デフォルト） */
   --font-size-result: 1.5rem;
   --font-color-result: rgba(255, 255, 255, 1);
@@ -138,14 +144,27 @@ hr {
 }
 
 /**　チャット欄アイコン入れ物 */
-.MuiListItemAvatar-alignItemsFlexStart {
-  margin: 0px !important;
+.MuiListItemAvatar-root {
+  min-width: unset;
+  margin-top: var(--icon-margin-top) !important;
+  margin-bottom: var(--icon-margin-bottom) !important;
+  margin-left: var(--icon-margin-left) !important;
+  margin-right: var(--icon-margin-right) !important;
+}
+.dTOhMm {
+  width: var(--icon-width) !important;
+  height: var(--icon-height) !important;
 }
 
-/**　チャット欄アイコン画像 */
+/**　チャット欄アイコン背景 */
 .sc-bBHHxi {
   background: var(--icon-background-color) !important;
   border-radius: var(--icon-radius);
+}
+
+/** チャット欄アイコン画像 */
+.dTOhMm img {
+  width: var(--icon-width) !important;
 }
 
 /**　右側背景 */
@@ -210,6 +229,12 @@ p.MuiTypography-root {
   color: var(--font-color-fail) !important;
   text-shadow: var(--font-shadow-fail) !important;
   font-size: var(--font-size-fail) !important;
+}
+
+/** ダイス結果（1D100）など */
+.MuiTypography-colorTextSecondary {
+  font-size: inherit !important;
+  font-weight: inherit !important;
 }
 
 /* ユーザ名、ダイスを振った時間 */
