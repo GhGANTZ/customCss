@@ -23,7 +23,7 @@
   /** カットインの表示 */
   --disp-cut-in: block;
   /** ダイス結果(下)の表示 */
-  --disp-dice-window: block;
+  --disp-dice-window: flex;
   /** ダイス結果(下)のボタンの表示 */
   --disp-dice-window-btn: inline-flex;
   /** サイコロ画像の表示 */
@@ -40,9 +40,9 @@
   /** 背景色 */
   --dice-win-background: rgba(22, 22, 22, 0.84);
   /** 枠線 */
-  --dice-win-border: solid 5px white;
+  --dice-win-border: solid 4px white;
   /** 角の丸み */
-  --dice-win-radius: 15px;
+  --dice-win-radius: 10px;
 
   /** ◆◆◆ダイス画像◆◆◆ */
   /** サイズ設定 */
@@ -104,7 +104,7 @@
   /** 右の余白 */
   --content-right-space: 30px;
   /** テキストボックスの縦幅 */
-  --content-height: 125px;
+  --content-height: 95px;
 }
 
 /**************************
@@ -122,13 +122,13 @@ body {
 **************************/
 
 /** ツールバー */
-.MuiAppBar-root,
+.MuiToolbar-regular,
 /** サウンド設定 */
-.ehpWma,
+.eLyRoF,
 /** 盤面サイズ設定 */
-.VniSm,
+.iydCdD,
 /** 編集ボタン */
-.jItBif {
+.qzKtc {
   display: none !important;
 }
 
@@ -138,57 +138,58 @@ body {
 }
 
 /** 配置固定したスクリーンパネルの表示 */
-.hcTYPf {
+.bYSbUT {
   display: var(--disp-fixed-screen) !important;
 }
 
 /** 配置固定していないスクリーンパネルの表示 */
-.ghXOMC {
+.cmsyeO {
   display: var(--disp-flex-screen) !important;
 }
 
 /** 配置固定したマーカーパネルの表示 */
-.beCBEn {
+.lfgopw {
   display: var(--disp-fixed-marker) !important;
 }
 
 /** 配置固定していないマーカーパネルの表示 */
-.cwrusq {
+.fBwYpd {
   display: var(--disp-flex-marker) !important;
 }
 
 /** キャラ駒の名前の表示 */
-.jDbTzn {
+.kGPkTd {
   display: var(--disp-char-name) !important;
 }
 
 /** キャラ駒の表示 */
-.eucqli {
+.gFQitj img {
   display: var(--disp-char-picture) !important;
 }
 
 /** カットインの表示 */
-.erRkBX {
+.gXiIDm {
   display: var(--disp-cut-in) !important;
 }
 
 /** ダイス結果(下)の表示 */
-.kEQhkG {
+.inyvfy,
+.hUiEzw {
   display: var(--disp-dice-window) !important;
 }
 
 /** ダイス結果(下)のボタンの表示 */
-.MuiToolbar-gutters .MuiIconButton-root {
+.MuiIconButton-edgeEnd {
   display: var(--disp-dice-window-btn) !important;
 }
 
 /** サイコロ画像の表示 */
-.iSEgox {
+.cpRwfx {
   display: var(--disp-dice-picture) !important;
 }
 
 /** ステータスの表示 */
-.gpoAiV {
+.fjqig {
   display: var(--disp-status) !important;
 }
 
@@ -197,12 +198,12 @@ body {
 **************************/
 
 /** 背景の非表示 */
-.fA-DYIg {
+.bXnBWt {
   opacity: 0 !important;
 }
 
 /** スクロールバーの削除 */
-.cvajyX::-webkit-scrollbar {
+.hUiEzw::-webkit-scrollbar {
   display: none !important;
 }
 
@@ -211,7 +212,7 @@ body {
 **************************/
 
 /** ウィンドウ */
-.kEQhkG {
+.hqkidh {
   /** 横幅 */
   max-width: var(--dice-win-width) !important;
   /** 背景色 */
@@ -221,19 +222,22 @@ body {
   /** 角の丸み */
   border-radius: var(--dice-win-radius) !important;
 }
-.ldYVfF {
+.hHFdDk {
   /** 気にするでない */
   background: rgba(0, 0, 0, 0) !important;
   padding-top: 0px !important;
 }
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
 
 /** ダイス画像 */
-.sc-hkgtus {
+.dPdkwb {
   /** サイズ設定 */
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
 }
-.iSEgox {
+.cpRwfx {
   /** 上下位置の調整 */
   bottom: var(--dice-pic-y) !important;
   /** 左側のスペースの幅 */
@@ -294,7 +298,7 @@ body {
   font-size: var(--content-size) !important;
 }
 
-.cvajyX {
+.hUiEzw {
   /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
   /** 左の余白 */
