@@ -262,6 +262,7 @@ body {
   /** 文字サイズ */
   font-size: var(--content-size) !important;
 }
+
 .hUiEzw {
   /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
