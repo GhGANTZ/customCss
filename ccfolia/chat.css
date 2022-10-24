@@ -5,13 +5,10 @@
 :root {
   /** 表示行数の上限 */
   --line-clamp: 3;
-  /** ダイス結果の上下揃えの設定 */
-  --is-top: auto;/* 上揃えの場合⇒0、下揃えの場合⇒auto */
-  --is-bottom: 0;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
   /** ダイス結果背景 */
   --width: 500px; /** 結果の横幅 */
   --background-color: rgba(0, 0, 0, 0.6); /** 背景色 */
-  --background-padding: 8px 18px 8px 8px; /** 外枠と文字の隙間 */
+  --background-padding: 8px 18px 8px 18px; /** 外枠と文字の隙間 */
   --border-color: rgba(255, 255, 255, 1); /** 枠線の色 */
   --border-image: url(https://xxx/yyy.png); /** 枠線に画像を使用 */
   --border-slice: 0px; /** 枠線画像の太さ */
@@ -27,13 +24,13 @@
   --icon-margin-top: 0px; /** アイコン上のスペース */
   --icon-margin-bottom: 0px; /** アイコン下のスペース */
   --icon-margin-left: 0px; /** アイコン左のスペース */
-  --icon-margin-right: 10px; /** アイコン右のスペース */
+  --icon-margin-right: 15px; /** アイコン右のスペース */
   /** ダイス結果の文字部分（デフォルト） */
   --font-size-result: 1.5rem;
   --font-color-result: rgba(255, 255, 255, 1);
   --font-shadow-result: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** 成功時の青文字部分 */
-  --font-size-success: 1.1rem; 
+  --font-size-success: 1.1rem;
   --font-color-success: rgba(134, 202, 255, 1);
   --font-shadow-success: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** 失敗時の赤文字部分 */
@@ -61,55 +58,47 @@ body {
   overflow: hidden;
 }
 
-
 /**************************
  非表示要素の設定
 **************************/
 
 /** ツールバー */
-.MuiAppBar-root,
+.MuiToolbar-regular,
 /** サウンド設定 */
-.ehpWma,
+.eLyRoF,
 /** 盤面サイズ設定 */
-.VniSm,
+.iydCdD,
 /** 編集ボタン */
-.jItBif,
+.MuiFab-root,
 /** 配置固定したスクリーンパネルの削除 */
-.hcTYPf,
-/** 配置固定していないスクリーンパネルの削除 */
-.ghXOMC,
+.bYSbUT,
+/** 配置固定してないスクリーンパネルの削除 */
+.cmsyeO,
+/** 配置固定したマーカーパネルの削除 */
+.lfgopw,
+/** 配置固定してないマーカーパネルの削除 */
+.fBwYpd,
 /** 背景の削除 */
-.goyzdF img:nth-child(1),
+.bXnBWt,
 /** 前景の削除 */
-.goyzdF img:nth-child(2),
-/** 前景の削除(無敗系の時のマス目) */
-.ccDFfG>div>div>div,
+.cTrKpP img:nth-child(1),
+.cTrKpP img:nth-child(2),
 /** ステータスの削除 */
-.gpoAiV,
+.fjqig,
 /** キャラ駒の削除 */
-.eucqli,
-/** キャラ駒の名前の削除 */
-.jDbTzn,
+.gFQitj,
 /** カットインの削除 */
-.erRkBX,
-/** ダイス結果(下)の削除 */
-.kEQhkG,
-/** サイコロ画像の削除 */
-.iSEgox,
-/** チャット入力欄の削除 */
-.btWeVW {
+.gXiIDm,
+/** ダイス結果、チャット入力欄の削除 */
+.MuiPaper-elevation1 {
   display: none !important;
-}
-/** 背景の非表示 */
-.fA-DYIg {
-  opacity: 0 !important;
 }
 /** 広告の削除 */
 .MuiDialog-scrollPaper {
   display: none !important; /** 広告画像の削除 */
 }
 .MuiBackdrop-root {
-  background: rgba(0,0,0,0) !important; /** 広告背景の削除 */
+  background: rgba(0, 0, 0, 0) !important; /** 広告背景の削除 */
 }
 
 /**************************
@@ -117,7 +106,7 @@ body {
 **************************/
 
 /**　右側全体 */
-.MuiDrawer-root>.MuiPaper-root {
+.MuiDrawer-root > .MuiPaper-root {
   /** チャットがアニメーションする幅を確保 */
   width: 100% !important;
 }
@@ -151,37 +140,34 @@ hr {
   margin-left: var(--icon-margin-left) !important;
   margin-right: var(--icon-margin-right) !important;
 }
-.dTOhMm {
+.kVFvyD {
   width: var(--icon-width) !important;
   height: var(--icon-height) !important;
 }
 
 /**　チャット欄アイコン背景 */
-.sc-bBHHxi {
+.kVFvyD {
   background: var(--icon-background-color) !important;
-  border-radius: var(--icon-radius);
+  border-radius: var(--icon-radius) !important;
 }
 
 /** チャット欄アイコン画像 */
-.dTOhMm img {
+.kVFvyD img {
   width: var(--icon-width) !important;
 }
 
 /**　右側背景 */
 .MuiPaper-root {
-  background-color: rgba(0,0,0,0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 /** ダイス結果のスクロールを発生させないよう高さを指定 */
-.sc-cNKqjZ>div:nth-child(1)>div>div {
+.flHLrh > div:nth-child(0) > div > div {
   height: auto !important;
-  position: absolute !important;
-  /** ダイス結果の上揃え、下揃えを設定 */
-  top: var(--is-top) !important;
-  bottom: var(--is-bottom) !important;
+  position: relative !important;
 }
 
-.MuiList-root>div>div>div>div {
+.MuiList-root > div > div > div > div {
   /** ダイス結果をすべて非表示に。外出しした設定にimportantを付けることで設定した個数だけ表示する */
   display: none;
   /** 要素の高さを持ってる子要素に合わせる */
@@ -190,13 +176,13 @@ hr {
   /** ダイス結果の横幅を設定 */
   width: var(--width) !important;
   /** top,leftなどの影響を受けないようにする */
-  position: static !important;
+  position: relative !important;
   /* 他の要素のサイズで箱の要素の横幅が変わらないよう固定 */
   flex-shrink: 0 !important;
   /** ダイス結果同士の距離感を設定 */
   margin: var(--result-space) !important;
   /** 自動で設定されるtopをリセットする */
-  top: auto !important;
+  top: 0 !important;
 }
 
 /* ダイス結果欄のテキストすべてを囲う要素 */
