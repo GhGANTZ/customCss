@@ -8,9 +8,9 @@
 **************************/
 
 body {
-    background-color: rgba(0, 0, 0, 0);
-    margin: 0px auto;
-    overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
 }
 
 /**************************
@@ -18,33 +18,34 @@ body {
 **************************/
 
 /** ツールバー */
-.MuiAppBar-root,
+.MuiToolbar-regular,
 /** サウンド設定 */
-.ehpWma,
+.eLyRoF,
 /** 盤面サイズ設定 */
-.VniSm,
+.iydCdD,
 /** 編集ボタン */
-.jItBif,
+.qzKtc,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** 配置固定したスクリーンパネルの削除 */
-.hcTYPf,
-/** 配置固定していないスクリーンパネルの削除 */
-.ghXOMC,
-/** 背景の削除 */
-.goyzdF img:nth-child(1),
+.bYSbUT,
+/** 配置固定してないスクリーンパネルの削除 */
+.cmsyeO,
+/** 配置固定したマーカーパネルの削除 */
+.lfgopw,
+/** 配置固定してないマーカーパネルの削除 */
+.fBwYpd,
 /** 前景の削除 */
-.goyzdF img:nth-child(2),
-/** キャラ駒の名前の削除 */
-.jDbTzn,
-/** カットインの削除 */
-.erRkBX,
-/** ダイス結果(下)の削除 */
-.kEQhkG,
-/** サイコロ画像の削除 */
-.iSEgox,
+.cTrKpP img:nth-child(1),
+.cTrKpP img:nth-child(2),
 /** ステータスの削除 */
-.gpoAiV {
+.fjqig,
+/** キャラ駒の削除 */
+.gFQitj,
+/** カットインの削除 */
+.gXiIDm,
+/** ダイス結果、チャット入力欄の削除 */
+.MuiPaper-elevation1 {
   display: none !important;
 }
 /** 広告の削除 */
@@ -52,14 +53,14 @@ body {
   display: none !important; /** 広告画像の削除 */
 }
 .MuiBackdrop-root {
-  background: rgba(0,0,0,0) !important; /** 広告背景の削除 */
+  background: rgba(0, 0, 0, 0) !important; /** 広告背景の削除 */
 }
 
 /** メイン盤面の見切れを解消 */
-.hPKYjV {
+.bXnBWt {
   right: -960px !important;
 }
 
-.jDgfID {
+.hEjwsR {
   filter: blur(var(--blur-degree)) !important;
 }
