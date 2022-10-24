@@ -7,7 +7,7 @@
    アイコン
  **************************/
   /** アイコンを表示するか：inline-flex⇒通常、none：非表示 */
-  --disp-icon: inline-flex;
+  --disp-icon: none;
   /** アイコンの大きさ */
   --icon-size: 60px;
   /** アイコンの角の丸み：50%⇒正円 */
