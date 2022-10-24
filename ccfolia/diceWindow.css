@@ -122,17 +122,16 @@ body {
 /** 配置固定していないマーカーパネルの削除 */
 .cwrusq,
 /** 背景の削除 */
-.goyzdF img:nth-child(1),
+.bXnBWt,
 /** 前景の削除 */
-.goyzdF img:nth-child(2),
-/** キャラ駒の名前の削除 */
-.jDbTzn,
+.cTrKpP img:nth-child(1),
+.cTrKpP img:nth-child(2),
 /** キャラ駒の削除 */
-.eucqli,
+.gFQitj,
 /** カットインの削除 */
 .erRkBX,
 /** ステータスの削除 */
-.gpoAiV {
+.fjqig {
   display: none !important;
 }
 
