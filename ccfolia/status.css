@@ -50,6 +50,7 @@
   --height-total: 30px; /** 高さ */
   --top-total: 0px; /** 位置 */
   --color-total: rgb(255, 255, 255); /** 色 */
+  --image-total: url(https://gazounoURL); /** ステータス背景を画像にしたい場合 */
   --opacity-total: 0.6; /** 不透明度 */
   --degree-total: -30deg; /** 角の角度 */
   --radius-total: 0px; /** 角の丸み */
@@ -210,6 +211,7 @@ body {
   transform: skewX(var(--degree-remain)) !important;
   opacity: var(--opacity-remain) !important;
   border-radius: var(--radius-remain) !important;
+  content: var(--image-total) !important;
 }
 .dNSdUd {
   padding-top: var(--status-padding-top) !important;
