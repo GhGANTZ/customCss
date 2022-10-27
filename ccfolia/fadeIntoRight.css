@@ -1,4 +1,4 @@
-.MuiListItem-gutters {
+.MuiList-root>div>div>div>div {
   /* アニメーション名の指定：@keyframesと名前をそろえる */
   animation-name: fadeLeftToRight;
   /* 再生時間：短いほどフェードインが早くなる */
