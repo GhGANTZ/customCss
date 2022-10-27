@@ -116,8 +116,13 @@ hr {
   display: none !important;
 }
 
+/* ダイスチャットの高さを自動調整してスクロールを防ぐ */
+.MuiList-root > div > div > div {
+  height: auto !important;
+}
+
 /**　ダイス結果 */
-.MuiListItem-root {
+.MuiList-root > div > div > div > div {
   padding: var(--background-padding) !important;
   background: var(--background-color) !important;
   border: solid var(--border-width) var(--border-color) !important;
@@ -130,6 +135,26 @@ hr {
   box-sizing: border-box !important;
   box-shadow: var(--border-shadow) !important;
   align-items: center !important;
+  /** ダイス結果の横幅を設定 */
+  width: var(--width) !important;
+  height: auto !important;
+  position: relative !important;
+  top: 0 !important;
+  /** ダイス結果同士の距離感を設定 */
+  margin: var(--result-space) !important;
+  /** 要素の高さを持ってる子要素に合わせる */
+  height: auto !important;
+  min-height: auto !important;
+  /** ダイス結果の横幅を設定 */
+  width: var(--width) !important;
+  /** top,leftなどの影響を受けないようにする */
+  position: relative !important;
+  /* 他の要素のサイズで箱の要素の横幅が変わらないよう固定 */
+  flex-shrink: 0 !important;
+  /** 自動で設定されるtopをリセットする */
+  top: 0 !important;
+  /** ダイス結果をすべて非表示に。外出しした設定にimportantを付けることで設定した個数だけ表示する */
+  display: none;
 }
 
 /**　チャット欄アイコン入れ物 */
@@ -165,24 +190,6 @@ hr {
 .flHLrh > div:nth-child(0) > div > div {
   height: auto !important;
   position: relative !important;
-}
-
-.MuiList-root > div > div > div > div {
-  /** ダイス結果をすべて非表示に。外出しした設定にimportantを付けることで設定した個数だけ表示する */
-  display: none;
-  /** 要素の高さを持ってる子要素に合わせる */
-  height: auto !important;
-  min-height: auto !important;
-  /** ダイス結果の横幅を設定 */
-  width: var(--width) !important;
-  /** top,leftなどの影響を受けないようにする */
-  position: relative !important;
-  /* 他の要素のサイズで箱の要素の横幅が変わらないよう固定 */
-  flex-shrink: 0 !important;
-  /** ダイス結果同士の距離感を設定 */
-  margin: var(--result-space) !important;
-  /** 自動で設定されるtopをリセットする */
-  top: 0 !important;
 }
 
 /* ダイス結果欄のテキストすべてを囲う要素 */
