@@ -1,0 +1,65 @@
+/**************************
+ OBS用のおまじない
+**************************/
+
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/**************************
+ 非表示項目の設定
+**************************/
+
+/** ツールバー */
+.MuiToolbar-regular,
+/** サウンド設定 */
+.eLyRoF,
+/** 盤面サイズ設定 */
+.iydCdD,
+/** 編集ボタン */
+.qzKtc,
+/** チャット欄 */
+.MuiDrawer-paper,
+/** 配置固定したスクリーンパネルの削除 */
+.bYSbUT,
+/** 配置固定してないスクリーンパネルの削除 */
+.cmsyeO,
+/** 配置固定したマーカーパネルの削除 */
+.lfgopw,
+/** 配置固定してないマーカーパネルの削除 */
+.fBwYpd,
+/** 前景の削除 */
+.cTrKpP img:nth-child(1),
+.cTrKpP img:nth-child(2),
+/** ステータスの削除 */
+.fjqig,
+/** キャラ駒の削除 */
+.gFQitj,
+/** ダイス結果、チャット入力欄の削除 */
+.MuiPaper-elevation1 {
+  display: none !important;
+}
+/** 広告の削除 */
+.MuiDialog-scrollPaper {
+  display: none !important; /** 広告画像の削除 */
+}
+.MuiBackdrop-root {
+  background: rgba(0, 0, 0, 0) !important; /** 広告背景の削除 */
+}
+
+/** メイン盤面の見切れを解消 */
+.bXnBWt {
+  right: -960px !important;
+}
+
+/** 背景の削除 */
+.bXnBWt {
+  opacity: 0 !important;
+}
+
+/** モーダル背景の削除 */
+.gXiIDm {
+    background: rgba(0,0,0,0) !important;
+}
