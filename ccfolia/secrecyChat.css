@@ -5,6 +5,9 @@
 :root {
   /** 表示行数の上限 */
   --line-clamp: 3;
+  /** ダイス結果の上下揃えの設定 */
+  --is-top: auto;/* 上揃えの場合⇒0、下揃えの場合⇒auto */
+  --is-bottom: 0;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
   /** ダイス結果背景 */
   --width: 500px; /** 結果の横幅 */
   --background-color: rgba(0, 0, 0, 0.6); /** 背景色 */
@@ -105,11 +108,6 @@ hr {
   display: none !important;
 }
 
-/* ダイスチャットの高さを自動調整してスクロールを防ぐ */
-.MuiList-root > div > div > div {
-  height: auto !important;
-}
-
 /**　ダイス結果 */
 .MuiListItem-root {
   padding: var(--background-padding) !important;
@@ -143,9 +141,12 @@ hr {
 }
 
 /** ダイス結果のスクロールを発生させないよう高さを指定 */
-.flHLrh > div:nth-child(0) > div > div {
+.MuiList-root > div > div > div {
   height: auto !important;
-  position: relative !important;
+  position: absolute !important;
+  /** ダイス結果の上揃え、下揃えを設定 */
+  top: var(--is-top) !important;
+  bottom: var(--is-bottom) !important;
 }
 
 .MuiList-root > div > div > div > div {
