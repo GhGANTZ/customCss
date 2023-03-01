@@ -93,6 +93,10 @@ body {
 .MuiPaper-elevation1 {
   display: none !important;
 }
+/** 背景の非表示 */
+.cbgJdn {
+  opacity: 0 !important;
+}
 /** 広告の削除 */
 .MuiDialog-root {
   display: none !important;
