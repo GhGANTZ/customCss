@@ -6,8 +6,8 @@
   /** 表示行数の上限 */
   --line-clamp: 3;
   /** ダイス結果の上下揃えの設定 */
-  --is-top: auto;/* 上揃えの場合⇒0、下揃えの場合⇒auto */
-  --is-bottom: 0;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
+  --is-top: auto; /* 上揃えの場合⇒0、下揃えの場合⇒auto */
+  --is-bottom: 0; /* 上揃えの場合⇒auto、下揃えの場合⇒0 */
   /** ダイス結果背景 */
   --width: 500px; /** 結果の横幅 */
   --background-color: rgba(0, 0, 0, 0.6); /** 背景色 */
@@ -20,13 +20,13 @@
   --border-shadow: 5px 5px 10px black; /** 読み方）X軸 Y軸 影の幅 色 */
   --result-space: 10px; /** ダイス結果同士の隙間 */
   /** アイコン画像の設定 */
-  --icon-radius: 0%; /** 画像の丸み：0%⇒四角、50%⇒正円 */
+  --icon-radius: 30%; /** 画像の丸み：0%⇒四角、50%⇒正円 */
   --icon-background-color: transparent; /** アイコン背景色：transparentで透明 */
   --icon-width: 70px; /** 画像の横幅 */
   --icon-height: 70px; /** 画像の高さ */
   --icon-margin-top: 0px; /** アイコン上のスペース */
   --icon-margin-bottom: 0px; /** アイコン下のスペース */
-  --icon-margin-left: 0px; /** アイコン左のスペース */
+  --icon-margin-left: -20px; /** アイコン左のスペース */
   --icon-margin-right: 15px; /** アイコン右のスペース */
   /** ダイス結果の文字部分（デフォルト） */
   --font-size-result: 1.5rem;
@@ -68,40 +68,34 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.eLyRoF,
+.bGVpMS,
 /** 盤面サイズ設定 */
-.iydCdD,
+.ifPGDp,
 /** 編集ボタン */
-.MuiFab-root,
+.ktEoRZ,
 /** 配置固定したスクリーンパネルの削除 */
-.bYSbUT,
-/** 配置固定してないスクリーンパネルの削除 */
-.cmsyeO,
+.PrbGZ,
+/** 配置固定していないスクリーンパネルの削除 */
+.fZrjps,
 /** 配置固定したマーカーパネルの削除 */
-.lfgopw,
-/** 配置固定してないマーカーパネルの削除 */
-.fBwYpd,
-/** 背景の削除 */
-.bXnBWt,
+.kAaVzZ,
+/** 配置固定していないマーカーパネルの削除 */
+.gZAqaA,
 /** 前景の削除 */
-.cTrKpP img:nth-child(1),
-.cTrKpP img:nth-child(2),
-/** ステータスの削除 */
-.fjqig,
+.iAOgCy>div>div>img,
 /** キャラ駒の削除 */
-.gFQitj,
+.fYeaLa,
 /** カットインの削除 */
-.gXiIDm,
+.fyqfMj,
+/** ステータスの削除 */
+.jwMWZb,
 /** ダイス結果、チャット入力欄の削除 */
 .MuiPaper-elevation1 {
   display: none !important;
 }
 /** 広告の削除 */
-.MuiDialog-scrollPaper {
-  display: none !important; /** 広告画像の削除 */
-}
-.MuiBackdrop-root {
-  background: rgba(0, 0, 0, 0) !important; /** 広告背景の削除 */
+.MuiDialog-root {
+  display: none !important;
 }
 
 /**************************
@@ -163,19 +157,15 @@ hr {
   margin-left: var(--icon-margin-left) !important;
   margin-right: var(--icon-margin-right) !important;
 }
-.kVFvyD {
+/**　チャット欄アイコン背景 */
+.jsdCAw {
   width: var(--icon-width) !important;
   height: var(--icon-height) !important;
-}
-
-/**　チャット欄アイコン背景 */
-.kVFvyD {
   background: var(--icon-background-color) !important;
   border-radius: var(--icon-radius) !important;
 }
-
 /** チャット欄アイコン画像 */
-.kVFvyD img {
+.jsdCAw img {
   width: var(--icon-width) !important;
 }
 
