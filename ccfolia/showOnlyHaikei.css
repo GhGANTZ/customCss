@@ -20,47 +20,37 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.eLyRoF,
+.bGVpMS,
 /** 盤面サイズ設定 */
-.iydCdD,
+.ifPGDp,
 /** 編集ボタン */
-.qzKtc,
+.ktEoRZ,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** 配置固定したスクリーンパネルの削除 */
-.bYSbUT,
+.PrbGZ,
 /** 配置固定してないスクリーンパネルの削除 */
-.cmsyeO,
+.fZrjps,
 /** 配置固定したマーカーパネルの削除 */
-.lfgopw,
+.kAaVzZ,
 /** 配置固定してないマーカーパネルの削除 */
-.fBwYpd,
+.gZAqaA,
 /** 前景の削除 */
-.cTrKpP img:nth-child(1),
-.cTrKpP img:nth-child(2),
+.iAOgCy>div>div>img,
 /** ステータスの削除 */
-.fjqig,
+.jwMWZb,
 /** キャラ駒の削除 */
-.gFQitj,
+.fYeaLa,
 /** カットインの削除 */
-.gXiIDm,
+.fyqfMj,
 /** ダイス結果、チャット入力欄の削除 */
 .MuiPaper-elevation1 {
   display: none !important;
 }
 /** 広告の削除 */
-.MuiDialog-scrollPaper {
-  display: none !important; /** 広告画像の削除 */
+.MuiDialog-root {
+  display: none !important;
 }
-.MuiBackdrop-root {
-  background: rgba(0, 0, 0, 0) !important; /** 広告背景の削除 */
-}
-
-/** メイン盤面の見切れを解消 */
-.bXnBWt {
-  right: -960px !important;
-}
-
-.hEjwsR {
+.cbgJdn {
   filter: blur(var(--blur-degree)) !important;
 }
