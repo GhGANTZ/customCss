@@ -22,6 +22,12 @@
   /** アイコン画像の設定 */
   --icon-radius: 30%; /** 画像の丸み：0%⇒四角、50%⇒正円 */
   --icon-background-color: transparent; /** アイコン背景色：transparentで透明 */
+  --icon-width: 70px; /** 画像の横幅 */
+  --icon-height: 70px; /** 画像の高さ */
+  --icon-margin-top: 0px; /** アイコン上のスペース */
+  --icon-margin-bottom: 0px; /** アイコン下のスペース */
+  --icon-margin-left: -20px; /** アイコン左のスペース */
+  --icon-margin-right: 15px; /** アイコン右のスペース */
   /** ダイス結果の文字部分（デフォルト） */
   --font-size-result: 1.5rem;
   --font-color-result: rgba(255, 255, 255, 1);
@@ -60,35 +66,36 @@ body {
 **************************/
 
 /** サウンド設定 */
-.bGVpMS,
+.dvIgZb,
 /** 盤面サイズ設定 */
-.ifPGDp,
+.cDMISq,
 /** 編集ボタン */
-.ktEoRZ,
+.eIoVGu,
 /** 配置固定したスクリーンパネルの削除 */
-.PrbGZ,
+.craUcb,
 /** 配置固定していないスクリーンパネルの削除 */
-.fZrjps,
+.cSWuti,
 /** 配置固定したマーカーパネルの削除 */
-.kAaVzZ,
+.lbccHy,
 /** 配置固定していないマーカーパネルの削除 */
-.gZAqaA,
+.focXIj,
 /** 前景の削除 */
-.iAOgCy>div>div>img,
+.jmvWII>div>div>img,
+/** ステータスの削除 */
+.CawLz,
 /** キャラ駒の削除 */
-.fYeaLa,
+.grjmDq,
 /** カットインの削除 */
 .fyqfMj,
-/** ステータスの削除 */
-.jwMWZb,
 /** ヘッダーの削除 */
 .MuiToolbar-gutters,
 /** チャット欄不要部分の削除 */
 .gUWfvN,.gDHEHd,.jss10 {
   display: none !important;
 }
+
 /** 背景の非表示 */
-.cbgJdn {
+.hLRgBW {
   opacity: 0 !important;
 }
 
@@ -121,16 +128,46 @@ hr {
   box-sizing: border-box !important;
   box-shadow: var(--border-shadow) !important;
   align-items: center !important;
+  /** ダイス結果の横幅を設定 */
+  width: var(--width) !important;
+  height: auto !important;
+  position: relative !important;
+  top: 0 !important;
+  /** ダイス結果同士の距離感を設定 */
+  margin: var(--result-space) !important;
+  /** 要素の高さを持ってる子要素に合わせる */
+  height: auto !important;
+  min-height: auto !important;
+  /** ダイス結果の横幅を設定 */
+  width: var(--width) !important;
+  /** top,leftなどの影響を受けないようにする */
+  position: relative !important;
+  /* 他の要素のサイズで箱の要素の横幅が変わらないよう固定 */
+  flex-shrink: 0 !important;
+  /** 自動で設定されるtopをリセットする */
+  top: 0 !important;
+  /** ダイス結果をすべて非表示に。外出しした設定にimportantを付けることで設定した個数だけ表示する */
+  display: none;
 }
 
 /**　チャット欄アイコン入れ物 */
 .MuiListItemAvatar-root {
-  margin: 0px !important;
+  min-width: unset;
+  margin-top: var(--icon-margin-top) !important;
+  margin-bottom: var(--icon-margin-bottom) !important;
+  margin-left: var(--icon-margin-left) !important;
+  margin-right: var(--icon-margin-right) !important;
+}
+/**　チャット欄アイコン背景 */
+.bQQFPS {
+  width: var(--icon-width) !important;
+  height: var(--icon-height) !important;
+  background: var(--icon-background-color) !important;
+  border-radius: var(--icon-radius) !important;
 }
 /** チャット欄アイコン画像 */
-.jsdCAw img {
-  background: var(--icon-background-color) !important;
-  border-radius: var(--icon-radius);
+.bQQFPS img {
+  width: var(--icon-width) !important;
 }
 
 /**　右側背景 */
@@ -145,24 +182,6 @@ hr {
   /** ダイス結果の上揃え、下揃えを設定 */
   top: var(--is-top) !important;
   bottom: var(--is-bottom) !important;
-}
-
-.MuiList-root > div > div > div > div {
-  /** ダイス結果をすべて非表示に。外出しした設定にimportantを付けることで設定した個数だけ表示する */
-  display: none;
-  /** 要素の高さを持ってる子要素に合わせる */
-  height: auto !important;
-  min-height: auto !important;
-  /** ダイス結果の横幅を設定 */
-  width: var(--width) !important;
-  /** top,leftなどの影響を受けないようにする */
-  position: static !important;
-  /* 他の要素のサイズで箱の要素の横幅が変わらないよう固定 */
-  flex-shrink: 0 !important;
-  /** ダイス結果同士の距離感を設定 */
-  margin: var(--result-space) !important;
-  /** 自動で設定されるtopをリセットする */
-  top: auto !important;
 }
 
 /* ダイス結果欄のテキストすべてを囲う要素 */
