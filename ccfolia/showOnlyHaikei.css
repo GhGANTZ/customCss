@@ -1,18 +1,3 @@
-:root {
-  /** ぼかしの度合い(デフォルト：8px) */
-  --blur-degree: 0px;
-}
-
-/**************************
- OBS用のおまじない
-**************************/
-
-body {
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0px auto;
-  overflow: hidden;
-}
-
 /**************************
  非表示項目の設定
 **************************/
@@ -20,27 +5,27 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.bGVpMS,
+.dvIgZb,
 /** 盤面サイズ設定 */
-.ifPGDp,
+.cDMISq,
 /** 編集ボタン */
-.ktEoRZ,
+.eIoVGu,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** 配置固定したスクリーンパネルの削除 */
-.PrbGZ,
+.craUcb,
 /** 配置固定していないスクリーンパネルの削除 */
-.fZrjps,
+.cSWuti,
 /** 配置固定したマーカーパネルの削除 */
-.kAaVzZ,
+.lbccHy,
 /** 配置固定していないマーカーパネルの削除 */
-.gZAqaA,
+.focXIj,
 /** 前景の削除 */
-.iAOgCy>div>div>img,
+.jmvWII>div>div>img,
 /** ステータスの削除 */
-.jwMWZb,
+.CawLz,
 /** キャラ駒の削除 */
-.fYeaLa,
+.grjmDq,
 /** カットインの削除 */
 .fyqfMj,
 /** ダイス結果、チャット入力欄の削除 */
@@ -51,6 +36,6 @@ body {
 .MuiDialog-root {
   display: none !important;
 }
-.cbgJdn {
+.hLRgBW {
   filter: blur(var(--blur-degree)) !important;
 }

@@ -124,11 +124,11 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.bGVpMS,
+.dvIgZb,
 /** 盤面サイズ設定 */
-.ifPGDp,
+.cDMISq,
 /** 編集ボタン */
-.ktEoRZ {
+.eIoVGu {
   display: none !important;
 }
 
@@ -138,32 +138,32 @@ body {
 }
 
 /** 配置固定したスクリーンパネルの表示 */
-.PrbGZ {
+.craUcb {
   display: var(--disp-fixed-screen) !important;
 }
 
 /** 配置固定していないスクリーンパネルの表示 */
-.fZrjps {
+.cSWuti {
   display: var(--disp-flex-screen) !important;
 }
 
 /** 配置固定したマーカーパネルの表示 */
-.kAaVzZ {
+.lbccHy {
   display: var(--disp-fixed-marker) !important;
 }
 
 /** 配置固定していないマーカーパネルの表示 */
-.gZAqaA {
+.focXIj {
   display: var(--disp-flex-marker) !important;
 }
 
 /** キャラ駒の名前の表示 */
-.bGVEst {
+.cuplV {
   display: var(--disp-char-name) !important;
 }
 
 /** キャラ駒の表示 */
-.fYeaLa img {
+.grjmDq {
   display: var(--disp-char-picture) !important;
 }
 
@@ -173,7 +173,7 @@ body {
 }
 
 /** ダイス結果(下)の表示 */
-.eWkvOb {
+.ihOmcc {
   display: var(--disp-dice-window) !important;
 }
 
@@ -183,12 +183,12 @@ body {
 }
 
 /** サイコロ画像の表示 */
-.eWmzSm {
+.fpJfOM {
   display: var(--disp-dice-picture) !important;
 }
 
 /** ステータスの表示 */
-.jwMWZb {
+.CawLz {
   display: var(--disp-status) !important;
 }
 
@@ -197,12 +197,12 @@ body {
 **************************/
 
 /** 背景の非表示 */
-.cbgJdn {
+.hLRgBW {
   opacity: 0 !important;
 }
 
 /** スクロールバーの削除 */
-.eWkvOb::-webkit-scrollbar {
+.jduNjR::-webkit-scrollbar {
   display: none !important;
 }
 
@@ -211,7 +211,7 @@ body {
 **************************/
 
 /** ウィンドウ */
-.gVOVSn {
+.fNRKxo {
   /** 横幅 */
   width: var(--dice-win-width) !important;
   /** 背景色 */
@@ -222,7 +222,7 @@ body {
   border-radius: var(--dice-win-radius) !important;
 }
 /* ダイスウィンドウ裏の背景色非表示 */
-.eWkvOb {
+.ihOmcc {
   background-color: rgba(0, 0, 0, 0);
   padding-top: 0px !important;
 }
@@ -232,12 +232,12 @@ body {
 }
 
 /** ダイス画像 */
-.hEEGDU {
+.jUQjBC {
   /** サイズ設定 */
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
 }
-.eWmzSm {
+.fpJfOM {
   /** 上下位置の調整 */
   bottom: var(--dice-pic-y) !important;
   /** 左側のスペースの幅 */
@@ -299,7 +299,7 @@ body {
   font-size: var(--content-size) !important;
 }
 
-.haOMrf {
+.jduNjR {
   /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
   /** 左の余白 */
@@ -308,8 +308,4 @@ body {
   padding-right: var(--content-right-space) !important;
   /** テキストボックスの縦幅 */
   height: var(--content-height) !important;
-}
-/** スクロールバーの削除 */
-.haOMrf::-webkit-scrollbar {
-  display: none !important;
 }

@@ -106,34 +106,34 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.bGVpMS,
+.dvIgZb,
 /** 盤面サイズ設定 */
-.ifPGDp,
+.cDMISq,
 /** 編集ボタン */
-.ktEoRZ,
+.eIoVGu,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** 配置固定したスクリーンパネルの削除 */
-.PrbGZ,
+.craUcb,
 /** 配置固定していないスクリーンパネルの削除 */
-.fZrjps,
+.cSWuti,
 /** 配置固定したマーカーパネルの削除 */
-.kAaVzZ,
+.lbccHy,
 /** 配置固定していないマーカーパネルの削除 */
-.gZAqaA,
+.focXIj,
 /** 前景の削除 */
-.iAOgCy>div>div>img,
-/** キャラ駒の削除 */
-.fYeaLa,
-/** カットインの削除 */
-.fyqfMj,
+.jmvWII>div>div>img,
 /** ステータスの削除 */
-.jwMWZb {
+.CawLz,
+/** キャラ駒の削除 */
+.grjmDq,
+/** カットインの削除 */
+.fyqfMj {
   display: none !important;
 }
 
 /** 背景の非表示 */
-.cbgJdn {
+.hLRgBW {
   opacity: 0 !important;
 }
 
@@ -152,7 +152,7 @@ body {
 }
 
 /** サイコロ画像の表示 */
-.eWmzSm {
+.fpJfOM {
   display: var(--disp-dice-picture) !important;
 }
 
@@ -161,7 +161,7 @@ body {
 **************************/
 
 /** ウィンドウ */
-.gVOVSn {
+.fNRKxo {
   /** 横幅 */
   width: var(--dice-win-width) !important;
   /** 背景色 */
@@ -172,7 +172,7 @@ body {
   border-radius: var(--dice-win-radius) !important;
 }
 /* ダイスウィンドウ裏の背景色非表示 */
-.eWkvOb {
+.ihOmcc {
   background-color: rgba(0, 0, 0, 0);
   padding-top: 0px !important;
 }
@@ -182,12 +182,12 @@ body {
 }
 
 /** ダイス画像 */
-.hEEGDU {
+.jUQjBC {
   /** サイズ設定 */
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
 }
-.eWmzSm {
+.fpJfOM {
   /** 表示、非表示 */
   display: var(--disp-dice-pic) !important;
   /** 上下位置の調整 */
@@ -251,7 +251,7 @@ body {
   font-size: var(--content-size) !important;
 }
 
-.haOMrf {
+.jduNjR {
   /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
   /** 左の余白 */
@@ -262,6 +262,6 @@ body {
   height: var(--content-height) !important;
 }
 /** スクロールバーの削除 */
-.haOMrf::-webkit-scrollbar {
+.jduNjR::-webkit-scrollbar {
   display: none !important;
 }

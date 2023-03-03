@@ -68,35 +68,37 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.bGVpMS,
+.dvIgZb,
 /** 盤面サイズ設定 */
-.ifPGDp,
+.cDMISq,
 /** 編集ボタン */
-.ktEoRZ,
+.eIoVGu,
 /** 配置固定したスクリーンパネルの削除 */
-.PrbGZ,
+.craUcb,
 /** 配置固定していないスクリーンパネルの削除 */
-.fZrjps,
+.cSWuti,
 /** 配置固定したマーカーパネルの削除 */
-.kAaVzZ,
+.lbccHy,
 /** 配置固定していないマーカーパネルの削除 */
-.gZAqaA,
+.focXIj,
 /** 前景の削除 */
-.iAOgCy>div>div>img,
+.jmvWII>div>div>img,
+/** ステータスの削除 */
+.CawLz,
 /** キャラ駒の削除 */
-.fYeaLa,
+.grjmDq,
 /** カットインの削除 */
 .fyqfMj,
-/** ステータスの削除 */
-.jwMWZb,
 /** ダイス結果、チャット入力欄の削除 */
 .MuiPaper-elevation1 {
   display: none !important;
 }
+
 /** 背景の非表示 */
-.cbgJdn {
+.hLRgBW {
   opacity: 0 !important;
 }
+
 /** 広告の削除 */
 .MuiDialog-root {
   display: none !important;
@@ -162,14 +164,14 @@ hr {
   margin-right: var(--icon-margin-right) !important;
 }
 /**　チャット欄アイコン背景 */
-.jsdCAw {
+.bQQFPS {
   width: var(--icon-width) !important;
   height: var(--icon-height) !important;
   background: var(--icon-background-color) !important;
   border-radius: var(--icon-radius) !important;
 }
 /** チャット欄アイコン画像 */
-.jsdCAw img {
+.bQQFPS img {
   width: var(--icon-width) !important;
 }
 
