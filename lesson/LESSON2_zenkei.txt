@@ -33,6 +33,12 @@
   --disp-dice-picture: flex !important;
   /** ステータスの表示 */
   --disp-status: block !important;
+  /** カードデッキの表示 */
+  --disp-deck: block;
+  /** ダイスシンボルの表示 */
+  --disp-dice-symbol: block;
+  /** タイマーの表示 */
+  --disp-timer: block;
 
   /**************************
    ダイスウィンドウの設定
