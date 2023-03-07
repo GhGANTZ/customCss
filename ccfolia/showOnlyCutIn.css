@@ -15,29 +15,37 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.bGVpMS,
+.dvIgZb,
 /** 盤面サイズ設定 */
-.ifPGDp,
+.cDMISq,
 /** 編集ボタン */
-.ktEoRZ,
+.eIoVGu,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** 配置固定したスクリーンパネルの削除 */
-.PrbGZ,
+.craUcb,
 /** 配置固定していないスクリーンパネルの削除 */
-.fZrjps,
+.cSWuti,
 /** 配置固定したマーカーパネルの削除 */
-.kAaVzZ,
+.lbccHy,
 /** 配置固定していないマーカーパネルの削除 */
-.gZAqaA,
+.focXIj,
 /** 前景の削除 */
-.iAOgCy>div>div>img,
+.jmvWII>div>div>img,
 /** ステータスの削除 */
-.jwMWZb,
+.CawLz,
 /** キャラ駒の削除 */
-.fYeaLa,
+.grjmDq,
 /** ダイス結果、チャット入力欄の削除 */
-.MuiPaper-elevation1 {
+.MuiPaper-elevation1,
+/** カードデッキの削除 */
+.cEIFto,
+/** ダイスシンボルの削除 */
+.dFdmMo,
+/** タイマーの削除 */
+.bQUIVU,
+/** 監視モード注釈の削除 */
+.MuiSnackbar-root {
   display: none !important;
 }
 /** 広告の削除 */
@@ -49,10 +57,10 @@ body {
   right: -960px !important;
 }
 /** 背景の非表示 */
-.cbgJdn {
+.hLRgBW {
   opacity: 0 !important;
 }
 /** モーダル背景の削除 */
-.fyqfMj {
-    background: rgba(0,0,0,0) !important;
+.iupvZv {
+  background: rgba(0, 0, 0, 0) !important;
 }

@@ -30,6 +30,12 @@
   --disp-dice-picture: flex;
   /** ステータスの表示 */
   --disp-status: block;
+  /** カードデッキの表示 */
+  --disp-deck: block;
+  /** ダイスシンボルの表示 */
+  --disp-dice-symbol: block;
+  /** タイマーの表示 */
+  --disp-timer: block;
 
   /**************************
    ダイスウィンドウの設定
@@ -192,6 +198,22 @@ body {
   display: var(--disp-status) !important;
 }
 
+/** カードデッキの表示 */
+.cEIFto {
+  display: var(--disp-deck) !important;
+}
+
+/** ダイスシンボルの表示 */
+.dFdmMo {
+  display: var(--disp-dice-symbol) !important;
+}
+
+/** タイマーの表示 */
+.bQUIVU {
+  display: var(--disp-timer) !important;
+}
+
+
 /**************************
  固定非表示項目の設定
 **************************/
@@ -200,9 +222,12 @@ body {
 .hLRgBW {
   opacity: 0 !important;
 }
-
 /** スクロールバーの削除 */
 .jduNjR::-webkit-scrollbar {
+  display: none !important;
+}
+/** 監視モード注釈の非表示 */
+.MuiSnackbar-root {
   display: none !important;
 }
 

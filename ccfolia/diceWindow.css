@@ -128,7 +128,17 @@ body {
 /** キャラ駒の削除 */
 .grjmDq,
 /** カットインの削除 */
-.fyqfMj {
+.fyqfMj,
+/** ダイス結果、チャット入力欄の削除 */
+.MuiPaper-elevation1,
+/** カードデッキの削除 */
+.cEIFto,
+/** ダイスシンボルの削除 */
+.dFdmMo,
+/** タイマーの削除 */
+.bQUIVU,
+/** 監視モード注釈の削除 */
+.MuiSnackbar-root {
   display: none !important;
 }
 
