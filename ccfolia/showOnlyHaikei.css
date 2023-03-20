@@ -1,3 +1,7 @@
+:root {
+  --blur-degree: 0px;
+}
+
 /**************************
  非表示項目の設定
 **************************/
@@ -5,37 +9,37 @@
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.dvIgZb,
+.hPLikI,
 /** 盤面サイズ設定 */
-.cDMISq,
+.auYFM,
 /** 編集ボタン */
-.eIoVGu,
+.ljTpTZ,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** 配置固定したスクリーンパネルの削除 */
-.craUcb,
+.fGQKCn,
 /** 配置固定していないスクリーンパネルの削除 */
-.cSWuti,
+.hIGVWG,
 /** 配置固定したマーカーパネルの削除 */
-.lbccHy,
+.bdaUhq,
 /** 配置固定していないマーカーパネルの削除 */
-.focXIj,
+.hNtJoP,
 /** 前景の削除 */
-.jmvWII>div>div>img,
+.jRThuu>div>div>img,
 /** ステータスの削除 */
-.CawLz,
+.jjydZu,
 /** キャラ駒の削除 */
-.grjmDq,
+.iKjAPH,
 /** カットインの削除 */
-.iupvZv,
+.dWPPvt,
 /** ダイス結果、チャット入力欄の削除 */
 .MuiPaper-elevation1,
 /** カードデッキの削除 */
-.cEIFto,
+.goqjuy,
 /** ダイスシンボルの削除 */
-.dFdmMo,
+.emblvR,
 /** タイマーの削除 */
-.bQUIVU,
+.cbfxrz,
 /** 監視モード注釈の削除 */
 .MuiSnackbar-root {
   display: none !important;
@@ -44,6 +48,6 @@
 .MuiDialog-root {
   display: none !important;
 }
-.hLRgBW {
+.jdlckh {
   filter: blur(var(--blur-degree)) !important;
 }

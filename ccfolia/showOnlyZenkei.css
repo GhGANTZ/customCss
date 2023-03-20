@@ -130,11 +130,11 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.dvIgZb,
+.cqkVTi,
 /** 盤面サイズ設定 */
-.cDMISq,
+.auYFM,
 /** 編集ボタン */
-.eIoVGu {
+.ljTpTZ {
   display: none !important;
 }
 
@@ -144,42 +144,42 @@ body {
 }
 
 /** 配置固定したスクリーンパネルの表示 */
-.craUcb {
+.fGQKCn {
   display: var(--disp-fixed-screen) !important;
 }
 
 /** 配置固定していないスクリーンパネルの表示 */
-.cSWuti {
+.hIGVWG {
   display: var(--disp-flex-screen) !important;
 }
 
 /** 配置固定したマーカーパネルの表示 */
-.lbccHy {
+.bdaUhq {
   display: var(--disp-fixed-marker) !important;
 }
 
 /** 配置固定していないマーカーパネルの表示 */
-.focXIj {
+.hNtJoP {
   display: var(--disp-flex-marker) !important;
 }
 
 /** キャラ駒の名前の表示 */
-.cuplV {
+.kAgIur {
   display: var(--disp-char-name) !important;
 }
 
 /** キャラ駒の表示 */
-.grjmDq {
+.gXZeUy {
   display: var(--disp-char-picture) !important;
 }
 
 /** カットインの表示 */
-.iupvZv {
+.dWPPvt {
   display: var(--disp-cut-in) !important;
 }
 
 /** ダイス結果(下)の表示 */
-.ihOmcc {
+.eDwarb {
   display: var(--disp-dice-window) !important;
 }
 
@@ -189,41 +189,40 @@ body {
 }
 
 /** サイコロ画像の表示 */
-.fpJfOM {
+.kprzxS {
   display: var(--disp-dice-picture) !important;
 }
 
 /** ステータスの表示 */
-.CawLz {
+.jjydZu {
   display: var(--disp-status) !important;
 }
 
 /** カードデッキの表示 */
-.cEIFto {
+.goqjuy {
   display: var(--disp-deck) !important;
 }
 
 /** ダイスシンボルの表示 */
-.dFdmMo {
+.emblvR {
   display: var(--disp-dice-symbol) !important;
 }
 
 /** タイマーの表示 */
-.bQUIVU {
+.cbfxrz {
   display: var(--disp-timer) !important;
 }
-
 
 /**************************
  固定非表示項目の設定
 **************************/
 
 /** 背景の非表示 */
-.hLRgBW {
+.jdlckh {
   opacity: 0 !important;
 }
 /** スクロールバーの削除 */
-.jduNjR::-webkit-scrollbar {
+.hpBNwu::-webkit-scrollbar {
   display: none !important;
 }
 /** 監視モード注釈の非表示 */
@@ -236,7 +235,7 @@ body {
 **************************/
 
 /** ウィンドウ */
-.fNRKxo {
+.dvoGol {
   /** 横幅 */
   width: var(--dice-win-width) !important;
   /** 背景色 */
@@ -247,7 +246,7 @@ body {
   border-radius: var(--dice-win-radius) !important;
 }
 /* ダイスウィンドウ裏の背景色非表示 */
-.ihOmcc {
+.eDwarb {
   background-color: rgba(0, 0, 0, 0);
   padding-top: 0px !important;
 }
@@ -257,12 +256,12 @@ body {
 }
 
 /** ダイス画像 */
-.jUQjBC {
+.cWounr {
   /** サイズ設定 */
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
 }
-.fpJfOM {
+.kprzxS {
   /** 上下位置の調整 */
   bottom: var(--dice-pic-y) !important;
   /** 左側のスペースの幅 */
@@ -324,7 +323,7 @@ body {
   font-size: var(--content-size) !important;
 }
 
-.jduNjR {
+.hpBNwu {
   /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
   /** 左の余白 */
