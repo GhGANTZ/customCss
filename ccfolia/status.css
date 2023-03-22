@@ -3,52 +3,90 @@
 **************************/
 
 :root {
-  /** 表示行数の上限 */
-  --line-clamp: 3;
-  /** ダイス結果の上下揃えの設定 */
-  --is-top: auto; /* 上揃えの場合⇒0、下揃えの場合⇒auto */
-  --is-bottom: 0; /* 上揃えの場合⇒auto、下揃えの場合⇒0 */
-  /** ダイス結果背景 */
-  --width: 500px; /** 結果の横幅 */
-  --background-color: rgba(0, 0, 0, 0.6); /** 背景色 */
-  --background-padding: 8px 18px 8px 18px; /** 外枠と文字の隙間 */
-  --border-color: rgba(255, 255, 255, 1); /** 枠線の色 */
-  --border-image: url(https://xxx/yyy.png); /** 枠線に画像を使用 */
-  --border-slice: 0px; /** 枠線画像の太さ */
-  --border-width: 0px; /** 枠線の幅 */
-  --border-radius: 10px; /** 角の丸み */
-  --border-shadow: 5px 5px 10px black; /** 読み方）X軸 Y軸 影の幅 色 */
-  --result-space: 10px; /** ダイス結果同士の隙間 */
-  /** アイコン画像の設定 */
-  --icon-radius: 30%; /** 画像の丸み：0%⇒四角、50%⇒正円 */
-  --icon-background-color: transparent; /** アイコン背景色：transparentで透明 */
-  --icon-width: 70px; /** 画像の横幅 */
-  --icon-height: 70px; /** 画像の高さ */
-  --icon-margin-top: 0px; /** アイコン上のスペース */
-  --icon-margin-bottom: 0px; /** アイコン下のスペース */
-  --icon-margin-left: -20px; /** アイコン左のスペース */
-  --icon-margin-right: 15px; /** アイコン右のスペース */
-  /** ダイス結果の文字部分（デフォルト） */
-  --font-size-result: 1.5rem;
-  --font-color-result: rgba(255, 255, 255, 1);
-  --font-shadow-result: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
-  /** 成功時の青文字部分 */
-  --font-size-success: 1.1rem;
-  --font-color-success: rgba(134, 202, 255, 1);
-  --font-shadow-success: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
-  /** 失敗時の赤文字部分 */
-  --font-size-fail: 1.1rem;
-  --font-color-fail: rgba(255, 161, 161, 1);
-  --font-shadow-fail: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
-  /** ユーザ名の部分 */
-  --font-size-user-name: 1.1rem;
-  --font-color-user-name: rgba(255, 255, 255, 1);
-  --font-shadow-user-name: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
-  /** ダイスを振った時間を表示するか */
-  --disp-dice-time: transparent; /** none⇒表示しない、transparent⇒表示する */
-  --font-size-dice-time: 1rem;
-  --font-color-dice-time: rgba(255, 255, 255, 0.6);
-  --font-shadow-dice-time: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
+  /**************************
+   アイコン
+ **************************/
+  /** アイコンを表示するか：inline-flex⇒通常、none：非表示 */
+  --disp-icon: none;
+  /** アイコンの大きさ */
+  --icon-size: 60px;
+  /** アイコンの角の丸み：50%⇒正円 */
+  --icon-radius: 7px;
+  /** アイコンとステータスの配置：inline-flex⇒横並び、inline-block⇒縦並び */
+  --placement-icon-status: inline-block;
+  /** アイコンの位置調整(縦) */
+  --icon-position-x1: 0px; /** 横並びの時の縦位置の設定。縦並びの場合は0に設定する */
+  --icon-position-x2: 10px; /** 縦並びの時の縦位置の設定。横並びの場合は0に設定する */
+  /** アイコンの位置調整(横) */
+  --icon-position-y1: 0px; /** 横並びの時の横位置の設定。縦並びの場合は0に設定する */
+  --icon-position-y2: 170px; /** 縦並びの時の横位置の設定。横並びの場合は0に設定する */
+
+  /**************************
+   ステータス（全体）
+ **************************/
+  /** ステータスの横幅 */
+  --width-status: 170px;
+  /** ステータスの行間 */
+  --height-status: 40px;
+  /** ステータス同士の距離 */
+  --space-between-status: 160px;
+
+  /**************************
+    ステータス（個別）
+  **************************/
+  /** ステータス1～6行目の位置調整 */
+  --left-space-status1: 115px;
+  --left-space-status2: 92px;
+  --left-space-status3: 69px;
+  --left-space-status4: 46px;
+  --left-space-status5: 23px;
+  --left-space-status6: 0px;
+  /** ステータスの横幅＋位置調整の最大値以上に設定してください */
+  --max-width: 300px;
+
+  /**************************
+    ステータス（最大値）
+  **************************/
+  --height-total: 30px; /** 高さ */
+  --top-total: 0px; /** 位置 */
+  --color-total: rgb(255, 255, 255); /** 色 */
+  --image-total: url(https://gazounoURL); /** ステータス背景を画像にしたい場合 */
+  --opacity-total: 0.6; /** 不透明度 */
+  --degree-total: -30deg; /** 角の角度 */
+  --radius-total: 0px; /** 角の丸み */
+
+  /**************************
+    ステータス（現在値）
+  **************************/
+  --height-remain: 30px; /** 高さ */
+  --top-remain: 0px; /** 位置 */
+  --color-remain: rgb(255, 255, 255); /** 色 */
+  --opacity-remain: 1; /** 不透明度 */
+  --degree-remain: -30deg; /** 角の角度 */
+  --radius-remain: 0px; /** 角の丸み */
+
+  /**************************
+   文字
+ **************************/
+  /** ステータス文字の周りの余白(上,下,左,右) */
+  --status-padding-top: 3px;
+  --status-padding-bottom: 3px;
+  --status-padding-left: 20px;
+  --status-padding-right: 20px;
+  /** HPなど、見出し側のフォント、サイズ、色 */
+  --item-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  --item-font-size: 25px;
+  --item-font-color: rgb(66, 66, 66);
+  /** 12/15など、ステータス側のフォント、サイズ、色 */
+  --status-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  --status-font-size: 25px;
+  --status-font-color: rgb(66, 66, 66);
+  /* 不定時の赤字の色 */
+  --futei-font-color: rgb(197, 17, 98);
+  /** HPなど、見出しの周りに白縁を設定する */
+  --item-outline-color: rgba(255, 255, 255, 1);
+  /** 12/15など、ステータスの周りに白縁を設定する */
+  --status-outline-color: rgba(255, 255, 255, 1);
 }
 
 /**************************
@@ -73,6 +111,8 @@ body {
 .auYFM,
 /** 編集ボタン */
 .ljTpTZ,
+/** チャット欄 */
+.MuiDrawer-paper,
 /** 配置固定したスクリーンパネルの削除 */
 .fGQKCn,
 /** 配置固定していないスクリーンパネルの削除 */
@@ -83,8 +123,6 @@ body {
 .hNtJoP,
 /** 前景の削除 */
 .jRThuu>div>div>img,
-/** ステータスの削除 */
-.jjydZu,
 /** キャラ駒の削除 */
 .iKjAPH,
 /** カットインの削除 */
@@ -116,137 +154,106 @@ body {
 　デザイン
 **************************/
 
-/**　右側全体 */
-.MuiDrawer-root > .MuiPaper-root {
-  /** チャットがアニメーションする幅を確保 */
-  width: 100% !important;
-}
-
-/** ダイス結果間の境界線 */
-hr {
+/* イニシアティブのバッチ表示を非表示 */
+.MuiBadge-badge {
   display: none !important;
 }
-
-/**　ダイス結果 */
-.MuiList-root > div > div > div > div {
-  padding: var(--background-padding) !important;
-  background: var(--background-color) !important;
-  border: solid var(--border-width) var(--border-color) !important;
-  border-radius: var(--border-radius) !important;
-  border-image-source: var(--border-image) !important;
-  border-image-slice: var(--border-slice) !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: cover !important;
-  box-sizing: border-box !important;
-  box-shadow: var(--border-shadow) !important;
-  align-items: center !important;
-  /** ダイス結果の横幅を設定 */
-  width: var(--width) !important;
-  height: auto !important;
-  position: relative !important;
-  top: 0 !important;
-  /** ダイス結果同士の距離感を設定 */
-  margin: var(--result-space) !important;
-  /** 要素の高さを持ってる子要素に合わせる */
-  height: auto !important;
-  min-height: auto !important;
-  /** ダイス結果の横幅を設定 */
-  width: var(--width) !important;
-  /** top,leftなどの影響を受けないようにする */
-  position: relative !important;
-  /* 他の要素のサイズで箱の要素の横幅が変わらないよう固定 */
-  flex-shrink: 0 !important;
-  /** 自動で設定されるtopをリセットする */
-  top: 0 !important;
-  /** ダイス結果をすべて非表示に。外出しした設定にimportantを付けることで設定した個数だけ表示する */
-  display: none;
+/* アイコン画像 */
+.MuiBadge-root {
+  display: var(--disp-icon) !important;
+  top: var(--icon-position-x1) !important;
+  margin-right: var(--icon-position-y1) !important;
+  margin-bottom: var(--icon-position-x2) !important;
+  margin-left: var(--icon-position-y2) !important;
 }
-
-/**　チャット欄アイコン入れ物 */
-.MuiListItemAvatar-root {
-  min-width: unset;
-  margin-top: var(--icon-margin-top) !important;
-  margin-bottom: var(--icon-margin-bottom) !important;
-  margin-left: var(--icon-margin-left) !important;
-  margin-right: var(--icon-margin-right) !important;
-}
-/**　チャット欄アイコン背景 */
-.iycfRf {
-  width: var(--icon-width) !important;
-  height: var(--icon-height) !important;
-  background: var(--icon-background-color) !important;
+.eLqLhd {
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
   border-radius: var(--icon-radius) !important;
 }
-/** チャット欄アイコン画像 */
-.iycfRf img {
-  width: var(--icon-width) !important;
+.ldrODX {
+  display: var(--placement-icon-status) !important;
+  margin-right: var(--space-between-status) !important;
+  vertical-align: middle;
 }
-
-/**　右側背景 */
-.MuiPaper-root {
-  background-color: rgba(0, 0, 0, 0) !important;
+.hePzud {
+  width: var(--width-status) !important;
+  height: var(--height-status) !important;
 }
-
-/** ダイス結果のスクロールを発生させないよう高さを指定 */
-.MuiList-root > div > div > div {
-  height: auto !important;
-  position: absolute !important;
-  /** ダイス結果の上揃え、下揃えを設定 */
-  top: var(--is-top) !important;
-  bottom: var(--is-bottom) !important;
+.hePzud:nth-child(1) {
+  margin-left: var(--left-space-status1) !important;
 }
-
-/* ダイス結果欄のテキストすべてを囲う要素 */
-.MuiListItemText-root {
-  /* ダイス結果が長すぎて四角をはみ出た場合に、はみ出し部分を表示しない */
-  overflow: hidden !important;
+.hePzud:nth-child(2) {
+  margin-left: var(--left-space-status2) !important;
 }
-
-/** ダイス結果テキスト（ユーザ名などを除く） */
-p.MuiTypography-root {
-  /** -webkit-line-clampを有効にするためのおまじない */
-  display: -webkit-box !important;
-  -webkit-box-orient: vertical !important;
-  /* ダイス結果の上限行数を指定(超えると…表示になる) */
-  -webkit-line-clamp: var(--line-clamp) !important;
-  color: var(--font-color-result) !important;
-  text-shadow: var(--font-shadow-result) !important;
-  font-size: var(--font-size-result) !important;
+.hePzud:nth-child(3) {
+  margin-left: var(--left-space-status3) !important;
 }
-
-/** 成功時の青文字部分 */
-.MuiTypography-colorPrimary {
-  color: var(--font-color-success) !important;
-  text-shadow: var(--font-shadow-success) !important;
-  font-size: var(--font-size-success) !important;
+.hePzud:nth-child(4) {
+  margin-left: var(--left-space-status4) !important;
 }
-
-/* 失敗時の赤字部分 */
-.MuiTypography-colorSecondary {
-  color: var(--font-color-fail) !important;
-  text-shadow: var(--font-shadow-fail) !important;
-  font-size: var(--font-size-fail) !important;
+.hePzud:nth-child(5) {
+  margin-left: var(--left-space-status5) !important;
 }
-
-/** ダイス結果（1D100）など */
-.MuiTypography-colorTextSecondary {
-  font-size: inherit !important;
-  font-weight: inherit !important;
+.hePzud:nth-child(6) {
+  margin-left: var(--left-space-status6) !important;
 }
-
-/* ユーザ名、ダイスを振った時間 */
-.MuiListItemText-primary,
-.MuiTypography-caption {
-  /** ユーザ名を設定した色にしたい場合はここ（color）を削除する */
-  color: var(--font-color-user-name) !important;
-  text-shadow: var(--font-shadow-user-name) !important;
-  font-size: var(--font-size-user-name) !important;
+.gHbIBZ {
+  height: var(--height-total) !important;
+  top: var(--top-total) !important;
+  background: var(--color-total) !important;
+  transform: skewX(var(--degree-total)) !important;
+  opacity: var(--opacity-total) !important;
+  border-radius: var(--radius-total) !important;
 }
-/* ダイスを振った時間 */
-span.MuiTypography-root.MuiTypography-caption {
-  display: var(--disp-dice-time) !important;
-  color: var(--font-color-dice-time) !important;
-  text-shadow: var(--font-shadow-dice-time) !important;
-  font-size: var(--font-size-dice-time) !important;
+.ivTmlB {
+  height: var(--height-remain) !important;
+  top: var(--top-remain) !important;
+  background: var(--color-remain) !important;
+  transform: skewX(var(--degree-remain)) !important;
+  opacity: var(--opacity-remain) !important;
+  border-radius: var(--radius-remain) !important;
+  content: var(--image-total) !important;
+}
+.gooGSS {
+  padding-top: var(--status-padding-top) !important;
+  padding-bottom: var(--status-padding-bottom) !important;
+  padding-left: var(--status-padding-left) !important;
+  padding-right: var(--status-padding-right) !important;
+}
+.eoWtwG {
+  font-family: var(--item-font-family) !important;
+  font-size: var(--item-font-size) !important;
+  color: var(--item-font-color) !important;
+  text-shadow: var(--item-outline-color) 1px 1px 0px,
+    var(--item-outline-color) -1px -1px 0px,
+    var(--item-outline-color) -1px 1px 0px,
+    var(--item-outline-color) 1px -1px 0px,
+    var(--item-outline-color) 0px 1px 0px,
+    var(--item-outline-color) 0px -1px 0px,
+    var(--item-outline-color) -1px 0px 0px,
+    var(--item-outline-color) 1px 0px 0px !important;
+}
+.bNEIbY {
+  font-family: var(--status-font-family) !important;
+  font-size: var(--status-font-size) !important;
+  color: var(--status-font-color) !important;
+  text-shadow: var(--status-outline-color) 1px 1px 0px,
+    var(--status-outline-color) -1px -1px 0px,
+    var(--status-outline-color) -1px 1px 0px,
+    var(--status-outline-color) 1px -1px 0px,
+    var(--status-outline-color) 0px 1px 0px,
+    var(--status-outline-color) 0px -1px 0px,
+    var(--status-outline-color) -1px 0px 0px,
+    var(--status-outline-color) 1px 0px 0px !important;
+}
+.JmUIc {
+  color: var(--futei-font-color) !important;
+}
+.gKJOhX {
+  /* ステータスを一定以上の横幅にしたときに見切れないようにする設定 */
+  overflow-y: visible !important;
+  /** ステータスをひし形にした際に左側の角が見切れないようにする設定 */
+  margin-left: 60px !important;
+  max-width: var(--max-width) !important;
 }
