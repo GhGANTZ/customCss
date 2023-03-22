@@ -109,12 +109,12 @@ body {
   margin-bottom: var(--icon-position-x2) !important;
   margin-left: var(--icon-position-y2) !important;
 }
-.XzfSx {
+.MuiAvatar-root {
   width: var(--icon-size) !important;
   height: var(--icon-size) !important;
   border-radius: var(--icon-radius) !important;
 }
-.lmYMmZ {
+.kICzbE {
   display: var(--placement-icon-status) !important;
   margin-right: var(--space-between-status) !important;
   vertical-align: middle;
@@ -122,29 +122,29 @@ body {
 .MuiBadge-badge {
   display: none !important;
 }
-.jrZSzN {
+.fheaZC {
   width: var(--width-status) !important;
   height: var(--height-status) !important;
 }
-.jrZSzN:nth-child(1) {
+.fheaZC:nth-child(1) {
   margin-left: var(--left-space-status1) !important;
 }
-.jrZSzN:nth-child(2) {
+.fheaZC:nth-child(2) {
   margin-left: var(--left-space-status2) !important;
 }
-.jrZSzN:nth-child(3) {
+.fheaZC:nth-child(3) {
   margin-left: var(--left-space-status3) !important;
 }
-.jrZSzN:nth-child(4) {
+.fheaZC:nth-child(4) {
   margin-left: var(--left-space-status4) !important;
 }
-.jrZSzN:nth-child(5) {
+.fheaZC:nth-child(5) {
   margin-left: var(--left-space-status5) !important;
 }
-.jrZSzN:nth-child(6) {
+.fheaZC:nth-child(6) {
   margin-left: var(--left-space-status6) !important;
 }
-.fQlHbF {
+.fKOXEa {
   height: var(--height-total) !important;
   top: var(--top-total) !important;
   background: var(--color-total) !important;
@@ -152,7 +152,7 @@ body {
   opacity: var(--opacity-total) !important;
   border-radius: var(--radius-total) !important;
 }
-.iLZzml {
+.fciSXc {
   height: var(--height-remain) !important;
   top: var(--top-remain) !important;
   background: var(--color-remain) !important;
@@ -161,13 +161,13 @@ body {
   border-radius: var(--radius-remain) !important;
   content: var(--image-total) !important;
 }
-.iykfVv {
+.bikkAu {
   padding-top: var(--status-padding-top) !important;
   padding-bottom: var(--status-padding-bottom) !important;
   padding-left: var(--status-padding-left) !important;
   padding-right: var(--status-padding-right) !important;
 }
-.eNwtdn {
+.cELxbK {
   font-family: var(--item-font-family) !important;
   font-size: var(--item-font-size) !important;
   color: var(--item-font-color) !important;
@@ -180,7 +180,7 @@ body {
     var(--item-outline-color) -1px 0px 0px,
     var(--item-outline-color) 1px 0px 0px !important;
 }
-.gpnnbN {
+.djQozH {
   font-family: var(--status-font-family) !important;
   font-size: var(--status-font-size) !important;
   color: var(--status-font-color) !important;
@@ -193,10 +193,10 @@ body {
     var(--status-outline-color) -1px 0px 0px,
     var(--status-outline-color) 1px 0px 0px !important;
 }
-.bZlkmR {
+.kZDCrT {
   color: var(--futei-font-color) !important;
 }
-.clruJQ {
+.lhFFvL {
   /* ステータスを一定以上の横幅にしたときに見切れないようにする設定 */
   overflow-y: visible !important;
   /** ステータスをひし形にした際に左側の角が見切れないようにする設定 */
