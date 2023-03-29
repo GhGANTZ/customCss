@@ -66,44 +66,50 @@ body {
 **************************/
 
 /** サウンド設定 */
-.cqkVTi,
+.cDKmEJ,
 /** 盤面サイズ設定 */
-.auYFM,
+.eRQGfP,
 /** 編集ボタン */
-.ljTpTZ,
+.MuiFab-root,
 /** 配置固定したスクリーンパネルの削除 */
-.fGQKCn,
+.iofRwv,
 /** 配置固定していないスクリーンパネルの削除 */
-.hIGVWG,
+.gDGDhu,
 /** 配置固定したマーカーパネルの削除 */
-.bdaUhq,
+.khYdOn,
 /** 配置固定していないマーカーパネルの削除 */
-.hNtJoP,
+.ftKyVK,
 /** 前景の削除 */
-.jRThuu>div>div>img,
+.dAuAbO>div>div>img,
 /** ステータスの削除 */
-.jjydZu,
+.jyrvjI,
 /** キャラ駒の削除 */
-.iKjAPH,
+.iHmcGS,
 /** カットインの削除 */
-.dWPPvt,
+.gbgaKQ,
 /** カードデッキの削除 */
-.goqjuy,
+.jpGrSM,
+/** ダイスウィンドウの削除 */
+.iRDaWA,
 /** ダイスシンボルの削除 */
-.emblvR,
+.hVUkSD,
 /** タイマーの削除 */
-.cbfxrz,
+.MuiPaper-elevation5,
 /** 監視モード注釈の削除 */
 .MuiSnackbar-root,
 /** ヘッダーの削除 */
 .MuiToolbar-gutters,
-/** チャット欄不要部分の削除 */
-.eDwarb,.jss11,.jplFpw,.dMmCXK {
+/** 送信ボタンの削除 */
+.hfEIwt,
+/** メッセージ入力欄の削除 */
+.MuiInputBase-multiline,
+/** BCDiceクレジットの削除 */
+.MuiBox-root {
   display: none !important;
 }
 
 /** 背景の非表示 */
-.jdlckh {
+.jsiJYh {
   opacity: 0 !important;
 }
 
@@ -167,14 +173,14 @@ hr {
   margin-right: var(--icon-margin-right) !important;
 }
 /**　チャット欄アイコン背景 */
-.bQQFPS {
+.gWULzu {
   width: var(--icon-width) !important;
   height: var(--icon-height) !important;
   background: var(--icon-background-color) !important;
   border-radius: var(--icon-radius) !important;
 }
 /** チャット欄アイコン画像 */
-.bQQFPS img {
+.gWULzu img {
   width: var(--icon-width) !important;
 }
 
