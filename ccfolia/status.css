@@ -106,42 +106,42 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.hPLikI,
+.cDKmEJ,
 /** 盤面サイズ設定 */
-.auYFM,
+.eRQGfP,
 /** 編集ボタン */
-.ljTpTZ,
+.MuiFab-root,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** 配置固定したスクリーンパネルの削除 */
-.fGQKCn,
+.iofRwv,
 /** 配置固定していないスクリーンパネルの削除 */
-.hIGVWG,
+.gDGDhu,
 /** 配置固定したマーカーパネルの削除 */
-.bdaUhq,
+.khYdOn,
 /** 配置固定していないマーカーパネルの削除 */
-.hNtJoP,
+.ftKyVK,
 /** 前景の削除 */
-.jRThuu>div>div>img,
+.dAuAbO>div>div>img,
 /** キャラ駒の削除 */
-.iKjAPH,
+.iHmcGS,
 /** カットインの削除 */
-.dWPPvt,
+.gbgaKQ,
 /** ダイス結果、チャット入力欄の削除 */
 .MuiPaper-elevation1,
 /** カードデッキの削除 */
-.goqjuy,
+.jpGrSM,
 /** ダイスシンボルの削除 */
-.emblvR,
+.hVUkSD,
 /** タイマーの削除 */
-.cbfxrz,
+.MuiPaper-elevation5,
 /** 監視モード注釈の削除 */
 .MuiSnackbar-root {
   display: none !important;
 }
 
 /** 背景の非表示 */
-.jdlckh {
+.jsiJYh {
   opacity: 0 !important;
 }
 
@@ -166,39 +166,39 @@ body {
   margin-bottom: var(--icon-position-x2) !important;
   margin-left: var(--icon-position-y2) !important;
 }
-.eLqLhd {
+.eKLBkv {
   width: var(--icon-size) !important;
   height: var(--icon-size) !important;
   border-radius: var(--icon-radius) !important;
 }
-.ldrODX {
+.cEKIky {
   display: var(--placement-icon-status) !important;
   margin-right: var(--space-between-status) !important;
   vertical-align: middle;
 }
-.hePzud {
+.gdyjWe {
   width: var(--width-status) !important;
   height: var(--height-status) !important;
 }
-.hePzud:nth-child(1) {
+.gdyjWe:nth-child(1) {
   margin-left: var(--left-space-status1) !important;
 }
-.hePzud:nth-child(2) {
+.gdyjWe:nth-child(2) {
   margin-left: var(--left-space-status2) !important;
 }
-.hePzud:nth-child(3) {
+.gdyjWe:nth-child(3) {
   margin-left: var(--left-space-status3) !important;
 }
-.hePzud:nth-child(4) {
+.gdyjWe:nth-child(4) {
   margin-left: var(--left-space-status4) !important;
 }
-.hePzud:nth-child(5) {
+.gdyjWe:nth-child(5) {
   margin-left: var(--left-space-status5) !important;
 }
-.hePzud:nth-child(6) {
+.gdyjWe:nth-child(6) {
   margin-left: var(--left-space-status6) !important;
 }
-.gHbIBZ {
+.cjxAT {
   height: var(--height-total) !important;
   top: var(--top-total) !important;
   background: var(--color-total) !important;
@@ -206,7 +206,7 @@ body {
   opacity: var(--opacity-total) !important;
   border-radius: var(--radius-total) !important;
 }
-.ivTmlB {
+.ioHbVZ {
   height: var(--height-remain) !important;
   top: var(--top-remain) !important;
   background: var(--color-remain) !important;
@@ -215,13 +215,13 @@ body {
   border-radius: var(--radius-remain) !important;
   content: var(--image-total) !important;
 }
-.gooGSS {
+.czgSmb {
   padding-top: var(--status-padding-top) !important;
   padding-bottom: var(--status-padding-bottom) !important;
   padding-left: var(--status-padding-left) !important;
   padding-right: var(--status-padding-right) !important;
 }
-.eoWtwG {
+.fgVXZT {
   font-family: var(--item-font-family) !important;
   font-size: var(--item-font-size) !important;
   color: var(--item-font-color) !important;
@@ -234,7 +234,7 @@ body {
     var(--item-outline-color) -1px 0px 0px,
     var(--item-outline-color) 1px 0px 0px !important;
 }
-.bNEIbY {
+.dnBgTj {
   font-family: var(--status-font-family) !important;
   font-size: var(--status-font-size) !important;
   color: var(--status-font-color) !important;
@@ -247,10 +247,10 @@ body {
     var(--status-outline-color) -1px 0px 0px,
     var(--status-outline-color) 1px 0px 0px !important;
 }
-.JmUIc {
+.fkXVPS {
   color: var(--futei-font-color) !important;
 }
-.gKJOhX {
+.feAoFO {
   /* ステータスを一定以上の横幅にしたときに見切れないようにする設定 */
   overflow-y: visible !important;
   /** ステータスをひし形にした際に左側の角が見切れないようにする設定 */

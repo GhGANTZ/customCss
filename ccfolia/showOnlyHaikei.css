@@ -9,37 +9,37 @@
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.hPLikI,
+.cDKmEJ,
 /** 盤面サイズ設定 */
-.auYFM,
+.eRQGfP,
 /** 編集ボタン */
-.ljTpTZ,
+.MuiFab-root,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** 配置固定したスクリーンパネルの削除 */
-.fGQKCn,
+.iofRwv,
 /** 配置固定していないスクリーンパネルの削除 */
-.hIGVWG,
+.gDGDhu,
 /** 配置固定したマーカーパネルの削除 */
-.bdaUhq,
+.khYdOn,
 /** 配置固定していないマーカーパネルの削除 */
-.hNtJoP,
+.ftKyVK,
 /** 前景の削除 */
-.jRThuu>div>div>img,
+.dAuAbO>div>div>img,
 /** ステータスの削除 */
-.jjydZu,
+.jyrvjI,
 /** キャラ駒の削除 */
-.iKjAPH,
+.iHmcGS,
 /** カットインの削除 */
 .dWPPvt,
 /** ダイス結果、チャット入力欄の削除 */
 .MuiPaper-elevation1,
 /** カードデッキの削除 */
-.goqjuy,
+.jpGrSM,
 /** ダイスシンボルの削除 */
-.emblvR,
+.hVUkSD,
 /** タイマーの削除 */
-.cbfxrz,
+.MuiPaper-elevation5,
 /** 監視モード注釈の削除 */
 .MuiSnackbar-root {
   display: none !important;
@@ -48,6 +48,6 @@
 .MuiDialog-root {
   display: none !important;
 }
-.jdlckh {
+.jsiJYh {
   filter: blur(var(--blur-degree)) !important;
 }
