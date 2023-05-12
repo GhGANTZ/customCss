@@ -130,9 +130,9 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.cDKmEJ,
+#root>div>div>div:nth-child(3),
 /** 盤面サイズ設定 */
-.eRQGfP,
+#root>div>div>div:nth-child(6),
 /** 編集ボタン */
 .MuiFab-root {
   display: none !important;
@@ -144,42 +144,42 @@ body {
 }
 
 /** 配置固定したスクリーンパネルの表示 */
-.iofRwv {
+.lbccHy {
   display: var(--disp-fixed-screen) !important;
 }
 
 /** 配置固定していないスクリーンパネルの表示 */
-.gDGDhu {
+.focXIj {
   display: var(--disp-flex-screen) !important;
 }
 
 /** 配置固定したマーカーパネルの表示 */
-.khYdOn {
+.fRATRB {
   display: var(--disp-fixed-marker) !important;
 }
 
 /** 配置固定していないマーカーパネルの表示 */
-.ftKyVK {
+.gQqong {
   display: var(--disp-flex-marker) !important;
 }
 
 /** キャラ駒の名前の表示 */
-.diBmOZ {
+.dvGygd {
   display: var(--disp-char-name) !important;
 }
 
 /** キャラ駒の表示 */
-.laMuTU {
+.jgKkjj {
   display: var(--disp-char-picture) !important;
 }
 
 /** カットインの表示 */
-.gbgaKQ {
+#root>div>div>div:nth-child(n+9) {
   display: var(--disp-cut-in) !important;
 }
 
 /** ダイス結果(下)の表示 */
-.iRDaWA {
+#root>div>div>div:nth-child(7) {
   display: var(--disp-dice-window) !important;
 }
 
@@ -188,23 +188,18 @@ body {
   display: var(--disp-dice-window-btn) !important;
 }
 
-/** サイコロ画像の表示 */
-.cKbaat {
-  display: var(--disp-dice-picture) !important;
-}
-
 /** ステータスの表示 */
-.jyrvjI {
+#root>div>div>div:nth-child(8) {
   display: var(--disp-status) !important;
 }
 
 /** カードデッキの表示 */
-.jpGrSM {
+.gXDecr {
   display: var(--disp-deck) !important;
 }
 
 /** ダイスシンボルの表示 */
-.hVUkSD {
+.jfoMou {
   display: var(--disp-dice-symbol) !important;
 }
 
@@ -218,12 +213,8 @@ body {
 **************************/
 
 /** 背景の非表示 */
-.jsiJYh {
+#root>div>div:nth-child(2)>div:nth-child(1) {
   opacity: 0 !important;
-}
-/** スクロールバーの削除 */
-.bEOMjo::-webkit-scrollbar {
-  display: none !important;
 }
 /** 監視モード注釈の非表示 */
 .MuiSnackbar-root {
@@ -235,7 +226,8 @@ body {
 **************************/
 
 /** ウィンドウ */
-.XTvKq {
+.MuiPaper-elevation1,
+.MuiPaper-rounded:nth-child(2) {
   /** 横幅 */
   width: var(--dice-win-width) !important;
   /** 背景色 */
@@ -246,9 +238,11 @@ body {
   border-radius: var(--dice-win-radius) !important;
 }
 /* ダイスウィンドウ裏の背景色非表示 */
-.iRDaWA {
+.MuiPaper-elevation1,
+.MuiPaper-rounded:first-child {
   background-color: rgba(0, 0, 0, 0);
   padding-top: 0px !important;
+  border: none !important;
 }
 /* ダイスウィンドウ周りのドロップシャドウ非表示 */
 .MuiPaper-elevation1 {
@@ -256,12 +250,14 @@ body {
 }
 
 /** ダイス画像 */
-.cLnHZq {
+img[src~="dice"] {
   /** サイズ設定 */
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
 }
-.cKbaat {
+.MuiPaper-elevation1:nth-child(2) > div:first-child {
+  /** 表示、非表示 */
+  display: var(--disp-dice-picture) !important;
   /** 上下位置の調整 */
   bottom: var(--dice-pic-y) !important;
   /** 左側のスペースの幅 */
@@ -323,7 +319,7 @@ body {
   font-size: var(--content-size) !important;
 }
 
-.bEOMjo {
+.MuiPaper-elevation1:nth-child(2) > div:nth-child(3) {
   /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
   /** 左の余白 */
@@ -332,4 +328,8 @@ body {
   padding-right: var(--content-right-space) !important;
   /** テキストボックスの縦幅 */
   height: var(--content-height) !important;
+}
+/** スクロールバーの削除 */
+.MuiPaper-elevation1:nth-child(2) > div:nth-child(3)::-webkit-scrollbar {
+  display: none !important;
 }

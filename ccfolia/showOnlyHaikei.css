@@ -5,49 +5,18 @@
 /**************************
  非表示項目の設定
 **************************/
-
+/** もろもろ */
+#root>div>div:nth-child(n+3),
 /** ツールバー */
 .MuiToolbar-regular,
-/** サウンド設定 */
-.cDKmEJ,
-/** 盤面サイズ設定 */
-.eRQGfP,
-/** 編集ボタン */
-.MuiFab-root,
-/** チャット欄 */
-.MuiDrawer-paper,
-/** 配置固定したスクリーンパネルの削除 */
-.iofRwv,
-/** 配置固定していないスクリーンパネルの削除 */
-.gDGDhu,
-/** 配置固定したマーカーパネルの削除 */
-.khYdOn,
-/** 配置固定していないマーカーパネルの削除 */
-.ftKyVK,
-/** 前景の削除 */
-.dAuAbO>div>div>img,
-/** ステータスの削除 */
-.jyrvjI,
-/** キャラ駒の削除 */
-.iHmcGS,
-/** カットインの削除 */
-.gbgaKQ,
 /** ダイス結果、チャット入力欄の削除 */
-.MuiPaper-elevation1,
-/** カードデッキの削除 */
-.jpGrSM,
-/** ダイスシンボルの削除 */
-.hVUkSD,
-/** タイマーの削除 */
-.MuiPaper-elevation5,
-/** 監視モード注釈の削除 */
-.MuiSnackbar-root {
+.MuiPaper-elevation1 {
   display: none !important;
 }
 /** 広告の削除 */
 .MuiDialog-root {
   display: none !important;
 }
-.jsiJYh {
+#root>div>div>div:nth-child(1) {
   filter: blur(var(--blur-degree)) !important;
 }

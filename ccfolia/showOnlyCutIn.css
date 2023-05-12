@@ -14,53 +14,20 @@ body {
 
 /** ツールバー */
 .MuiToolbar-regular,
-/** サウンド設定 */
-.cDKmEJ,
-/** 盤面サイズ設定 */
-.eRQGfP,
+/** もろもろ */
+#root>div>div>div:nth-child(-n+8),
 /** 編集ボタン */
 .MuiFab-root,
-/** チャット欄 */
-.MuiDrawer-paper,
-/** 配置固定したスクリーンパネルの削除 */
-.iofRwv,
-/** 配置固定していないスクリーンパネルの削除 */
-.gDGDhu,
-/** 配置固定したマーカーパネルの削除 */
-.khYdOn,
-/** 配置固定していないマーカーパネルの削除 */
-.ftKyVK,
-/** 前景の削除 */
-.dAuAbO>div>div>img,
-/** ステータスの削除 */
-.jyrvjI,
-/** キャラ駒の削除 */
-.iHmcGS,
-/** ダイス結果、チャット入力欄の削除 */
-.MuiPaper-elevation1,
-/** カードデッキの削除 */
-.jpGrSM,
-/** ダイスシンボルの削除 */
-.hVUkSD,
-/** タイマーの削除 */
-.MuiPaper-elevation5,
-/** 監視モード注釈の削除 */
-.MuiSnackbar-root {
-  display: none !important;
-}
 /** 広告の削除 */
 .MuiDialog-root {
   display: none !important;
 }
+
 /** メイン盤面の見切れを解消 */
-.kfpljv {
+#root > div > div:nth-child(3) {
   right: 0px !important;
 }
-/** 背景の非表示 */
-.jsiJYh {
-  opacity: 0 !important;
-}
 /** モーダル背景の削除 */
-.gbgaKQ {
+#root > div > div > div:last-child {
   background: rgba(0, 0, 0, 0) !important;
 }

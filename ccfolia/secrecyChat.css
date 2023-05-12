@@ -65,40 +65,16 @@ body {
  非表示要素の設定
 **************************/
 
-/** サウンド設定 */
-.cDKmEJ,
-/** 盤面サイズ設定 */
-.eRQGfP,
-/** 編集ボタン */
-.MuiFab-root,
-/** 配置固定したスクリーンパネルの削除 */
-.iofRwv,
-/** 配置固定していないスクリーンパネルの削除 */
-.gDGDhu,
-/** 配置固定したマーカーパネルの削除 */
-.khYdOn,
-/** 配置固定していないマーカーパネルの削除 */
-.ftKyVK,
-/** 前景の削除 */
-.dAuAbO>div>div>img,
-/** ステータスの削除 */
-.jyrvjI,
-/** キャラ駒の削除 */
-.iHmcGS,
-/** カットインの削除 */
-.gbgaKQ,
-/** カードデッキの削除 */
-.jpGrSM,
-/** ダイスウィンドウの削除 */
-.iRDaWA,
-/** ダイスシンボルの削除 */
-.hVUkSD,
-/** タイマーの削除 */
-.MuiPaper-elevation5,
+/** ツールバー */
+.MuiToolbar-regular,
+/** 背景の非表示 */
+#root>div>div:nth-child(2),
+/** 前景全体 */
+#root>div>div:nth-child(3),
 /** 監視モード注釈の削除 */
 .MuiSnackbar-root,
 /** ヘッダーの削除 */
-.MuiToolbar-gutters,
+.MuiPaper-elevation1:nth-child(2)>form>div,
 /** 送信ボタンの削除 */
 .hfEIwt,
 /** メッセージ入力欄の削除 */
@@ -106,11 +82,6 @@ body {
 /** BCDiceクレジットの削除 */
 .MuiBox-root {
   display: none !important;
-}
-
-/** 背景の非表示 */
-.jsiJYh {
-  opacity: 0 !important;
 }
 
 /**************************
@@ -173,7 +144,7 @@ hr {
   margin-right: var(--icon-margin-right) !important;
 }
 /**　チャット欄アイコン背景 */
-.gWULzu {
+.MuiListItemAvatar-root > div {
   width: var(--icon-width) !important;
   height: var(--icon-height) !important;
   background: var(--icon-background-color) !important;

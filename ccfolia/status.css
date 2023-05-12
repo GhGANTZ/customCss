@@ -103,48 +103,13 @@ body {
  非表示要素の設定
 **************************/
 
-/** ツールバー */
-.MuiToolbar-regular,
-/** サウンド設定 */
-.cDKmEJ,
-/** 盤面サイズ設定 */
-.eRQGfP,
+/** もろもろ */
+#root>div>div>div:nth-child(-n+7),
+#root>div>div>div:nth-child(n+9),
 /** 編集ボタン */
 .MuiFab-root,
-/** チャット欄 */
-.MuiDrawer-paper,
-/** 配置固定したスクリーンパネルの削除 */
-.iofRwv,
-/** 配置固定していないスクリーンパネルの削除 */
-.gDGDhu,
-/** 配置固定したマーカーパネルの削除 */
-.khYdOn,
-/** 配置固定していないマーカーパネルの削除 */
-.ftKyVK,
-/** 前景の削除 */
-.dAuAbO>div>div>img,
-/** キャラ駒の削除 */
-.iHmcGS,
-/** カットインの削除 */
-.gbgaKQ,
-/** ダイス結果、チャット入力欄の削除 */
-.MuiPaper-elevation1,
-/** カードデッキの削除 */
-.jpGrSM,
-/** ダイスシンボルの削除 */
-.hVUkSD,
-/** タイマーの削除 */
-.MuiPaper-elevation5,
-/** 監視モード注釈の削除 */
-.MuiSnackbar-root {
-  display: none !important;
-}
-
-/** 背景の非表示 */
-.jsiJYh {
-  opacity: 0 !important;
-}
-
+/** ツールバー */
+.MuiToolbar-regular,
 /** 広告の削除 */
 .MuiDialog-root {
   display: none !important;
@@ -166,39 +131,48 @@ body {
   margin-bottom: var(--icon-position-x2) !important;
   margin-left: var(--icon-position-y2) !important;
 }
-.eKLBkv {
+.MuiAvatar-root {
   width: var(--icon-size) !important;
   height: var(--icon-size) !important;
   border-radius: var(--icon-radius) !important;
 }
-.cEKIky {
+#root > div > div > div:nth-child(8) > div {
   display: var(--placement-icon-status) !important;
   margin-right: var(--space-between-status) !important;
   vertical-align: middle;
 }
-.gdyjWe {
+#root > div > div > div:nth-child(8) > div > div > div > div {
   width: var(--width-status) !important;
   height: var(--height-status) !important;
 }
-.gdyjWe:nth-child(1) {
+#root > div > div > div:nth-child(8) > div > div > div > div:nth-child(1) {
   margin-left: var(--left-space-status1) !important;
 }
-.gdyjWe:nth-child(2) {
+#root > div > div > div:nth-child(8) > div > div > div > div:nth-child(2) {
   margin-left: var(--left-space-status2) !important;
 }
-.gdyjWe:nth-child(3) {
+#root > div > div > div:nth-child(8) > div > div > div > div:nth-child(3) {
   margin-left: var(--left-space-status3) !important;
 }
-.gdyjWe:nth-child(4) {
+#root > div > div > div:nth-child(8) > div > div > div > div:nth-child(4) {
   margin-left: var(--left-space-status4) !important;
 }
-.gdyjWe:nth-child(5) {
+#root > div > div > div:nth-child(8) > div > div > div > div:nth-child(5) {
   margin-left: var(--left-space-status5) !important;
 }
-.gdyjWe:nth-child(6) {
+#root > div > div > div:nth-child(8) > div > div > div > div:nth-child(6) {
   margin-left: var(--left-space-status6) !important;
 }
-.cjxAT {
+#root
+  > div
+  > div
+  > div:nth-child(8)
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > div:nth-child(1) {
   height: var(--height-total) !important;
   top: var(--top-total) !important;
   background: var(--color-total) !important;
@@ -206,7 +180,16 @@ body {
   opacity: var(--opacity-total) !important;
   border-radius: var(--radius-total) !important;
 }
-.ioHbVZ {
+#root
+  > div
+  > div
+  > div:nth-child(8)
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > div:nth-child(2) {
   height: var(--height-remain) !important;
   top: var(--top-remain) !important;
   background: var(--color-remain) !important;
@@ -215,13 +198,30 @@ body {
   border-radius: var(--radius-remain) !important;
   content: var(--image-total) !important;
 }
-.czgSmb {
+#root
+  > div
+  > div
+  > div:nth-child(8)
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(1) {
   padding-top: var(--status-padding-top) !important;
   padding-bottom: var(--status-padding-bottom) !important;
   padding-left: var(--status-padding-left) !important;
   padding-right: var(--status-padding-right) !important;
 }
-.fgVXZT {
+#root
+  > div
+  > div
+  > div:nth-child(8)
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(1)
+  > p:nth-child(1) {
   font-family: var(--item-font-family) !important;
   font-size: var(--item-font-size) !important;
   color: var(--item-font-color) !important;
@@ -234,7 +234,16 @@ body {
     var(--item-outline-color) -1px 0px 0px,
     var(--item-outline-color) 1px 0px 0px !important;
 }
-.dnBgTj {
+#root
+  > div
+  > div
+  > div:nth-child(8)
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(1)
+  > p:nth-child(2) {
   font-family: var(--status-font-family) !important;
   font-size: var(--status-font-size) !important;
   color: var(--status-font-color) !important;
@@ -247,10 +256,20 @@ body {
     var(--status-outline-color) -1px 0px 0px,
     var(--status-outline-color) 1px 0px 0px !important;
 }
-.fkXVPS {
+#root
+  > div
+  > div
+  > div:nth-child(8)
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(1)
+  > p:nth-child(2)
+  > span[color="secondary"] {
   color: var(--futei-font-color) !important;
 }
-.feAoFO {
+#root > div > div > div:nth-child(8) > div > div > div {
   /* ステータスを一定以上の横幅にしたときに見切れないようにする設定 */
   overflow-y: visible !important;
   /** ステータスをひし形にした際に左側の角が見切れないようにする設定 */

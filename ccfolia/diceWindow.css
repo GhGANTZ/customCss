@@ -25,8 +25,6 @@
   --dice-win-radius: 10px;
 
   /** ◆◆◆ダイス画像◆◆◆ */
-  /** 表示、非表示(非表示の場合はnoneを設定) */
-  --disp-dice-pic: flex;
   /** サイズ設定 */
   --dice-pic-size: 70px;
   /** 上下位置の調整 */
@@ -105,48 +103,17 @@ body {
 
 /** ツールバー */
 .MuiToolbar-regular,
-/** サウンド設定 */
-.cDKmEJ,
-/** 盤面サイズ設定 */
-.eRQGfP,
+/** もろもろ */
+#root>div>div>div:nth-child(-n+6),
+#root>div>div>div:nth-child(n+8),
 /** 編集ボタン */
 .MuiFab-root,
-/** チャット欄 */
-.MuiDrawer-paper,
-/** 配置固定したスクリーンパネルの削除 */
-.iofRwv,
-/** 配置固定していないスクリーンパネルの削除 */
-.gDGDhu,
-/** 配置固定したマーカーパネルの削除 */
-.khYdOn,
-/** 配置固定していないマーカーパネルの削除 */
-.ftKyVK,
-/** 前景の削除 */
-.dAuAbO>div>div>img,
-/** ステータスの削除 */
-.jyrvjI,
-/** キャラ駒の削除 */
-.iHmcGS,
-/** カットインの削除 */
-.gbgaKQ,
-/** カードデッキの削除 */
-.jpGrSM,
-/** ダイスシンボルの削除 */
-.hVUkSD,
-/** タイマーの削除 */
-.MuiPaper-elevation5,
-/** 監視モード注釈の削除 */
-.MuiSnackbar-root {
-  display: none !important;
-}
-
-/** 背景の非表示 */
-.jsiJYh {
-  opacity: 0 !important;
-}
-
 /** 広告の削除 */
 .MuiDialog-root {
+  display: none !important;
+}
+/** アイコン画像の非表示 */
+.MuiPaper-elevation1 > img:first-child {
   display: none !important;
 }
 
@@ -159,17 +126,13 @@ body {
   display: var(--disp-dice-window-btn) !important;
 }
 
-/** サイコロ画像の表示 */
-.kprzxS {
-  display: var(--disp-dice-picture) !important;
-}
-
 /**************************
  ダイスウィンドウの設定
 **************************/
 
 /** ウィンドウ */
-.XTvKq {
+.MuiPaper-elevation1,
+.MuiPaper-rounded:nth-child(2) {
   /** 横幅 */
   width: var(--dice-win-width) !important;
   /** 背景色 */
@@ -180,9 +143,11 @@ body {
   border-radius: var(--dice-win-radius) !important;
 }
 /* ダイスウィンドウ裏の背景色非表示 */
-.iRDaWA {
+.MuiPaper-elevation1,
+.MuiPaper-rounded:first-child {
   background-color: rgba(0, 0, 0, 0);
   padding-top: 0px !important;
+  border: none !important;
 }
 /* ダイスウィンドウ周りのドロップシャドウ非表示 */
 .MuiPaper-elevation1 {
@@ -190,14 +155,14 @@ body {
 }
 
 /** ダイス画像 */
-.cLnHZq {
+img[src~="dice"] {
   /** サイズ設定 */
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
 }
-.cKbaat {
+.MuiPaper-elevation1:nth-child(2) > div:first-child {
   /** 表示、非表示 */
-  display: var(--disp-dice-pic) !important;
+  display: var(--disp-dice-picture) !important;
   /** 上下位置の調整 */
   bottom: var(--dice-pic-y) !important;
   /** 左側のスペースの幅 */
@@ -259,7 +224,7 @@ body {
   font-size: var(--content-size) !important;
 }
 
-.bEOMjo {
+.MuiPaper-elevation1:nth-child(2) > div:nth-child(3) {
   /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
   /** 左の余白 */
@@ -270,6 +235,6 @@ body {
   height: var(--content-height) !important;
 }
 /** スクロールバーの削除 */
-.bEOMjo::-webkit-scrollbar {
+.MuiPaper-elevation1:nth-child(2) > div:nth-child(3)::-webkit-scrollbar {
   display: none !important;
 }
