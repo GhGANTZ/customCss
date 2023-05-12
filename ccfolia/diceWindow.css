@@ -104,8 +104,8 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** もろもろ */
-#root>div>div>div:nth-child(-n+7),
-#root>div>div>div:nth-child(n+9),
+#root>div>div>div:nth-child(-n+6),
+#root>div>div>div:nth-child(n+8),
 /** 編集ボタン */
 .MuiFab-root,
 /** 広告の削除 */
