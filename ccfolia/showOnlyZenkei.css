@@ -138,6 +138,11 @@ body {
   display: none !important;
 }
 
+/** カットイン */
+.fIpSmP {
+    display: none;
+}
+
 /** チャット欄 */
 .MuiDrawer-paper {
   display: var(--disp-chat-window) !important;
@@ -174,12 +179,12 @@ body {
 }
 
 /** カットインの表示 */
-#root>div>div>div:nth-child(n+9) {
+.gbgaKQ {
   display: var(--disp-cut-in) !important;
 }
 
 /** ダイス結果(下)の表示 */
-#root>div>div>div:nth-child(7) {
+.cRXMfO {
   display: var(--disp-dice-window) !important;
 }
 
@@ -189,7 +194,7 @@ body {
 }
 
 /** ステータスの表示 */
-#root>div>div>div:nth-child(8) {
+.jyrvjI {
   display: var(--disp-status) !important;
 }
 
