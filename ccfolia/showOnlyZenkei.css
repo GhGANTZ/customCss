@@ -130,9 +130,9 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-#root>div>div>div:nth-child(3),
+.kHTMwr,
 /** 盤面サイズ設定 */
-#root>div>div>div:nth-child(6),
+.iQBLVX,
 /** 編集ボタン */
 .MuiFab-root {
   display: none !important;

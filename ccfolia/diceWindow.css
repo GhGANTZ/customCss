@@ -104,7 +104,11 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** もろもろ */
-#root>div>div>div:nth-child(-n+6),
+#root>div>div>div:nth-child(-n+5),
+/** 盤面サイズボタン */
+.iQBLVX,
+/** カットイン */
+.gbgaKQ,
 /** 編集ボタン */
 .MuiFab-root,
 /** チャット欄 */
