@@ -105,15 +105,23 @@ body {
 .MuiToolbar-regular,
 /** もろもろ */
 #root>div>div>div:nth-child(-n+6),
-#root>div>div>div:nth-child(n+8),
 /** 編集ボタン */
 .MuiFab-root,
-/** 広告の削除 */
-.MuiDialog-root {
+/** チャット欄 */
+.MuiDrawer-paper,
+/** ステータスの削除 */
+.jyrvjI,
+/** 監視モード注釈の削除 */
+.MuiSnackbar-root {
   display: none !important;
 }
-/** アイコン画像の非表示 */
-.MuiPaper-elevation1 > img:first-child {
+/** 背景の非表示 */
+.jsiJYh {
+  opacity: 0 !important;
+}
+
+/** 広告の削除 */
+.MuiDialog-root {
   display: none !important;
 }
 
