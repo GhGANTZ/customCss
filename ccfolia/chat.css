@@ -147,8 +147,9 @@ hr {
   border-radius: var(--icon-radius) !important;
 }
 /** チャット欄アイコン画像 */
-.gWULzu img {
+.MuiListItemAvatar-root img {
   width: var(--icon-width) !important;
+  height: var(--icon-height) !important;
 }
 
 /**　右側背景 */
