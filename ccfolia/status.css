@@ -114,13 +114,19 @@ body {
  非表示要素の設定
 **************************/
 /** もろもろ */
-#root>div>div>div:nth-child(-n+6),
+#root>div>div>div:nth-child(-n+3),
+/** ダイスウィンドウ */
+.MuiPaper-elevation1,
+/** タイマー */
+.MuiPaper-elevation5,
 /** 編集ボタン */
 .MuiFab-root,
 /** ツールバー */
 .MuiToolbar-regular,
 /** チャット欄 */
 .MuiDrawer-paper,
+/** 盤面サイズボタン */
+.iQBLVX,
 /** カットインの削除 */
 .gbgaKQ,
 /** ダイス結果、チャット入力欄の削除 */
