@@ -155,6 +155,7 @@ body {
   border-radius: var(--dice-win-radius) !important;
   /** 背景色の見切れ解消 */
   position:absolute !important;
+  bottom:10px !important;
 }
 /* ダイスウィンドウ裏の背景色非表示 */
 .MuiPaper-elevation1,
