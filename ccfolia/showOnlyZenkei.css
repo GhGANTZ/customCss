@@ -250,7 +250,7 @@ body {
 }
 
 /** ダイス画像 */
-img[src~="dice"] {
+img[src*="dice"] {
   /** サイズ設定 */
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
