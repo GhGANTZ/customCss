@@ -75,8 +75,6 @@ body {
 .MuiSnackbar-root,
 /** ヘッダーの削除 */
 .MuiPaper-elevation1:nth-child(2)>form>div,
-/** 送信ボタンの削除 */
-.hfEIwt,
 /** メッセージ入力欄の削除 */
 .MuiInputBase-multiline,
 /** BCDiceクレジットの削除 */
@@ -153,7 +151,6 @@ hr {
 /** チャット欄アイコン画像 */
 .MuiListItemAvatar-root img {
   width: var(--icon-width) !important;
-  height: var(--icon-height) !important;
 }
 
 /**　右側背景 */
@@ -222,4 +219,10 @@ span.MuiTypography-root.MuiTypography-caption {
   color: var(--font-color-dice-time) !important;
   text-shadow: var(--font-shadow-dice-time) !important;
   font-size: var(--font-size-dice-time) !important;
+}
+
+.MuiList-root > div > div > div > div:nth-last-child(-n + 3) {
+  display: block !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }

@@ -9,7 +9,7 @@
   /** ダイス結果(下)のボタンの表示 */
   --disp-dice-window-btn: inline-flex;
   /** サイコロ画像の表示 */
-  --disp-dice-picture: flex;
+  --disp-dice-picture: block;
 
   /**************************
    ダイスウィンドウの設定
@@ -23,18 +23,6 @@
   --dice-win-border: solid 4px white;
   /** 角の丸み */
   --dice-win-radius: 10px;
-
-  /** ◆◆◆ダイス画像◆◆◆ */
-  /** サイズ設定 */
-  --dice-pic-size: 70px;
-  /** 上下位置の調整 */
-  --dice-pic-y: 0%;
-  /** 左側のスペースの幅 */
-  --dice-pic-left-space: 200px;
-  /** 右側のスペースの幅 */
-  --dice-pic-right-space: 0px;
-  /** 画像が表示される範囲 */
-  --dice-pic-disp-range: 600px;
 
   /** ◆◆◆見出し、キャラ名◆◆◆ */
   /** フォント */
@@ -106,22 +94,18 @@ body {
 /** もろもろ */
 #root>div>div>div:nth-child(-n+5),
 /** 盤面サイズボタン */
-.cxXvgu,
+.fhmotf,
 /** カットイン */
-.cnXaQa,
+.hPKTaG,
 /** 編集ボタン */
 .MuiFab-root,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** ステータスの削除 */
-.dIPUNQ,
+.ixtgWZ,
 /** 監視モード注釈の削除 */
 .MuiSnackbar-root {
   display: none !important;
-}
-/** 背景の非表示 */
-.jsiJYh {
-  opacity: 0 !important;
 }
 
 /** 広告の削除 */
@@ -154,8 +138,8 @@ body {
   /** 角の丸み */
   border-radius: var(--dice-win-radius) !important;
   /** 背景色の見切れ解消 */
-  position:absolute !important;
-  bottom:10px !important;
+  position: absolute !important;
+  bottom: 10px !important;
 }
 /* ダイスウィンドウ裏の背景色非表示 */
 .MuiPaper-elevation1,
@@ -170,22 +154,9 @@ body {
 }
 
 /** ダイス画像 */
-img[src*="dice"] {
-  /** サイズ設定 */
-  width: var(--dice-pic-size) !important;
-  height: var(--dice-pic-size) !important;
-}
-.MuiPaper-elevation1:nth-child(2) > div:first-child {
-  /** 表示、非表示 */
+.XLIUc {
+  /** ダイスの表示切り替え */
   display: var(--disp-dice-picture) !important;
-  /** 上下位置の調整 */
-  bottom: var(--dice-pic-y) !important;
-  /** 左側のスペースの幅 */
-  margin-left: var(--dice-pic-left-space) !important;
-  /** 右側のスペースの幅 */
-  right: var(--dice-pic-right-space) !important;
-  /** 画像が表示される範囲 */
-  max-width: var(--dice-pic-disp-range) !important;
 }
 
 /** 見出し、キャラ名 */

@@ -50,18 +50,6 @@
   /** 角の丸み */
   --dice-win-radius: 10px;
 
-  /** ◆◆◆ダイス画像◆◆◆ */
-  /** サイズ設定 */
-  --dice-pic-size: 70px;
-  /** 上下位置の調整 */
-  --dice-pic-y: 0%;
-  /** 左側のスペースの幅 */
-  --dice-pic-left-space: 200px;
-  /** 右側のスペースの幅 */
-  --dice-pic-right-space: 0px;
-  /** 画像が表示される範囲 */
-  --dice-pic-disp-range: 600px;
-
   /** ◆◆◆見出し、キャラ名◆◆◆ */
   /** フォント */
   --midashi-font: inherit;
@@ -132,7 +120,7 @@ body {
 /** サウンド設定 */
 .bKYxBh,
 /** 盤面サイズ設定 */
-.cxXvgu,
+.fhmotf,
 /** 編集ボタン */
 .MuiFab-root {
   display: none !important;
@@ -144,42 +132,42 @@ body {
 }
 
 /** 配置固定したスクリーンパネルの表示 */
-.orByZ {
+.bpLbnn {
   display: var(--disp-fixed-screen) !important;
 }
 
 /** 配置固定していないスクリーンパネルの表示 */
-.ffLtwg {
+.kXXakK {
   display: var(--disp-flex-screen) !important;
 }
 
 /** 配置固定したマーカーパネルの表示 */
-.ksHotB {
+.hFkqGX {
   display: var(--disp-fixed-marker) !important;
 }
 
 /** 配置固定していないマーカーパネルの表示 */
-.zRPOk {
+.jwKdFG {
   display: var(--disp-flex-marker) !important;
 }
 
 /** キャラ駒の名前の表示 */
-.WcwHv {
+.eoagMX {
   display: var(--disp-char-name) !important;
 }
 
 /** キャラ駒の表示 */
-.jRMDiz {
+.jcWTlg {
   display: var(--disp-char-picture) !important;
 }
 
 /** カットインの表示 */
-.cnXaQa {
+.hPKTaG {
   display: var(--disp-cut-in) !important;
 }
 
 /** ダイス結果(下)の表示 */
-.EimpG {
+.krGCMN {
   display: var(--disp-dice-window) !important;
 }
 
@@ -189,17 +177,17 @@ body {
 }
 
 /** ステータスの表示 */
-.dIPUNQ {
+.ixtgWZ {
   display: var(--disp-status) !important;
 }
 
 /** カードデッキの表示 */
-.fmVLVc {
+.bRJjty {
   display: var(--disp-deck) !important;
 }
 
 /** ダイスシンボルの表示 */
-.jSmGoJ {
+.kjVexh {
   display: var(--disp-dice-symbol) !important;
 }
 
@@ -250,22 +238,9 @@ body {
 }
 
 /** ダイス画像 */
-img[src*="dice"] {
-  /** サイズ設定 */
-  width: var(--dice-pic-size) !important;
-  height: var(--dice-pic-size) !important;
-}
-.MuiPaper-elevation1:nth-child(2) > div:first-child {
+.XLIUc {
   /** 表示、非表示 */
   display: var(--disp-dice-picture) !important;
-  /** 上下位置の調整 */
-  bottom: var(--dice-pic-y) !important;
-  /** 左側のスペースの幅 */
-  margin-left: var(--dice-pic-left-space) !important;
-  /** 右側のスペースの幅 */
-  right: var(--dice-pic-right-space) !important;
-  /** 画像が表示される範囲 */
-  max-width: var(--dice-pic-disp-range) !important;
 }
 
 /** 見出し、キャラ名 */

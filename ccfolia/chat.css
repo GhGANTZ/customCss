@@ -149,7 +149,6 @@ hr {
 /** チャット欄アイコン画像 */
 .MuiListItemAvatar-root img {
   width: var(--icon-width) !important;
-  height: var(--icon-height) !important;
 }
 
 /**　右側背景 */
