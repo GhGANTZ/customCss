@@ -98,7 +98,7 @@ hr {
 }
 
 /**　ダイス結果 */
-.MuiList-root > div > div > div > div {
+.MuiList-root > div > div > div {
   padding: var(--background-padding) !important;
   background: var(--background-color) !important;
   border: solid var(--border-width) var(--border-color) !important;
@@ -159,8 +159,8 @@ hr {
 }
 
 /** ダイス結果のスクロールを発生させないよう高さを指定 */
-.MuiList-root > div > div > div {
-  height: auto !important;
+.MuiList-root > div > div {
+  height: 100% !important;
   position: absolute !important;
   /** ダイス結果の上揃え、下揃えを設定 */
   top: var(--is-top) !important;

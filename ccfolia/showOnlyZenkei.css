@@ -130,9 +130,9 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.enqrsI,
+.eRaqCU,
 /** 盤面サイズ設定 */
-.bEqVnC,
+.hFzgoY,
 /** 編集ボタン */
 .MuiFab-root {
   display: none !important;
@@ -174,7 +174,7 @@ body {
 }
 
 /** カットインの表示 */
-.iKpVKW {
+.dRMpxB {
   display: var(--disp-cut-in) !important;
 }
 
@@ -189,7 +189,7 @@ body {
 }
 
 /** ステータスの表示 */
-.bksvMX {
+.kTIUpi {
   display: var(--disp-status) !important;
 }
 
