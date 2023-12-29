@@ -159,8 +159,10 @@ hr {
 }
 
 /** ダイス結果のスクロールを発生させないよう高さを指定 */
-.MuiList-root > div > div {
+.MuiList-root > div {
   height: 100% !important;
+}
+.MuiList-root > div > div {
   position: absolute !important;
   /** ダイス結果の上揃え、下揃えを設定 */
   top: var(--is-top) !important;
