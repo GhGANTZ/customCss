@@ -140,7 +140,7 @@ body {
 
 /** ウィンドウ */
 .MuiPaper-elevation1,
-.MuiPaper-rounded:nth-child(2) {
+.MuiPaper-rounded:first-child {
   /** 横幅 */
   width: var(--dice-win-width) !important;
   /** 背景色 */
@@ -153,15 +153,9 @@ body {
   position: absolute !important;
   bottom: 10px !important;
 }
-/* ダイスウィンドウ裏の背景色非表示 */
 .MuiPaper-elevation1,
 .MuiPaper-rounded:first-child {
-  background-color: rgba(0, 0, 0, 0);
-  padding-top: 0px !important;
-  border: none !important;
-}
-/* ダイスウィンドウ周りのドロップシャドウ非表示 */
-.MuiPaper-elevation1 {
+  /* ダイスウィンドウ周りのドロップシャドウ非表示 */
   box-shadow: none !important;
 }
 
@@ -235,7 +229,7 @@ img[src*="dice"] {
   font-size: var(--content-size) !important;
 }
 
-.MuiPaper-elevation1:nth-child(2) > div:nth-child(3) {
+.MuiPaper-elevation1, .MuiPaper-rounded:first-child > div:nth-child(3) {
   /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
   /** 左の余白 */
@@ -246,6 +240,6 @@ img[src*="dice"] {
   height: var(--content-height) !important;
 }
 /** スクロールバーの削除 */
-.MuiPaper-elevation1:nth-child(2) > div:nth-child(3)::-webkit-scrollbar {
+.MuiPaper-elevation1, .MuiPaper-rounded:first-child > div:nth-child(3)::-webkit-scrollbar {
   display: none !important;
 }
