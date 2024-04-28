@@ -195,14 +195,14 @@ p.MuiTypography-root {
 }
 
 /* 失敗時の赤字部分 */
-.MuiTypography-colorSecondary {
+.css-1j13mke {
   color: var(--font-color-fail) !important;
   text-shadow: var(--font-shadow-fail) !important;
   font-size: var(--font-size-fail) !important;
 }
 
 /** ダイス結果（1D100）など */
-.MuiTypography-colorTextSecondary {
+.css-1l6qhgm {
   font-size: inherit !important;
   font-weight: inherit !important;
 }
@@ -215,6 +215,7 @@ p.MuiTypography-root {
   text-shadow: var(--font-shadow-user-name) !important;
   font-size: var(--font-size-user-name) !important;
 }
+
 /* ダイスを振った時間 */
 span.MuiTypography-root.MuiTypography-caption {
   display: var(--disp-dice-time) !important;
