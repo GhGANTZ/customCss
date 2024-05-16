@@ -168,9 +168,6 @@ hr {
 }
 .MuiList-root > div > div {
   position: absolute !important;
-}
-.MuiList-root > div > div{
-  position: absolute !important;
   /** ダイス結果の上揃え、下揃えを設定 */
   top: var(--is-top) !important;
   bottom: var(--is-bottom) !important;

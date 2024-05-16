@@ -168,9 +168,6 @@ hr {
 }
 .MuiList-root > div > div {
   position: absolute !important;
-}
-.MuiList-root > div > div{
-  position: absolute !important;
   /** ダイス結果の上揃え、下揃えを設定 */
   top: var(--is-top) !important;
   bottom: var(--is-bottom) !important;
@@ -215,12 +212,6 @@ p.MuiTypography-root {
   font-size: var(--font-size-fail) !important;
 }
 
-/** ダイス結果（1D100）など */
-.css-1l6qhgm {
-  font-size: inherit !important;
-  font-weight: inherit !important;
-}
-
 /* ユーザ名、ダイスを振った時間 */
 .MuiListItemText-primary,
 .MuiTypography-caption {
@@ -229,7 +220,6 @@ p.MuiTypography-root {
   text-shadow: var(--font-shadow-user-name) !important;
   font-size: var(--font-size-user-name) !important;
 }
-
 /* ダイスを振った時間 */
 span.MuiTypography-root.MuiTypography-caption {
   display: var(--disp-dice-time) !important;
