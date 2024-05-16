@@ -105,16 +105,16 @@ body {
 .MuiToolbar-regular,
 /** もろもろ */
 #root>div>div>div:nth-child(-n+5),
-/** 盤面サイズボタン */
-.hFzgoY,
+/** 盤面サイズ設定 */
+.gZsPem,
 /** カットイン */
-.dRMpxB,
+.dekhVs,
 /** 編集ボタン */
 .MuiFab-root,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** ステータスの削除 */
-.kTIUpi,
+.cCmYap,
 /** 監視モード注釈の削除 */
 .MuiSnackbar-root {
   display: none !important;
@@ -140,7 +140,7 @@ body {
 
 /** ウィンドウ */
 .MuiPaper-elevation1,
-.MuiPaper-rounded:nth-child(2) {
+.MuiPaper-rounded:first-child {
   /** 横幅 */
   width: var(--dice-win-width) !important;
   /** 背景色 */
@@ -152,13 +152,9 @@ body {
   /** 背景色の見切れ解消 */
   position: absolute !important;
   bottom: 10px !important;
-}
-/* ダイスウィンドウ裏の背景色非表示 */
-.MuiPaper-elevation1,
-.MuiPaper-rounded:first-child {
+  /* ダイスウィンドウ裏の背景色非表示 */
   background-color: rgba(0, 0, 0, 0);
   padding-top: 0px !important;
-  border: none !important;
 }
 /* ダイスウィンドウ周りのドロップシャドウ非表示 */
 .MuiPaper-elevation1 {
@@ -171,7 +167,7 @@ img[src*="dice"] {
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
 }
-.gkRMkm {
+.hSjflw {
   /** 表示、非表示 */
   display: var(--disp-dice-picture) !important;
   /** 上下位置の調整 */
@@ -235,7 +231,7 @@ img[src*="dice"] {
   font-size: var(--content-size) !important;
 }
 
-.MuiPaper-elevation1:nth-child(2) > div:nth-child(3) {
+.MuiPaper-rounded > div > div:last-child {
   /** 下の余白 */
   padding-bottom: var(--content-bottom-space) !important;
   /** 左の余白 */
@@ -246,6 +242,6 @@ img[src*="dice"] {
   height: var(--content-height) !important;
 }
 /** スクロールバーの削除 */
-.MuiPaper-elevation1:nth-child(2) > div:nth-child(3)::-webkit-scrollbar {
+.MuiPaper-rounded > div > div:last-child::-webkit-scrollbar {
   display: none !important;
 }

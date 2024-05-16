@@ -32,6 +32,10 @@
   --font-size-result: 1.5rem;
   --font-color-result: rgba(255, 255, 255, 1);
   --font-shadow-result: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
+  /** ダイス結果の文字部分（(1D100) > 40 など） */
+  --font-size-detail: 1.1rem;
+  --font-color-detail: rgba(200, 200, 200, 1);
+  --font-shadow-detail: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** 成功時の青文字部分 */
   --font-size-success: 1.1rem;
   --font-color-success: rgba(134, 202, 255, 1);
@@ -159,8 +163,11 @@ hr {
 }
 
 /** ダイス結果のスクロールを発生させないよう高さを指定 */
-.MuiList-root > div > div {
+.MuiList-root > div {
   height: 100% !important;
+  position: absolute !important;
+}
+.MuiList-root > div > div{
   position: absolute !important;
   /** ダイス結果の上揃え、下揃えを設定 */
   top: var(--is-top) !important;
@@ -185,15 +192,22 @@ p.MuiTypography-root {
   font-size: var(--font-size-result) !important;
 }
 
+/** (1D100) > 40 などその他の文字部分 */
+.css-ucj12 {
+  color: var(--font-color-detail) !important;
+  text-shadow: var(--font-shadow-detail) !important;
+  font-size: var(--font-size-detail) !important;
+}
+
 /** 成功時の青文字部分 */
-.MuiTypography-colorPrimary {
+.css-1l6qhgm {
   color: var(--font-color-success) !important;
   text-shadow: var(--font-shadow-success) !important;
   font-size: var(--font-size-success) !important;
 }
 
 /* 失敗時の赤字部分 */
-.MuiTypography-colorSecondary {
+.css-1j13mke {
   color: var(--font-color-fail) !important;
   text-shadow: var(--font-shadow-fail) !important;
   font-size: var(--font-size-fail) !important;

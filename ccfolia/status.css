@@ -126,9 +126,9 @@ body {
 /** チャット欄 */
 .MuiDrawer-paper,
 /** 盤面サイズボタン */
-.hFzgoY,
+.gZsPem,
 /** カットインの削除 */
-.dRMpxB,
+.dekhVs,
 /** ダイス結果 */
 .MuiPaper-elevation,
 /** チャット入力欄の削除 */
@@ -166,42 +166,42 @@ body {
   border-radius: var(--icon-radius) !important;
 }
 
-.cvAzaT {
+.gRcoVw {
   display: var(--placement-icon-status) !important;
   margin-right: var(--space-between-status) !important;
   vertical-align: middle;
 }
 
-.fIhGJt {
+.eyQguk {
   width: var(--width-status) !important;
   height: var(--height-status) !important;
 }
 
-.fIhGJt:nth-child(1) {
+.eyQguk:nth-child(1) {
   margin-left: var(--left-space-status1) !important;
 }
 
-.fIhGJt:nth-child(2) {
+.eyQguk:nth-child(2) {
   margin-left: var(--left-space-status2) !important;
 }
 
-.fIhGJt:nth-child(3) {
+.eyQguk:nth-child(3) {
   margin-left: var(--left-space-status3) !important;
 }
 
-.fIhGJt:nth-child(4) {
+.eyQguk:nth-child(4) {
   margin-left: var(--left-space-status4) !important;
 }
 
-.fIhGJt:nth-child(5) {
+.eyQguk:nth-child(5) {
   margin-left: var(--left-space-status5) !important;
 }
 
-.fIhGJt:nth-child(6) {
+.eyQguk:nth-child(6) {
   margin-left: var(--left-space-status6) !important;
 }
 
-.fIhGJt > div:nth-child(2) > div:nth-child(1) {
+.eyQguk > div:nth-child(2) > div:nth-child(1) {
   height: var(--height-total) !important;
   top: var(--top-total) !important;
   background: var(--color-total) !important;
@@ -210,7 +210,7 @@ body {
   border-radius: var(--radius-total) !important;
 }
 
-.fIhGJt > div:nth-child(2) > div:nth-child(2) {
+.eyQguk > div:nth-child(2) > div:nth-child(2) {
   height: var(--height-remain) !important;
   top: var(--top-remain) !important;
   background: var(--color-remain) !important;
@@ -220,14 +220,14 @@ body {
   content: var(--image-total) !important;
 }
 
-.fIhGJt > div:nth-child(1) {
+.eyQguk > div:nth-child(1) {
   padding-top: var(--status-padding-top) !important;
   padding-bottom: var(--status-padding-bottom) !important;
   padding-left: var(--status-padding-left) !important;
   padding-right: var(--status-padding-right) !important;
 }
 
-.fIhGJt > div:nth-child(1) > p:nth-child(1) {
+.eyQguk > div:nth-child(1) > p:nth-child(1) {
   font-family: var(--item-font-family) !important;
   font-size: var(--item-font-size) !important;
   color: var(--item-font-color) !important;
@@ -241,7 +241,7 @@ body {
     var(--item-outline-color) 1px 0px 0px !important;
 }
 
-.fIhGJt > div:nth-child(1) > p:nth-child(2) {
+.eyQguk > div:nth-child(1) > p:nth-child(2) {
   font-family: var(--status-font-family) !important;
   font-size: var(--status-font-size) !important;
   color: var(--status-font-color) !important;
@@ -255,11 +255,11 @@ body {
     var(--status-outline-color) 1px 0px 0px !important;
 }
 
-.fIhGJt > div:nth-child(1) > p:nth-child(2) > span[color="secondary"] {
+.eyQguk > div:nth-child(1) > p:nth-child(2) > span[color="secondary"] {
   color: var(--futei-font-color) !important;
 }
 
-.CBQPq {
+.eTqEcT {
   /* ステータスを一定以上の横幅にしたときに見切れないようにする設定 */
   overflow-y: visible !important;
   /** ステータスをひし形にした際に左側の角が見切れないようにする設定 */
