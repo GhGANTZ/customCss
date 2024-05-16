@@ -7,7 +7,7 @@
 
 ◆◆◆◆◆テキスト２◆◆◆◆◆
 
-.MuiList-root>div>div>div:nth-last-child(-n+3) {
+.MuiList-root>div>div>div:nth-last-of-type(-n+3) {
     display: block !important;
 }
 

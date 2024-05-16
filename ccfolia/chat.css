@@ -165,6 +165,8 @@ hr {
 /** ダイス結果のスクロールを発生させないよう高さを指定 */
 .MuiList-root > div {
   height: 100% !important;
+}
+.MuiList-root > div > div {
   position: absolute !important;
 }
 .MuiList-root > div > div{
@@ -211,12 +213,6 @@ p.MuiTypography-root {
   color: var(--font-color-fail) !important;
   text-shadow: var(--font-shadow-fail) !important;
   font-size: var(--font-size-fail) !important;
-}
-
-/** ダイス結果（1D100）など */
-.MuiTypography-colorTextSecondary {
-  font-size: inherit !important;
-  font-weight: inherit !important;
 }
 
 /* ユーザ名、ダイスを振った時間 */
