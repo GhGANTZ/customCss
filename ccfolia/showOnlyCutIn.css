@@ -1,4 +1,4 @@
-/**************************
+﻿/**************************
  OBS用のおまじない
 **************************/
 
@@ -15,7 +15,7 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** もろもろ */
-#root>div>div>div:nth-child(-n+8),
+#root>div>div>div:nth-child(-n+10),
 /** 編集ボタン */
 .MuiFab-root,
 /** 広告の削除 */
@@ -28,6 +28,6 @@ body {
   right: 0px !important;
 }
 /** モーダル背景の削除 */
-.dekhVs {
+.jhHfYG {
   background: rgba(0, 0, 0, 0) !important;
 }
