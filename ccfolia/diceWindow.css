@@ -106,19 +106,19 @@ body {
 /** もろもろ */
 #root>div>div>div:nth-child(-n+5),
 /** 盤面サイズ設定 */
-.iAmsKx,
+.frzXew,
 /** カットイン */
-.jhHfYG,
+.dgUYuI,
 /** 編集ボタン */
 .MuiFab-root,
 /** チャット欄 */
 .MuiDrawer-paper,
 /** ステータスの削除 */
-.kDDzuz,
+.hVnzkT,
 /** 監視モード注釈の削除 */
 .MuiSnackbar-root,
 /** 発言時キャラクター */
-.jVewpu {
+.eifEaS {
   display: none !important;
 }
 
@@ -169,7 +169,7 @@ img[src*="dice"] {
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
 }
-.dnSOOJ {
+.kXQOsh {
   /** 表示、非表示 */
   display: var(--disp-dice-picture) !important;
   /** 上下位置の調整 */

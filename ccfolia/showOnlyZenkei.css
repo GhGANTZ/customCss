@@ -130,13 +130,13 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.dMPSkT,
+.gtLUdJ,
 /** 盤面サイズ設定 */
-.iAmsKx,
+.frzXew,
 /** 編集ボタン */
 .MuiFab-root,
 /** 発言時キャラクター */
-.jVewpu {
+.eifEaS {
   display: none !important;
 }
 
@@ -156,32 +156,32 @@ body {
 }
 
 /** 配置固定したマーカーパネルの表示 */
-.cvXnvK {
+.fdRabR {
   display: var(--disp-fixed-marker) !important;
 }
 
 /** 配置固定していないマーカーパネルの表示 */
-.bmUstz {
+.hCpvKs {
   display: var(--disp-flex-marker) !important;
 }
 
 /** キャラ駒の名前の表示 */
-.dEioFh {
+.sEwfA {
   display: var(--disp-char-name) !important;
 }
 
 /** キャラ駒の表示 */
-.dQzQva {
+.Hnfkf {
   display: var(--disp-char-picture) !important;
 }
 
 /** カットインの表示 */
-.jhHfYG {
+.dgUYuI {
   display: var(--disp-cut-in) !important;
 }
 
 /** ダイス結果(下)の表示 */
-.qLpxn {
+.ijmpa-D {
   display: var(--disp-dice-window) !important;
 }
 
@@ -191,17 +191,17 @@ body {
 }
 
 /** ステータスの表示 */
-.kDDzuz {
+.hVnzkT {
   display: var(--disp-status) !important;
 }
 
 /** カードデッキの表示 */
-.fxiNDP {
+.fkLLQa {
   display: var(--disp-deck) !important;
 }
 
 /** ダイスシンボルの表示 */
-.bcwSGZ {
+.ksnzcl {
   display: var(--disp-dice-symbol) !important;
 }
 
@@ -256,7 +256,7 @@ img[src*="dice"] {
   width: var(--dice-pic-size) !important;
   height: var(--dice-pic-size) !important;
 }
-.dnSOOJ {
+.kXQOsh {
   /** 表示、非表示 */
   display: var(--disp-dice-picture) !important;
   /** 上下位置の調整 */
