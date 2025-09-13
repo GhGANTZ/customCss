@@ -130,9 +130,9 @@ body {
 /** ツールバー */
 .MuiToolbar-regular,
 /** サウンド設定 */
-.gtLUdJ,
+.eePile,
 /** 盤面サイズ設定 */
-.frzXew,
+.kpfCBT,
 /** 編集ボタン */
 .MuiFab-root,
 /** 発言時キャラクター */
@@ -176,12 +176,12 @@ body {
 }
 
 /** カットインの表示 */
-.dgUYuI {
+.kHacUr {
   display: var(--disp-cut-in) !important;
 }
 
 /** ダイス結果(下)の表示 */
-.ijmpa-D {
+.fMzoRa {
   display: var(--disp-dice-window) !important;
 }
 
@@ -191,7 +191,7 @@ body {
 }
 
 /** ステータスの表示 */
-.hVnzkT {
+.fXPYIC {
   display: var(--disp-status) !important;
 }
 
